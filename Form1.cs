@@ -1,9 +1,6 @@
 // Form1.cs
-using System;
-using System.Windows.Forms;
 using Microsoft.Web.WebView2.WinForms;
 using Microsoft.Web.WebView2.Core;
-using System.Threading.Tasks;
 
 namespace Webview2_Test
 {
@@ -49,17 +46,6 @@ namespace Webview2_Test
                 Dock = DockStyle.Left,  // This will dock the button to the left
             };
             toolbar.Controls.Add(refreshButton);
-            // Create a Button for going back
-            backButton = new Button()
-            {
-                Text = "Back",
-                Width = 60,  // Adjust as needed
-                Height = 20,  // Adjust as needed
-                Top = 5,  // Adjust as needed
-                Dock = DockStyle.Left,  // This will dock the button to the left
-            };
-            toolbar.Controls.Add(backButton);
-
             // Create a Button for going forward
             forwardButton = new Button()
             {
@@ -70,10 +56,16 @@ namespace Webview2_Test
                 Dock = DockStyle.Left,  // This will dock the button to the left
             };
             toolbar.Controls.Add(forwardButton);
-
-
-
-
+            // Create a Button for going back
+            backButton = new Button()
+            {
+                Text = "Back",
+                Width = 60,  // Adjust as needed
+                Height = 20,  // Adjust as needed
+                Top = 5,  // Adjust as needed
+                Dock = DockStyle.Left,  // This will dock the button to the left
+            };
+            toolbar.Controls.Add(backButton);
             /// Handle the KeyPress event to navigate to the URL when Enter is pressed
             addressBar.KeyPress += (sender, e) =>
             {
