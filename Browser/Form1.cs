@@ -76,11 +76,7 @@ namespace Webview2_Test
                         string url = addressBar.Text;
                         if (url == "browser://newpage")
                         {
-                            url = "https://web.tabliss.io/";
-                        }
-                        else if (!url.StartsWith("http://") && !url.StartsWith("https://"))
-                        {
-                            url = "http://" + url;
+                            url = "file:///C:/SimpleBrowser/Resources/NewPage/index.html";
                         }
                         webView.CoreWebView2.Navigate(url);
                     }
@@ -102,7 +98,7 @@ namespace Webview2_Test
                 Dock = DockStyle.Fill,
             };
             await webView.EnsureCoreWebView2Async(null);
-            webView.CoreWebView2.Navigate("https://web.tabliss.io/");
+            webView.CoreWebView2.Navigate("file:///C:/SimpleBrowser/Resources/NewPage/index.html");
 
             // Add the webView control to the parent control's Controls collection
             this.Controls.Add(webView);
@@ -118,7 +114,7 @@ namespace Webview2_Test
             {
                 // Update the address bar with the new URL
                 string url = webView.CoreWebView2.Source.ToString();
-                if (url == "https://web.tabliss.io/")
+                if (url == "file:///C:/SimpleBrowser/Resources/NewPage/index.html")
                 {
                     addressBar.Text = "browser://newpage";
                 }
