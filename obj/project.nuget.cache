@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sSzh6g8C9JI9bwiqzyZFqT+xjfG5qmRpobDFg8VbGHAV7uzzr0EeMNIJHgO55RiV03VuioPJWwZ81piqm/XHdw==",
+  "success": true,
+  "projectFilePath": "F:\\Source\\Repos\\Simple Browser\\Simple Browser\\Simple Browser.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daniel McGuire\\.nuget\\packages\\microsoft.web.webview2\\1.0.2151.40\\microsoft.web.webview2.1.0.2151.40.nupkg.sha512"
+  ],
+  "logs": []
+}
