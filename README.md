@@ -1,6 +1,6 @@
 # Simple-Browser
 
-This is a simple project that will only get updated once a year (23H2, 24H2, etc.).
+This is a simple project that will only get updated thrice a year (24Q1, 24Q2, 24Q3, 24Q4, etc.).
 
 This is a very simple browser that uses MS WebView2 (Chromium Based) for rendering webpages.
 
