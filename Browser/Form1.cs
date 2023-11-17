@@ -34,38 +34,6 @@ namespace Webview2_Test
             };
 
             toolbar.Controls.Add(addressBar);
-
-            // Move the addition of the other controls after the address bar
-            // Create a Button for refresh
-            Button refreshButton = new Button()
-            {
-                Text = "Refresh",
-                Width = 70,  // Adjust as needed
-                Height = 20,  // Adjust as needed
-                Top = 5,  // Adjust as needed
-                Dock = DockStyle.Left,  // This will dock the button to the left
-            };
-            toolbar.Controls.Add(refreshButton);
-            // Create a Button for going forward
-            forwardButton = new Button()
-            {
-                Text = "Forward",
-                Width = 70,  // Adjust as needed
-                Height = 20,  // Adjust as needed
-                Top = 5,  // Adjust as needed
-                Dock = DockStyle.Left,  // This will dock the button to the left
-            };
-            toolbar.Controls.Add(forwardButton);
-            // Create a Button for going back
-            backButton = new Button()
-            {
-                Text = "Back",
-                Width = 60,  // Adjust as needed
-                Height = 20,  // Adjust as needed
-                Top = 5,  // Adjust as needed
-                Dock = DockStyle.Left,  // This will dock the button to the left
-            };
-            toolbar.Controls.Add(backButton);
             /// Handle the KeyPress event to navigate to the URL when Enter is pressed
             addressBar.KeyPress += (sender, e) =>
             {
@@ -130,11 +98,6 @@ namespace Webview2_Test
 
         private void CoreWebView2_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
         {
-            // Enable or disable the Back button depending on if navigation can go back
-            backButton.Enabled = webView.CoreWebView2.CanGoBack;
-
-            // Enable or disable the Forward button depending on if navigation can go forward
-            forwardButton.Enabled = webView.CoreWebView2.CanGoForward;
         }
 
     }
