@@ -10,7 +10,6 @@ namespace Webview2_Test
         private Button backButton;
         private Button forwardButton;
 
-        // Declare addressBar at the class level
         private TextBox addressBar;
 
         public Form1()
