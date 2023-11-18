@@ -1,6 +1,7 @@
 # Simple-Browser
 
 This is a simple project that will only get updated four times a year (24Q1, 24Q2, 24Q3, 24Q4, etc.).
+Normal Release Schedule will start once we get out of alpha.
 
 This is a very simple browser that uses MS WebView2 (Chromium Based) for rendering webpages.
 
