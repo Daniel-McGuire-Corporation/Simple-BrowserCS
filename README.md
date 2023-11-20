@@ -17,6 +17,8 @@ OSX Support is going into development soon
 
 Android and iOS Support is on its way (late 2024 to early 2025)
 
+Android version is in HEAVY development
+
 ### Stay Tuned for the Daniel McGuire Corporation FULL BROWSER!
 (chromium based) It will be released after COMPLETE stability testing.
 
