@@ -11,6 +11,12 @@ This used to be used on our servers.
 ## Compatibility:
 **Requires**: Windows 11 21H2 (or later)
 
+Linux Support is in active development
+
+OSX Support is going into development soon
+
+Android and iOS Support is on its way (late 2024 to early 2025)
+
 ### Stay Tuned for the Daniel McGuire Corporation FULL BROWSER!
 (chromium based) It will be released after COMPLETE stability testing.
 
