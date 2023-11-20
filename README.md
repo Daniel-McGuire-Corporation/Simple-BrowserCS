@@ -8,7 +8,7 @@ This is a very simple browser that uses MS WebView2 (Chromium Based) for renderi
 
 This used to be used on our servers.
 
-THIS IS CODED IN C# (MueTab is the other lanugages (JavaScript, HTML, CSS, etc.)
+THIS IS CODED IN C# (MueTab is the other lanugages (JavaScript, HTML, CSS, etc.))
 
 ## Compatibility:
 **Requires**: Windows 11 21H2 (or later)
