@@ -1,6 +1,6 @@
 [![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-green)
 
-## WE ARE VERY CLODE TO 1.0.0 (just need to add tabs)
+### WE ARE VERY CLOSE TO 1.0.0 (just need to add tabs)
 
 # Simple-Browser
 
