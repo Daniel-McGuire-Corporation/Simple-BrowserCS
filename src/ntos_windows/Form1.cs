@@ -1,7 +1,16 @@
 // Copyright (C) Daniel McGuire Corporation
-// Simple Browser (v0.1.30) - A very simple browser based on the 
+//
+// WE ARE VERY CLOSE TO 1.0.0 (just need to add tabs)
+//
+// Simple Browser (v0.2.0) - A very simple browser based on the 
 // Microsoft Edge (Chromium) WebView2 Framework
+// Maybe I can make this using some sort of Chromium Base Framework?
+// THANKS FOR CONTRIBUTING (ignore if building from source lmao)
 // Form1.cs
+using System;
+using System.IO;
+using System.Drawing;
+using System.Windows.Forms;
 using Microsoft.Web.WebView2.WinForms;
 using Microsoft.Web.WebView2.Core;
 
@@ -10,54 +19,46 @@ namespace Webview2_Test
     public partial class Form1 : Form
     {
         private WebView2 webView;
-        private Button backButton;
-        private Button forwardButton;
-
-        // Declare addressBar at the class level
         private TextBox addressBar;
 
         public Form1()
         {
             InitializeComponent();
 
-            // Create a Panel that will act as our custom toolbar
             Panel toolbar = new Panel()
             {
                 Dock = DockStyle.Top,
-                Height = 30,  // Adjust as needed
-                BackColor = ColorTranslator.FromHtml("#F3F3F3"),  // Set the color to #F3F3F3
+                Height = 30,
+                BackColor = ColorTranslator.FromHtml("#F3F3F3"),
             };
             this.Controls.Add(toolbar);
 
-            // Initialize addressBar
             addressBar = new TextBox()
             {
-                Dock = DockStyle.Fill,  // This will make the address bar fill the remaining space in the toolbar
-                Height = 20,  // Adjust as needed
+                Dock = DockStyle.Fill,
+                Height = 20,
             };
 
             toolbar.Controls.Add(addressBar);
-            /// Handle the KeyPress event to navigate to the URL when Enter is pressed
+
             addressBar.KeyPress += (sender, e) =>
             {
-                if (e.KeyChar == (char)13)  // 13 is the ASCII value for Enter
+                if (e.KeyChar == (char)13)
                 {
                     if (webView != null && webView.CoreWebView2 != null)
                     {
                         string url = addressBar.Text;
-                        if (url == "browser://newpage")
+                        if (url.Contains(GetAppDataHtmlFilePath()))
                         {
-                            url = "file:///C:/SimpleBrowser/Resources/NewPage/index.html";
+                            addressBar.Text = "simple://newtab";
                         }
-                        webView.CoreWebView2.Navigate(url);
+                        else
+                        {
+                            webView.CoreWebView2.Navigate(url);
+                        }
                     }
                 }
             };
-
-
-
-
-            this.Controls.Add(webView);
 
             InitializeAsync();
         }
@@ -69,40 +70,51 @@ namespace Webview2_Test
                 Dock = DockStyle.Fill,
             };
             await webView.EnsureCoreWebView2Async(null);
-            webView.CoreWebView2.Navigate("file:///C:/SimpleBrowser/Resources/NewPage/index.html");
 
-            // Add the webView control to the parent control's Controls collection
             this.Controls.Add(webView);
+            this.Controls.SetChildIndex(webView, 0);
 
-            // Now you can set the child index
-            this.Controls.SetChildIndex(webView, 0); // Ensure the WebView2 control is behind the toolbar
-
-            // Subscribe to the NavigationCompleted event
             webView.CoreWebView2.NavigationCompleted += CoreWebView2_NavigationCompleted;
 
-            // Subscribe to the SourceChanged event
             webView.CoreWebView2.SourceChanged += (sender, e) =>
             {
-                // Update the address bar with the new URL
                 string url = webView.CoreWebView2.Source.ToString();
-                if (url == "file:///C:/SimpleBrowser/Resources/NewPage/index.html")
+                if (url.Contains("SimpleBrowser/resources/MueTab/index.html"))
                 {
-                    addressBar.Text = "browser://newpage";
+                    addressBar.Text = "simple://newtab";
                 }
                 else
                 {
                     addressBar.Text = url;
                 }
             };
+
+            // Navigate to the default index.html file
+            string defaultHtmlFilePath = GetDefaultHtmlFilePath();
+            webView.CoreWebView2.Navigate(defaultHtmlFilePath);
         }
 
+        private string GetDefaultHtmlFilePath()
+        {
+            // Replace this with the path to the HTML file stored in AppData
+            string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string htmlFilePath = Path.Combine(appDataFolder, "Programs", "SimpleBrowser", "resources", "MueTab", "index.html");
 
+            return htmlFilePath;
+        }
 
+        private string GetAppDataHtmlFilePath()
+        {
+            // Construct the path to match against the entered URL in the address bar
+            string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string htmlFilePath = Path.Combine(appDataFolder, "Programs", "SimpleBrowser", "resources", "MueTab", "index.html");
+
+            return htmlFilePath;
+        }
 
         private void CoreWebView2_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
         {
+            // Handle navigation completion if needed
         }
-
     }
 }
-
