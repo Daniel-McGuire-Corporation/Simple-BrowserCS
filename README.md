@@ -25,3 +25,4 @@ Android version is in HEAVY development
 ### Stay Tuned for the Daniel McGuire Corporation FULL BROWSER!
 (chromium based) It will be released after COMPLETE stability testing.
 
+[![Download Simple-Browser](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/simple-browser/files/latest/download)
