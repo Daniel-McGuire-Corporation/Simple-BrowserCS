@@ -1,9 +1,5 @@
 [![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-green)
 
-### [Download on GitHub](https://github.com/DanielLMcGuire/Simple-Browser/releases/download/v0.1.28-alpha/setup64.exe)
-
-[![Download Simple-Browser](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/simple-browser/files/v0.1.28-alpha/setup64.exe/download)
-
 # Simple-Browser
 
 This is a simple project that will only get updated four times a year (24Q1, 24Q2, 24Q3, 24Q4, etc.).
