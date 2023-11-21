@@ -1,3 +1,6 @@
+// Copyright (C) Daniel McGuire Corporation
+// Simple Browser (v0.1.30) - A very simple browser based on the 
+// Microsoft Edge (Chromium) WebView2 Framework
 // Form1.cs
 using Microsoft.Web.WebView2.WinForms;
 using Microsoft.Web.WebView2.Core;
