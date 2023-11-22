@@ -26,9 +26,9 @@ Tabbed Browsing (1.0.0)
 
 Android version is in HEAVY development
 
-Linux Support is in active development
+Linux (Debian) Support is in active development
 
-OSX Support is going into development soon
+macOS (Catalina & later) Support is going into development soon
 
 iOS Support is on its way (late 2024 to early 2025)
 
