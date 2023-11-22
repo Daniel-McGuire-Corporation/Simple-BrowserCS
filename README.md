@@ -20,6 +20,10 @@ THIS IS CODED IN C# (MueTab is the other lanugages (JavaScript, HTML, CSS, etc.)
 Windows 10 22H2 or later
 Windows 11 (Any Version)
 
+## Upcoming:
+
+Tabbed Browsing (1.0.0)
+
 Android version is in HEAVY development
 
 Linux Support is in active development
@@ -28,7 +32,5 @@ OSX Support is going into development soon
 
 iOS Support is on its way (late 2024 to early 2025)
 
-### Stay Tuned for the Daniel McGuire Corporation FULL BROWSER!
-(chromium based) It will be released after COMPLETE stability testing.
-
+### Other Sources:
 [![Download Simple-Browser](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/simple-browser/files/latest/download)
