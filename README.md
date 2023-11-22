@@ -17,15 +17,16 @@ This used to be used on our servers.
 THIS IS CODED IN C# (MueTab is the other lanugages (JavaScript, HTML, CSS, etc.))
 
 ## Compatibility:
-**Requires**: Windows 11 21H2 (or later)
+Windows 10 22H2 or later
+Windows 11 (Any Version)
+
+Android version is in HEAVY development
 
 Linux Support is in active development
 
 OSX Support is going into development soon
 
-Android and iOS Support is on its way (late 2024 to early 2025)
-
-Android version is in HEAVY development
+iOS Support is on its way (late 2024 to early 2025)
 
 ### Stay Tuned for the Daniel McGuire Corporation FULL BROWSER!
 (chromium based) It will be released after COMPLETE stability testing.
