@@ -1,6 +1,7 @@
-# DEVELOPMENT PAUSED UNTIL JANUARY (1.0.0 will release on (ETA) February 1st 2024
+# DEVELOPMENT PAUSED UNTIL JANUARY (1.0.0 will release on (ETA) January 15th - 20th 2024
 # Simple-Browser
-## As of Thanksgiving Day I am migrating all code to C++.
+## As of Thanksgiving Day, I am migrating all code to C++.
+Everything should be complete before January 20th
 
 [![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser) ![GitHub release (with filter)](https://img.shields.io/github/v/release/DanielLMcGuire/Simple-Browser)
 
