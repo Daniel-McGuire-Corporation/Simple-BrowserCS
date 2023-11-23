@@ -8,7 +8,7 @@ Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chro
 
 EDIT: THIS IS A COMPLETE MESS UNTIL 1.0.0 SORRY FOR THE CONFUSION!
 
-      It will be a mess everywhere until 1.0.0 (what can you expect? we are still in alpha.)
+It will be a mess everywhere until 1.0.0 (what can you expect? we are still in alpha.)
       
 EDIT #2: ALL JOKES ASIDE, THIS WON'T TAKE LONG!
 
