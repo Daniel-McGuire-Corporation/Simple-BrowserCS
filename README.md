@@ -44,6 +44,7 @@ We welcome contributions! If you'd like to contribute, please follow our guideli
 - More Versions Coming Soon
 
 ## Download
+### ALL DOWNLOADS OFFLINE FOR STABILITY REASONS
 
 - [(Recommended) Download Simple-Browser (GitHub)](https://github.com/DanielLMcGuire/Simple-Browser/releases/latest)
 - [Download Simple-Browser (SourceForge)](https://sourceforge.net/projects/simple-browser/files/latest/download)
