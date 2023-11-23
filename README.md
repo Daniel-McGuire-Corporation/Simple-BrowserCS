@@ -6,36 +6,33 @@
 
 Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chromium Based). This project aims to provide users with a minimalistic browsing experience with a focus on simplicity and performance.
 
-EDIT: THIS IS A COMPLETE MESS UNTIL 1.0.0 SORRY FOR THE CONFUSION!
-
-It will be a mess everywhere until 1.0.0 (what can you expect? we are still in alpha.)
-      
-EDIT #2: ALL JOKES ASIDE, THIS WON'T TAKE LONG!
-
-
 ## Features
 
 - **Current Features**: 
-  - Updating README in 1.0
+  - Address Bar
+  - Browser
 - **Upcoming Features**:
   - Tabbed Browsing (1.0.0)
-  - Android version in heavy development
-  - Linux (Debian) support actively being developed
-  - macOS (Catalina & later) support coming soon
-  - iOS support scheduled for late 2024 to early 2025
+  - Android version (1.X.X)
+  - Linux version   (1.X.X)
+  - macOS version   (2.X.X)
+  - iOS version     (2.X.X)
+
+(X = UNKNOWN)
 
 ## Installation
 
 Follow these steps to install Simple-Browser:
-1. Wait until 1.0
+1. THIS WILL BE UPDATED IN 1.0.0
+2. Wait until 1.0.0
 
 ## Usage
 
-Once installed, launch Simple-Browser and wait until 1.0
+Once installed, launch Simple-Browser and browse away!
 
 ## Contributing
 
-We welcome contributions! If you'd like to contribute, please follow our guidelines by time traveling to whenever the hell 1.0 releases.
+We welcome contributions! If you'd like to contribute, please follow our guidelines outlined [here](https://daniellmcguire.github.io/simple-browser/contibute). (Link broken until 1.0.0)
 
 ## Compatibility
 
@@ -43,15 +40,20 @@ We welcome contributions! If you'd like to contribute, please follow our guideli
   - Windows 10 22H2 or later (x64 Release Only)
   - Windows 11 (Any Version)
 
+- More Versions Coming Soon
+
+## Download
+
+- [(Recommended) Download Simple-Browser (GitHub)](https://github.com/DanielLMcGuire/Simple-Browser/releases/latest)
+- [Download Simple-Browser (SourceForge)](https://sourceforge.net/projects/simple-browser/files/latest/download)
+
 ## Roadmap
 
 Our roadmap includes:
-- Waiting until 1.0.0
-- more waiting...
+- Coming Soon!
 
 ## License
 
-Simple-Browser is licensed under the GNU General Public License v3.0. See [this page (License)](https://DanielLMcGuire.github.io/Simple-Browser/License) for more details.
+Simple-Browser is licensed under the GNU General Public License v3.0. See the [LICENSE](https://DanielLMcGuire.github.io/Simple-Browser/License) for more details.
 
 ---
-
