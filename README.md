@@ -1,6 +1,8 @@
-[![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-green)
-
+[![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser) ![GitHub release (with filter)](https://img.shields.io/github/v/release/DanielLMcGuire/Simple-Browser)
+============================================================================
 ### WE ARE VERY CLOSE TO 1.0.0 (just need to add tabs)
+
+-----------------------------------------------------------------------
 
 # Simple-Browser
 
@@ -13,18 +15,30 @@ This used to be used on our servers.
 
 THIS IS CODED IN C# (MueTab is the other lanugages (JavaScript, HTML, CSS, etc.))
 
+----------------------------------------------------------------------
+
 ## Compatibility:
-**Requires**: Windows 11 21H2 (or later)
 
-Linux Support is in active development
+Windows: 
 
-OSX Support is going into development soon
+  - Windows 10 22H2 or later
+      ```22H2 or later (x64 Release Only)```
+  - Windows 11
+     ```Any Version```
 
-Android and iOS Support is on its way (late 2024 to early 2025)
+-----------------------------------------------------------------------
+## Upcoming:
+
+Tabbed Browsing (1.0.0)
 
 Android version is in HEAVY development
 
-### Stay Tuned for the Daniel McGuire Corporation FULL BROWSER!
-(chromium based) It will be released after COMPLETE stability testing.
+Linux (Debian) Support is in active development
 
+macOS (Catalina & later) Support is going into development soon
+
+iOS Support is on its way (late 2024 to early 2025)
+
+----------------------------------------------------------------------------
+### Other Sources:
 [![Download Simple-Browser](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/simple-browser/files/latest/download)
