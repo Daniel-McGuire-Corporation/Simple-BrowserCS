@@ -1,3 +1,4 @@
+# DEVELOPMENT PAUSED UNTIL I CAN FIND OUT HOW TO FIX IT😭😭😭☠️
 # Simple-Browser
 
 [![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser) ![GitHub release (with filter)](https://img.shields.io/github/v/release/DanielLMcGuire/Simple-Browser)
