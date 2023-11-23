@@ -1,44 +1,55 @@
-[![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser) ![GitHub release (with filter)](https://img.shields.io/github/v/release/DanielLMcGuire/Simple-Browser)
-============================================================================
-### WE ARE VERY CLOSE TO 1.0.0 (just need to add tabs)
-
------------------------------------------------------------------------
-
 # Simple-Browser
 
-This is a simple project that will only get updated four times a year (24Q1, 24Q2, 24Q3, 24Q4, etc.).
-Normal Release Schedule will start once we get out of alpha.
+[![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser) ![GitHub release (with filter)](https://img.shields.io/github/v/release/DanielLMcGuire/Simple-Browser)
 
-This is a very simple browser that uses MS WebView2 (Chromium Based) for rendering webpages.
+## Overview
 
-This used to be used on our servers.
+Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chromium Based). This project aims to provide users with a minimalistic browsing experience with a focus on simplicity and performance.
 
-THIS IS CODED IN C# (MueTab is the other lanugages (JavaScript, HTML, CSS, etc.))
+EDIT: THIS IS A COMPLETE MESS UNTIL 1.0.0 SORRY FOR THE CONFUSION!
+      It will be a mess everywhere until 1.0.0 (what can you expect? we are still in alpha.)
+EDIT #2: ALL JOKES ASIDE, THIS WON'T TAKE LONG!
 
-----------------------------------------------------------------------
 
-## Compatibility:
+## Features
 
-Windows: 
+- **Current Features**: 
+  - Updating README in 1.0
+- **Upcoming Features**:
+  - Tabbed Browsing (1.0.0)
+  - Android version in heavy development
+  - Linux (Debian) support actively being developed
+  - macOS (Catalina & later) support coming soon
+  - iOS support scheduled for late 2024 to early 2025
 
-  - Windows 10 22H2 or later
-      ```22H2 or later (x64 Release Only)```
-  - Windows 11
-     ```Any Version```
+## Installation
 
------------------------------------------------------------------------
-## Upcoming:
+Follow these steps to install Simple-Browser:
+1. Wait until 1.0
 
-Tabbed Browsing (1.0.0)
+## Usage
 
-Android version is in HEAVY development
+Once installed, launch Simple-Browser and wait until 1.0
 
-Linux (Debian) Support is in active development
+## Contributing
 
-macOS (Catalina & later) Support is going into development soon
+We welcome contributions! If you'd like to contribute, please follow our guidelines by time traveling to whenever the hell 1.0 releases.
 
-iOS Support is on its way (late 2024 to early 2025)
+## Compatibility
 
-----------------------------------------------------------------------------
-### Other Sources:
-[![Download Simple-Browser](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/simple-browser/files/latest/download)
+- **Windows**:
+  - Windows 10 22H2 or later (x64 Release Only)
+  - Windows 11 (Any Version)
+
+## Roadmap
+
+Our roadmap includes:
+- Waiting until 1.0.0
+- more waiting...
+
+## License
+
+Simple-Browser is licensed under the GNU General Public License v3.0. See the LICENSE file for more details.
+
+---
+
