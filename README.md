@@ -1,4 +1,4 @@
-## DEVELOPMENT PAUSED UNTIL JANUARY (1.0.0 will release on (ETA) January 15th - 20th 2024
+## DEVELOPMENT PAUSED 1.0.0 will release on (ETA) January 15th - 20th 2024
 # Simple-Browser
 ## As of Thanksgiving Day, I am migrating all code to C++.
 Everything should be complete before January 20th
