@@ -1,8 +1,8 @@
 // Copyright (C) Daniel McGuire Corporation
 //
-// WE ARE VERY CLOSE TO 1.0.0 (just need to add tabs)
+// WE ARE VERY CLOSE TO 1.2.0 (just need to add tabs)
 //
-// Simple Browser (v0.2.0) - A very simple browser based on the 
+// Simple Browser (v1.0.0) - A very simple browser based on the 
 // Microsoft Edge (Chromium) WebView2 Framework
 // Maybe I can make this using some sort of Chromium Base Framework?
 // THANKS FOR CONTRIBUTING (ignore if building from source lmao)
@@ -24,6 +24,8 @@ namespace Webview2_Test
         public Form1()
         {
             InitializeComponent();
+
+            this.Text = "Simple Web";
 
             Panel toolbar = new Panel()
             {
@@ -79,7 +81,7 @@ namespace Webview2_Test
             webView.CoreWebView2.SourceChanged += (sender, e) =>
             {
                 string url = webView.CoreWebView2.Source.ToString();
-                if (url.Contains("SimpleBrowser/resources/MueTab/index.html"))
+                if (url.Contains("SimpleBrowser/Resources/NewTab/NewTab.html"))
                 {
                     addressBar.Text = "simple://newtab";
                 }
@@ -96,20 +98,14 @@ namespace Webview2_Test
 
         private string GetDefaultHtmlFilePath()
         {
-            // Replace this with the path to the HTML file stored in AppData
-            string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            string htmlFilePath = Path.Combine(appDataFolder, "Programs", "SimpleBrowser", "resources", "MueTab", "index.html");
-
-            return htmlFilePath;
+            string filePath = @"C:\Program Files (x86)\SimpleBrowser\Resources\NewTab\NewTab.html";
+            return filePath;
         }
 
         private string GetAppDataHtmlFilePath()
         {
-            // Construct the path to match against the entered URL in the address bar
-            string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            string htmlFilePath = Path.Combine(appDataFolder, "Programs", "SimpleBrowser", "resources", "MueTab", "index.html");
-
-            return htmlFilePath;
+            string filePath = @"C:\Program Files (x86)\SimpleBrowser\Resources\NewTab\NewTab.html";
+            return filePath;
         }
 
         private void CoreWebView2_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)

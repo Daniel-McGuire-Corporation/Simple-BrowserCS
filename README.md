@@ -12,7 +12,7 @@ Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chro
   - Address Bar
   - Browser
 - **Upcoming Features**:
-  - Tabbed Browsing (1.0.0)
+  - Tabbed Browsing (1.2.0)
   - Android version (1.X.X)
 
 (X = UNKNOWN)
@@ -20,8 +20,7 @@ Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chro
 ## Installation
 
 Follow these steps to install Simple-Browser:
-1. THIS WILL BE UPDATED IN 1.0.0
-2. Wait until 1.0.0
+1. Download and run setup 
 
 ## Usage
 
@@ -29,7 +28,7 @@ Once installed, launch Simple-Browser and browse away!
 
 ## Contributing
 
-We welcome contributions! If you'd like to contribute, please follow our guidelines outlined [here](https://daniellmcguire.github.io/simple-browser/contibute). (Link broken until 1.0.0)
+We welcome contributions! If you'd like to contribute, please follow our guidelines outlined [here](https://daniellmcguire.github.io/simple-browser/contibute). (Link broken until 1.2.0)
 
 ## Compatibility
 
@@ -47,7 +46,7 @@ We welcome contributions! If you'd like to contribute, please follow our guideli
 ## Roadmap
 
 Our roadmap includes:
-- Coming Soon!
+- NOT AVAILIBLE
 
 ## License
 
