@@ -1,3 +1,4 @@
+# Simple Browser
 [![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser) ![GitHub release (with filter)](https://img.shields.io/github/v/release/DanielLMcGuire/Simple-Browser)
 
 ## Overview
@@ -12,7 +13,7 @@ Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chro
 - **Upcoming Features**:
   - Tabbed Browsing (1.2.0)
   - Android version (1.X.X)
-  - Extension Support (Custom, not chromium extensions)
+  - Extension Support (Custom, not chromium extensions) (2.X.X)
 
 (X = UNKNOWN)
 
@@ -28,6 +29,8 @@ Once installed, launch Simple-Browser and browse away!
 ## Contributing
 
 We welcome contributions! If you'd like to contribute, please follow our guidelines outlined [here](https://daniellmcguire.github.io/simple-browser/contibute). (Link broken until 1.2.0)
+
+### IN VERSION 2 WE MAY BE COMPLETELY RE-WRITING THIS IN C++
 
 ## Compatibility
 
