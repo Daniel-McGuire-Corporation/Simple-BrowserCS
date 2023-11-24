@@ -152,11 +152,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Source\\Repos\\Simple Browser\\Simple Browser\\Simple Browser.csproj",
+      "projectUniqueName": "G:\\Simple-Browser\\src\\windows\\Simple Browser.csproj",
       "projectName": "Simple Browser",
-      "projectPath": "F:\\Source\\Repos\\Simple Browser\\Simple Browser\\Simple Browser.csproj",
+      "projectPath": "G:\\Simple-Browser\\src\\windows\\Simple Browser.csproj",
       "packagesPath": "C:\\Users\\Daniel McGuire\\.nuget\\packages\\",
-      "outputPath": "F:\\Source\\Repos\\Simple Browser\\Simple Browser\\obj\\",
+      "outputPath": "G:\\Simple-Browser\\src\\windows\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
