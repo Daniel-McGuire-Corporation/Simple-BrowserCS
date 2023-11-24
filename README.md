@@ -1,9 +1,3 @@
-## DEVELOPMENT PAUSED.
-1.0.0 will release on (ETA) January 15th - 20th 2024
-# Simple-Browser
-## As of Thanksgiving Day, I am migrating all code to C++.
-Everything should be complete before January 20th
-
 [![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser) ![GitHub release (with filter)](https://img.shields.io/github/v/release/DanielLMcGuire/Simple-Browser)
 
 ## Overview
@@ -44,7 +38,6 @@ We welcome contributions! If you'd like to contribute, please follow our guideli
 - More Versions Coming Soon
 
 ## Download
-### ALL DOWNLOADS OFFLINE FOR STABILITY REASONS
 
 - [(Recommended) Download Simple-Browser (GitHub)](https://github.com/DanielLMcGuire/Simple-Browser/releases/latest)
 - [Download Simple-Browser (SourceForge)](https://sourceforge.net/projects/simple-browser/files/latest/download)

@@ -71,6 +71,13 @@ namespace Webview2_Test
             {
                 Dock = DockStyle.Fill,
             };
+
+            // Set the UserDataFolder property here
+            webView.CreationProperties = new CoreWebView2CreationProperties()
+            {
+                UserDataFolder = $"C:\\Users\\{Environment.UserName}\\AppData\\Local\\SimpleBrowser"
+            };
+
             await webView.EnsureCoreWebView2Async(null);
 
             this.Controls.Add(webView);
@@ -95,6 +102,8 @@ namespace Webview2_Test
             string defaultHtmlFilePath = GetDefaultHtmlFilePath();
             webView.CoreWebView2.Navigate(defaultHtmlFilePath);
         }
+
+
 
         private string GetDefaultHtmlFilePath()
         {

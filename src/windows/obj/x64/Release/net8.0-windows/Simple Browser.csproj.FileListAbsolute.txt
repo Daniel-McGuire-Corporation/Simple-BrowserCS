@@ -1,0 +1,24 @@
+F:\Source\Repos\Simple Browser\Simple Browser\bin\x64\Release\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+F:\Source\Repos\Simple Browser\Simple Browser\bin\x64\Release\net8.0-windows\Simple Browser.exe
+F:\Source\Repos\Simple Browser\Simple Browser\bin\x64\Release\net8.0-windows\Simple Browser.deps.json
+F:\Source\Repos\Simple Browser\Simple Browser\bin\x64\Release\net8.0-windows\Simple Browser.runtimeconfig.json
+F:\Source\Repos\Simple Browser\Simple Browser\bin\x64\Release\net8.0-windows\Simple Browser.dll
+F:\Source\Repos\Simple Browser\Simple Browser\bin\x64\Release\net8.0-windows\Simple Browser.pdb
+F:\Source\Repos\Simple Browser\Simple Browser\bin\x64\Release\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+F:\Source\Repos\Simple Browser\Simple Browser\bin\x64\Release\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+F:\Source\Repos\Simple Browser\Simple Browser\bin\x64\Release\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+F:\Source\Repos\Simple Browser\Simple Browser\bin\x64\Release\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+F:\Source\Repos\Simple Browser\Simple Browser\bin\x64\Release\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\Simple Browser.csproj.AssemblyReference.cache
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\Webview2_Test.Form1.resources
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\Simple Browser.csproj.GenerateResource.cache
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\Simple Browser.GeneratedMSBuildEditorConfig.editorconfig
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\Simple Browser.AssemblyInfoInputs.cache
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\Simple Browser.AssemblyInfo.cs
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\Simple Browser.csproj.CoreCompileInputs.cache
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\Simple Browser.csproj.CopyComplete
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\Simple Browser.dll
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\refint\Simple Browser.dll
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\Simple Browser.pdb
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\Simple Browser.genruntimeconfig.cache
+F:\Source\Repos\Simple Browser\Simple Browser\obj\x64\Release\net8.0-windows\ref\Simple Browser.dll
