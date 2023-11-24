@@ -13,7 +13,7 @@ Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chro
 - **Upcoming Features**:
   - Tabbed Browsing (1.2.0)
   - Android version (1.X.X)
-  - Extension Support (Custom, not chromium extensions) (2.X.X)
+  - Extension Support (Custom, not chromium extensions) (1.X.X)
 
 (X = UNKNOWN)
 
