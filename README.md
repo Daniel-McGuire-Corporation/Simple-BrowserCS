@@ -14,7 +14,6 @@ Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chro
   - Tabbed Browsing (1.2.0)
   - Android version (1.X.X)
   - Extension Support (Custom, not chromium extensions) (2.X.X)
-  IN VERSION 2 WE MAY BE COMPLETELY RE-WRITING THIS IN C++
 
 (X = UNKNOWN)
 
@@ -30,6 +29,8 @@ Once installed, launch Simple-Browser and browse away!
 ## Contributing
 
 We welcome contributions! If you'd like to contribute, please follow our guidelines outlined [here](https://daniellmcguire.github.io/simple-browser/contibute). (Link broken until 1.2.0)
+
+### IN VERSION 2 WE MAY BE COMPLETELY RE-WRITING THIS IN C++
 
 ## Compatibility
 
