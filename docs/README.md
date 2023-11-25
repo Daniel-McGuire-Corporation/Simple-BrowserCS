@@ -30,7 +30,6 @@ Once installed, launch Simple-Browser and browse away!
 
 We welcome contributions! If you'd like to contribute, please follow our guidelines outlined [here](https://daniellmcguire.github.io/simple-browser/contibute). (Link broken until 1.2.0)
 
-### IN VERSION 2 WE MAY BE COMPLETELY RE-WRITING THIS IN C++
 
 ## Compatibility
 
