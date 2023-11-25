@@ -51,6 +51,6 @@ Our roadmap includes:
 
 ## License
 
-Simple-Browser is licensed under the GNU General Public License v3.0. See the [LICENSE](https://DanielLMcGuire.github.io/Simple-Browser/License) for more details.
+Simple-Browser is licensed under the GNU General Public License v3.0. See the [LICENSE Site](https://DanielLMcGuire.github.io/Simple-Browser/License) for more details.
 
 ---
