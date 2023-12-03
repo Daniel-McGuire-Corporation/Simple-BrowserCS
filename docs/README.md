@@ -12,11 +12,11 @@ Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chro
   - Browser
 - **Upcoming Features**:
   - Tabbed Browsing (1.2)
-  - Android version (1.x)
   - Extension Support (Chrome WebStore Plugin) (1.3)
   - Extension Store (Similar to Opera's Webstore) (1.3x)
+  - Android version (1.5x)
 
-(.x = UNKNOWN) (Number & x (e.g. 1.2.x) = Later than number (2 in this case) but unknown how much later) 
+(.x = UNKNOWN) (Numberx (e.g. 1.2x) = Later than number (2 in this case) but unknown how much later) 
 
 ## Installation
 
