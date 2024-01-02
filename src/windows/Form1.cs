@@ -1,5 +1,5 @@
 // Copyright (C) Daniel McGuire Corporation
-// Simple Browser (v1.0.0)
+// Simple Browser (v1.1.0)
 // THANKS FOR CONTRIBUTING (or Building from Source)
 // Thanks Andy for your help with this project.
 // 
@@ -113,7 +113,7 @@ namespace Webview2_Test
         // This method is called when the user navigates to a new page.
         private string GetAppDataHtmlFilePath()
         {
-            string filePath = @"C:\Program Files (x86)\SimpleBrowser\Resources\NewTab\NewTab.html";
+            string filePath = @"C:///Program Files (x86)///SimpleBrowser///Resources///NewTab///NewTab.html";
             return filePath;
         }
 
