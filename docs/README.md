@@ -1,5 +1,5 @@
 # Simple Browser
-[![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser?style=flat-square)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600?style=flat-square) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser?style=flat-square) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser?style=flat-square) ![Static Badge](https://img.shields.io/badge/24H1)
+[![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser?style=flat-square)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600?style=flat-square) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser?style=flat-square) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser?style=flat-square) ![Badge Error](https://img.shields.io/badge/24H1?style=flat-square)
 
 
 ## DEVELOPMENT PAUSED UNTIL SUMMER - FALL 2024
