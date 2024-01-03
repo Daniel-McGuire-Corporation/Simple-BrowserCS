@@ -1,6 +1,8 @@
 # Simple Browser
 [![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser?style=flat-square)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600?style=flat-square) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser?style=flat-square) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser?style=flat-square) ![GitHub release (with filter)](https://img.shields.io/github/v/release/DanielLMcGuire/Simple-Browser?style=flat-square)
 
+## DEVELOPMENT PAUSED UNTIL SUMMER - FALL 2024
+
 ## Overview
 
 Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chromium Based). This project aims to provide users with a minimalistic browsing experience with a focus on simplicity and performance.
@@ -33,21 +35,21 @@ Once installed, launch Simple-Browser and browse away!
 We welcome contributions! If you'd like to contribute, please follow our guidelines outlined [here](https://daniellmcguire.github.io/simple-browser/contibute). (Link broken until 1.2.0)
 
 ## Release Plans
-24H1: January 1st - February 15th
+24E1: January 1st - February 15th
 
-24H2: February 16th - April 1st
+~24E2: February 16th - April 1st~
 
-24H3: April 2nd - May 17th
+~24E3: April 2nd - May 17th~
 
-24H4: May 18th - July 2nd
+~24E4: May 18th - July 2nd~
 
-24H5: July 3rd - August 17th
+24E5: July 3rd - August 17th
 
-24H6: August 18th - October 2nd
+24E6: August 18th - October 2nd
 
-24H7: October 3rd - November 17th
+24E7: October 3rd - November 17th
 
-24H8: November 18th - December 31st
+24E8: November 18th - December 31st
 
 (Does not include patches)
 
