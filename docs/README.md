@@ -32,6 +32,17 @@ Once installed, launch Simple-Browser and browse away!
 
 We welcome contributions! If you'd like to contribute, please follow our guidelines outlined [here](https://daniellmcguire.github.io/simple-browser/contibute). (Link broken until 1.2.0)
 
+## Release Plans
+24H1: January 1st - February 15th
+24H2: February 16th - April 1st
+24H3: April 2nd - May 17th
+24H4: May 18th - July 2nd
+24H5: July 3rd - August 17th
+24H6: August 18th - October 2nd
+24H7: October 3rd - November 17th
+24H8: November 18th - December 31st
+(Does not incude patches)
+(patches example: 24H2 patch.1)
 
 ## Compatibility
 
