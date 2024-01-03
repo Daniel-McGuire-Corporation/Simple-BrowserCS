@@ -10,6 +10,7 @@ Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chro
 - **Current Features**: 
   - Address Bar
   - Browser
+  - Optional Modern New Tab
 - **Upcoming Features**:
   - Tabbed Browsing (1.2)
   - Extension Support (Chrome WebStore Plugin) (1.3)
