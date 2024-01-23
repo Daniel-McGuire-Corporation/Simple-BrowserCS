@@ -31,6 +31,7 @@ We welcome contributions! Check our [contribution guidelines](https://daniellmcg
 - 25F3 | Space Update: Jun 7
 - 25F4 | Election Day Update: Nov 2
 - 25F5 | Christmas Update: Dec 24
+ (F for 5th [Fifth])
 
 ***Dates might not be exact***
 
