@@ -11,6 +11,8 @@ I will still push minor updates to source (No releases will be made)
 
 Everything should be fine well before Summer 2024 ends
 
+(at this rate, the earliest is June 2024)
+
 ## About
 Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chromium Based), aiming to offer users a simple and fast browsing experience.
 
