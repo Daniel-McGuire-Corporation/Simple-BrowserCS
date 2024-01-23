@@ -31,6 +31,7 @@ We welcome contributions! Check our [contribution guidelines](https://daniellmcg
 - 25F3 | Space Update: Jun 7
 - 25F4 | Election Day Update: Nov 2
 - 25F5 | Christmas Update: Dec 24
+
  (F for 5th [Fifth])
 
 ***Dates might not be exact***
@@ -48,11 +49,7 @@ We welcome contributions! Check our [contribution guidelines](https://daniellmcg
 - [(Recommended) Download Simple-Browser (GitHub)](https://github.com/DanielLMcGuire/Simple-Browser/releases/latest)
 - [Download Simple-Browser (SourceForge)](https://sourceforge.net/projects/simple-browser/files/latest/download)
 
-## Roadmap
-Our roadmap includes:
-- NOT AVAILABLE
-
 ## License
-Simple-Browser is licensed under the GNU General Public License v3.0. See the [LICENSE Site](https://DanielLMcGuire.github.io/Simple-Browser/License) for more details.
+Simple-Browser is licensed under the GNU General Public License v3.0. See the [license tab](https://github.com/DanielLMcGuire/Simple-Browser?tab=GPL-3.0-1-ov-file) for more details.
 
 ---
