@@ -4,14 +4,16 @@
 
 ## Project Status
 Everything will continue soon!
+We have lost over 50% of our code.
+We are using reverse engineering on our software to get back (similar) code.
 
-We have lost over 50% of our code, we are using reverse engineering on our software to get back the code.
+I will still push minor updates to source.
+(No releases will be made)
 
-I will still push minor updates to source (No releases will be made)
-
-Everything should be fine well before Summer 2024 ends
-
+Everything should be fine well before Summer 2024 ends.
 (at this rate, the earliest is June 2024)
+
+We are hard at work restoring code, and promise updates until mid 2025. 
 
 ## About
 Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chromium Based), aiming to offer users a simple and fast browsing experience.
@@ -33,13 +35,13 @@ Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chro
 We welcome contributions! Check our [contribution guidelines](https://daniellmcguire.github.io/simple-browser/contribute). (Link broken until 1.2.0)
 
 ## Release Plans
-- 2024 Update: Jan 1 - Feb 15
-- Version 2.0 | (C++, [WebUI](https://github.com/webui-dev/webui)): Anytime after Spring 2024
-- 25F1 | 2025 Update: Jan 31
-- 25F2 | Earth Update: Apr 22
-- 25F3 | Space Update: Jun 7
-- 25F4 | Election Day Update: Nov 2
-- 25F5 | Christmas Update: Dec 24
+- 2024 Update: Jan 1 - Feb 15.
+- Version 2.0 | (C++, [WebUI](https://github.com/webui-dev/webui)): Anytime after Spring 2024 and before Mid 2025. 
+- 25F1 | 2025 Update: Jan 31.
+- 25F2 | Earth Update: Apr 22.
+- 25F3 | Space Update: Jun 7.
+- 25F4 | Election Day Update: Nov 2.
+- 25F5 | Christmas Update: Dec 24.
 
  (F for 5th [Fifth])
 
