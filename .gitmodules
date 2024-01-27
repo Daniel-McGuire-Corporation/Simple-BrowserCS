@@ -1,6 +1,6 @@
-[submodule "vendor/SimpleNewTab"]
-	path = vendor/SimpleNewTab
-	url = https://github.com/DanielLMcGuire/SimpleNewTab.git
-[submodule "vendor/mue"]
-	path = vendor/mue
+[submodule "vendor/mue/mue"]
+	path = vendor/mue/mue
 	url = https://github.com/mue/mue.git
+[submodule "vendor/DanielLMcGuire/SimpleNewTab"]
+	path = vendor/DanielLMcGuire/SimpleNewTab
+	url = https://github.com/DanielLMcGuire/SimpleNewTab.git
