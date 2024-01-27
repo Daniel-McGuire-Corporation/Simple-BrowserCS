@@ -1,8 +1,6 @@
 // Copyright (C) Daniel McGuire Corporation
 // Simple Browser (v1.1.0)
 // THANKS FOR CONTRIBUTING (or Building from Source)
-// Thanks Andy for your help with this project.
-// 
 // This file is part of Simple Browser. (Obviously)
 //
 // Form1.cs

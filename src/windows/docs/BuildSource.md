@@ -37,4 +37,9 @@ After a successful build, you can run the application by clicking on the Start b
 - If there are any build errors, resolve them by checking for missing dependencies or incorrect configurations within Visual Studio.
 - If you encounter any issues during the build process, feel free to create an issue in this repository for assistance.
 
+---------------------------------------------------------------
+
+I do have plans in the future to make a script for compiling this.
+
+
 Happy coding!
