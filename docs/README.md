@@ -7,10 +7,10 @@ We have lost over 50% of our code.
 We are using reverse engineering on our software to get back (similar) code.
 
 I will still push minor updates to source.
-(No releases will be made)
+(No Releases Will Be Made)
 
-Everything should be fine well before Summer 2024 ends.
-(at this rate, the earliest is June 2024)
+Everything should be fine well before Summer 2024 starts.
+(at this rate, the earliest is March 2024)
 
 We are hard at work restoring code, and promise updates until mid 2025. 
 
