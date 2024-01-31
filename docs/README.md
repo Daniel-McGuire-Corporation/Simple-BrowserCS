@@ -19,6 +19,8 @@ We are hard at work restoring code, and promise updates until mid 2025.
 ## About
 Simple-Browser is a lightweight web browser built using C# and MS WebView2 (Chromium Based), aiming to offer users a simple and fast browsing experience.
 
+##[Monthly Updates](https://github.com/DanielLMcGuire/Simple-Browser/blob/main/docs/Monthly%20Updates.md)
+
 ## Features
 - **Current Features**: 
   - Address Bar
