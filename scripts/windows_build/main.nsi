@@ -18,9 +18,9 @@
   !define DESCRIPTION "Simple Web Browser"
   !define DEVELOPER "Daniel McGuire" #License Holder
   # Files Directory
-  !define FILE_DIR "D:\Simple-Browser\src\windows\bin\Release\net8.0-windows" #Replace with the full path of install folder
+  !define FILE_DIR "..\..\src\windows\bin\Release\net8.0-windows" #Replace with the full path of install folder
   !define LOGO_ICON_FILE "C:\Program Files (x86)\NSIS\Contrib\Graphics\Icons\nsis1-install.ico"
-  !define LICENSE_TEXT_FILE "D:\Simple-Browser\scripts\main.nsi-extras\LICENSE.txt"
+  !define LICENSE_TEXT_FILE "main.nsi-extras\LICENSE.txt"
   !define HEADER_IMG_FILE "C:\Program Files (x86)\NSIS\Contrib\Graphics\Header\win.bmp"
   # These three must be integers
   !define VERSIONMAJOR 1	#Major release Number
@@ -113,7 +113,7 @@ Section "install"
   SetOutPath $INSTDIR
 
   # Files add here should be removed by the uninstaller (see section "uninstall")
-  File /r "D:\Simple-Browser\src\windows\bin\Release\net8.0-windows\*.*"
+  File /r "..\..\src\windows\bin\Release\net8.0-windows\*.*"
   
   ################################################################################################################
 
