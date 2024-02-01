@@ -13,7 +13,7 @@
 ;Settings
 
   !define APPNAME "Simple Browser"
-  !define APP_NAME_IN_INSTALLED_DIR "SimpleBrowser"
+  !define APP_NAME_IN_INSTALLED_DIR "Simple Browser"
   !define COMPANYNAME "Daniel McGuire Corporation"
   !define DESCRIPTION "Simple Web Browser"
   !define DEVELOPER "Daniel McGuire" #License Holder
@@ -24,27 +24,27 @@
   !define HEADER_IMG_FILE "C:\Program Files (x86)\NSIS\Contrib\Graphics\Header\win.bmp"
   # These three must be integers
   !define VERSIONMAJOR 1	#Major release Number
-  !define VERSIONMINOR 1	#Minor release Number
-  !define VERSIONBUILD 1	#Maintenance release Number (bugfixes only)
-  !define BUILDNUMBER 1		#Source control revision number
+  !define VERSIONMINOR 2	#Minor release Number
+  !define VERSIONBUILD 2	#Maintenance release Number (bugfixes only)
+  !define BUILDNUMBER 15	#Source control revision number
   # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
   # It is possible to use "mailto:" links in here to open email client
-  !define HELPURL "https://codewarindia.business.site"
-  !define UPDATEURL "https://"
-  !define ABOUTURL "https://www.youtube.com/c/codewar"
+  !define HELPURL "https://github.com/DanielLMcGuire/Simple-Browser/issues/new/choose"
+  !define UPDATEURL "https://github.com/DanielLMcGuire/Simple-Browser/releases/latest"
+  !define ABOUTURL "https://github.com/DanielLMcGuire/Simple-Browser"
   # This is the size (in kB) of all the files copied into "Program Files"
-  !define INSTALLSIZE 1118721
+  !define INSTALLSIZE 4352
 
 ;--------------------------------
 ;General
 
   ;Name and file
   Name "${APPNAME}"
-  Icon "logo.ico"
-  OutFile "${APPNAME} Setup.exe"
+  Icon "${LOGO_ICON_FILE}"
+  OutFile "SimpleBrowserSetup.exe"
 
   ;Default installation folder
-  InstallDir "$PROGRAMFILES\${APPNAME}"
+  InstallDir "$PROGRAMFILES\SimpleBrowser"
 
   ;Get installation folder from registry if available
   InstallDirRegKey HKCU "Software\${APPNAME}" ""
@@ -112,18 +112,8 @@ Section "install"
   # Files for install directory - to build the installer, these should be in the same directory as the install script (this file)
   SetOutPath $INSTDIR
 
-  ################################################################################################################
-  #Create required Directories in Install Location
-  CreateDirectory "$INSTDIR\sample folder"
-  
-  #Add your Files Here
   # Files add here should be removed by the uninstaller (see section "uninstall")
-  file "${APP_NAME_IN_INSTALLED_DIR}.exe"
-  file "logo.ico"
-  
-  ;File in sample folder
-  SetOutPath "$INSTDIR\sample folder"
-  file "sample folder\sample file.txt"
+  File /r "D:\Simple-Browser\src\windows\bin\Release\net8.0-windows\*.*"
   
   ################################################################################################################
 
@@ -140,22 +130,22 @@ Section "install"
   CreateShortCut "$DESKTOP\${APPNAME}.lnk" "$INSTDIR\${APP_NAME_IN_INSTALLED_DIR}.exe" "" "$INSTDIR\logo.ico"
 
   # Registry information for add/remove programs
-  WriteRegStr HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayName" "${APPNAME} - ${DESCRIPTION}"
-  WriteRegStr HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "UninstallString" "$\"$INSTDIR\uninstall.exe$\""
-  WriteRegStr HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "QuitUninstallString" "$\"$INSTDIR\uninstall.exe$\" /S"
-  WriteRegStr HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayIcon" "$\"$INSTDIR\logo.ico$\""
-  WriteRegStr HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "Publisher" "$\"${COMPANYNAME}$\""
-  WriteRegStr HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "HelpLink" "$\"${HELPURL}$\""
-  WriteRegStr HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "URLUpdateInfo" "$\"${UPDATEURL}$\""
-  WriteRegStr HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "URLInfoAbout" "$\"${ABOUTURL}$\""
-  WriteRegStr HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayVersion" "$\"${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONBUILD}.${BUILDNUMBER}$\""
-  WriteRegStr HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "VersionMajor" ${VERSIONMAJOR}
-  WriteRegStr HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "VersionMinor" ${VERSIONMINOR}
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayName" "${APPNAME} - ${DESCRIPTION}"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "UninstallString" "$\"$INSTDIR\uninstall.exe$\""
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "QuitUninstallString" "$\"$INSTDIR\uninstall.exe$\" /S"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayIcon" "$\"$INSTDIR\logo.ico$\""
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "Publisher" "$\"${COMPANYNAME}$\""
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "HelpLink" "$\"${HELPURL}$\""
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "URLUpdateInfo" "$\"${UPDATEURL}$\""
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "URLInfoAbout" "$\"${ABOUTURL}$\""
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayVersion" "$\"${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONBUILD}.${BUILDNUMBER}$\""
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "VersionMajor" ${VERSIONMAJOR}
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "VersionMinor" ${VERSIONMINOR}
   # There is no option for modifying or reparing the install
-  WriteRegDWORD HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "NoModify" 1
+  WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "NoModify" 1
   WriteRegDWORD HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "NoRepair" 1
   # Set the INSTALLSIZE constant (!define at the top of this script) so Add/Remove Program can accurately report the size
-  WriteRegDWORD HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}" "EstimatedSize" ${INSTALLSIZE}
+  WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "EstimatedSize" ${INSTALLSIZE}
 SectionEnd
 
 ;--------------------------------
@@ -188,36 +178,22 @@ SectionEnd
 Section "uninstall"
   #Remove Start Menu Launcher
   delete "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk"
-  delete "$SMPROGRAMS\${APPNAME}\uninstall.lnk"
-  #Remove Desktop Shortcut
-  delete "$DESKTOP\${APPNAME}.lnk"
   #Try to remove the Start Menu folder - this will only happen if it is empty
   rmDir "$SMPROGRAMS\${APPNAME}"
 
   ################################################################################################################
-  #Remove files
-  delete $INSTDIR\${APP_NAME_IN_INSTALLED_DIR}.exe
-  delete $INSTDIR\logo.ico
-  
-  #removeing files from sample folder
-  delete "$INSTDIR\sample folder\sample file.txt"
-  
-  #Remove Directories created in Install Location
-  rmDir "$INSTDIR\sample folder"
-  
-  ################################################################################################################
-	
-  # ALways delete uninstaller as the last section
-  delete $INSTDIR\uninstall.exe
 
-  # Try to remove the install directory - this will only happen if it is empty
-  rmDir $INSTDIR
+  ; Remove installed files
+  Delete /REBOOTOK $INSTDIR\*
 
+  ; Remove installed directories
+  RMDir /r $INSTDIR
+  
   #Delete installation folder from registry if available - this will only happen if it is empty
-  DeleteRegKey /ifempty HKCU "Software\${APPNAME}"
+  DeleteRegKey HKCU "Software\${APPNAME}"
 
   # Remove uninstaller information from the registry
-  DeleteRegKey HKLM "Software\Microstft\Windows\CurrentVersion\Uninstall\${APPNAME}"
+  DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}"
 SectionEnd
 
 ;--------------------------------

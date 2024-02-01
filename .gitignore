@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/c++,windows,macos,csharp,linux,kotlin,visualstudio,visualstudiocode,androidstudio,gradle,intellij,xcode
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,windows,macos,csharp,linux,kotlin,visualstudio,visualstudiocode,androidstudio,gradle,intellij,xcode
 
+# Custom Stuff
+Release-SB.bat
+
 ### C++ ###
 # Prerequisites
 *.d
