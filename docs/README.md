@@ -35,6 +35,9 @@ Simple-Browser is a lightweight web browser built using C# and WebView2 (Chromiu
 - [(Recommended) Download Simple-Browser (GitHub)](https://github.com/DanielLMcGuire/Simple-Browser/releases/latest)
 - [Download Simple-Browser (SourceForge)](https://sourceforge.net/projects/simple-browser/files/latest/download)
 
+## Build From Source:
+Open /scripts/windows-build
+
 ## License
 Simple-Browser is licensed under the GNU General Public License v3.0. See the [license](https://github.com/DanielLMcGuire/Simple-Browser?tab=GPL-3.0-1-ov-file) for more details.
 
