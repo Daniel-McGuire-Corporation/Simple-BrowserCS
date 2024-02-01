@@ -49,7 +49,7 @@ namespace Webview2_Test
                         string url = addressBar.Text;
                         if (url.Contains(GetAppDataHtmlFilePath()))
                         {
-                            addressBar.Text = "simple://newtab";
+                            addressBar.Text = "simple://start";
                         }
                         else
                         {
@@ -88,7 +88,7 @@ namespace Webview2_Test
                 string url = webView.CoreWebView2.Source.ToString();
                 if (url.Contains("SimpleBrowser/Resources/NewTab/NewTab.html"))
                 {
-                    addressBar.Text = "simple://newtab";
+                    addressBar.Text = "simple://start";
                 }
                 else
                 {
