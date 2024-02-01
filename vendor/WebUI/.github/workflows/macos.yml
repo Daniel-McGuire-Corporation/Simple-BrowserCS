@@ -1,0 +1,89 @@
+# http://webui.me
+# https://github.com/webui-dev/webui
+# Copyright (c) 2020-2023 Hassan Draga.
+# Licensed under MIT License.
+# All rights reserved.
+#
+# Special Thanks to Turiiya (https://github.com/ttytm)
+
+name: macOS
+on:
+  workflow_call:
+
+jobs:
+  setup:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Bundle WebUI Bridge
+        run: |
+          npm i -g esbuild
+          chmod +x bridge/build.sh
+          bridge/build.sh
+      - uses: actions/cache@v3
+        with:
+          path: bridge/webui_bridge.h
+          key: ${{ runner.os }}-${{ github.sha }}-bridge
+
+  build:
+    needs: setup
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    strategy:
+      matrix:
+        compiler: [Clang]
+        arch: [x64, arm64]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache/restore@v3
+        with:
+          path: bridge/webui_bridge.h
+          key: ${{ runner.os }}-${{ github.sha }}-bridge
+          fail-on-cache-miss: true
+      - name: Build Debug Target
+        run: make ARCH_TARGET=${{ matrix.arch }} debug
+      - name: Build Release Target
+        run: make ARCH_TARGET=${{ matrix.arch }}
+      - name: Prepare Artifacts
+        run: |
+          cp -r include dist
+          # Add the ARTIFACT name(lowercased) as GitHub environment variable.
+          artifact=webui-$(echo ${{ runner.os }}-${{ matrix.compiler }}-${{ matrix.arch }} | tr '[:upper:]' '[:lower:]')
+          echo "ARTIFACT=$artifact" >> $GITHUB_ENV
+          mv dist/ $artifact
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.ARTIFACT }}
+          path: ${{ env.ARTIFACT }}
+      - name: Prepare Release
+        if: github.ref_type == 'tag' || (github.ref_name == 'main' && github.event_name == 'push')
+        run: |
+          zip -r ${{ env.ARTIFACT }}.zip ${{ env.ARTIFACT }}
+          if [ $GITHUB_REF_TYPE == tag ]; then
+            echo "TAG=$GITHUB_REF_NAME" >> $GITHUB_ENV
+          else
+            echo "IS_PRERELEASE=true" >> $GITHUB_ENV
+            now=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
+            echo "TAG=nightly" >> $GITHUB_ENV
+            echo "BODY=Generated on <samp>$now</samp> from commit ${{ github.sha }}." >> $GITHUB_ENV
+            echo "TITLE=WebUI Development Build" >> $GITHUB_ENV
+          fi
+      - name: Update Nightly Tag
+        if: env.IS_PRERELEASE
+        uses: richardsimko/update-tag@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: nightly
+      - name: Release
+        if: github.ref_type == 'tag' || (github.ref_name == 'main' && github.event_name == 'push')
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: ${{ env.ARTIFACT }}.zip
+          tag: ${{ env.TAG }}
+          body: ${{ env.BODY }}
+          name: ${{ env.TITLE }}
+          prerelease: ${{ env.IS_PRERELEASE }}
+          allowUpdates: true
