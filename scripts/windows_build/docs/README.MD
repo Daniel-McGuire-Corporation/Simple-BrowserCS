@@ -1,7 +1,12 @@
 # Method 1 | .NET SDK (Recommended)
-1. Install the [prerequsites](https://filebin.net/sn3e6jhrh2qj1ggn/Prerequisites.zip)
-2. Run buildwindows.cmd
-3. Run buildinstaller.cmd
+1. **Clone the Repository:**
+   Clone this repository to your local machine using Git.
+   ```bash
+   git clone https://github.com/DanielLMcGuire/Simple-Browser.git
+   ```
+2. Install the [prerequsites](https://filebin.net/sn3e6jhrh2qj1ggn/Prerequisites.zip)
+3. Run buildwindows.cmd
+4. Run buildinstaller.cmd
 
 # Method 2 | Visual Studio
 
@@ -11,6 +16,8 @@
 Make sure you have the following installed:
 
 - **Visual Studio:** This project was developed using Visual Studio. You can download it from [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
+- .NET (for vs)
+
 
 ## Steps to Build
 
