@@ -11,6 +11,8 @@
 Make sure you have the following installed:
 
 - **Visual Studio:** This project was developed using Visual Studio. You can download it from [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
+.NET (for vs)
+
 
 ## Steps to Build
 
