@@ -1,5 +1,5 @@
 // Copyright (C) Daniel McGuire Corporation
-// Simple Browser (v1.3.1.2)
+// Simple Browser (v1.3.2.1)
 // THANKS FOR CONTRIBUTING (or Building from Source)
 // This file is part of Simple Browser. (Obviously)
 //
