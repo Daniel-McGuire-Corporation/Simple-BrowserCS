@@ -1,7 +1,3 @@
-[submodule "vendor/DanielLMcGuire/SimpleNewTab"]
-	path = vendor/DanielLMcGuire/SimpleNewTab
-	url = https://github.com/DanielLMcGuire/SimpleNewTab.git
-	branch = main
 [submodule "vendor/mue/mue"]
 	path = vendor/mue/mue
 	url = https://github.com/mue/mue.git

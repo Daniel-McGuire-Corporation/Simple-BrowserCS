@@ -1,13 +1,9 @@
 // Copyright (C) Daniel McGuire Corporation
-// Simple Browser (v1.1.0)
+// Simple Browser (v1.3.1.2)
 // THANKS FOR CONTRIBUTING (or Building from Source)
 // This file is part of Simple Browser. (Obviously)
 //
 // Form1.cs
-using System;
-using System.IO;
-using System.Drawing;
-using System.Windows.Forms;
 using Microsoft.Web.WebView2.WinForms;
 using Microsoft.Web.WebView2.Core;
 
@@ -28,7 +24,7 @@ namespace Webview2_Test
             {
                 Dock = DockStyle.Top,
                 Height = 30,
-                BackColor = ColorTranslator.FromHtml("#F3F3F3"),
+                BackColor = ColorTranslator.FromHtml("#121212"),
             };
             this.Controls.Add(toolbar);
             
@@ -102,13 +98,12 @@ namespace Webview2_Test
         }
 
 
-        // This method is called when the user navigates to a new page.
+        // These methods art called when the user navigates to a new page.
         private string GetDefaultHtmlFilePath()
         {
             string filePath = @"C:\Program Files (x86)\SimpleBrowser\Resources\NewTab\NewTab.html";
             return filePath;
         }
-        // This method is called when the user navigates to a new page.
         private string GetAppDataHtmlFilePath()
         {
             string filePath = @"C:///Program Files (x86)///SimpleBrowser///Resources///NewTab///NewTab.html";
