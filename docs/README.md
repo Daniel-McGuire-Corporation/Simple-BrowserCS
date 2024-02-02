@@ -1,7 +1,9 @@
 # Simple Browser
 [![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/Simple-Browser?style=flat-square)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600?style=flat-square) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser?style=flat-square) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser?style=flat-square)
 ## Project Status
-Everything's Great (We have almost fully recovered!)
+GitHub marked my account as spam
+# [CONTACT ME](mailto:danielmcguire23@icloud.com?subject=Simple-Browser&body=Simple%20Browser%20is%20online%20and%20well!) IF I FORGET ABOUT THIS AFTER SPRING 2024
+
 ## About
 Simple-Browser is a lightweight web browser built using C# and WebView2 (Chromium Based), aiming to offer users a simple and fast browsing experience.
 
