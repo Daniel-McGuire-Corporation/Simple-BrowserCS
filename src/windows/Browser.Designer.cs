@@ -40,6 +40,7 @@ namespace Webview2_Test
             returnToStartPageToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
             viewHelpToolStripMenuItem = new ToolStripMenuItem();
+            aboutWindowsToolStripMenuItem = new ToolStripMenuItem();
             reportBugToolStripMenuItem = new ToolStripMenuItem();
             inSimpleBrowserToolStripMenuItem = new ToolStripMenuItem();
             inDefaultBrowserToolStripMenuItem = new ToolStripMenuItem();
@@ -48,6 +49,7 @@ namespace Webview2_Test
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.FromArgb(32, 32, 32);
             menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, viewToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
@@ -58,6 +60,7 @@ namespace Webview2_Test
             // fileToolStripMenuItem
             // 
             fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openToolStripMenuItem, openNewWindowToolStripMenuItem, closeAltToolStripMenuItem });
+            fileToolStripMenuItem.ForeColor = Color.Silver;
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             fileToolStripMenuItem.Size = new Size(37, 20);
             fileToolStripMenuItem.Text = "File";
@@ -65,27 +68,28 @@ namespace Webview2_Test
             // openToolStripMenuItem
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.Size = new Size(180, 22);
+            openToolStripMenuItem.Size = new Size(177, 22);
             openToolStripMenuItem.Text = "Open";
             openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // openNewWindowToolStripMenuItem
             // 
             openNewWindowToolStripMenuItem.Name = "openNewWindowToolStripMenuItem";
-            openNewWindowToolStripMenuItem.Size = new Size(180, 22);
+            openNewWindowToolStripMenuItem.Size = new Size(177, 22);
             openNewWindowToolStripMenuItem.Text = "Open New Window";
             openNewWindowToolStripMenuItem.Click += openNewWindowToolStripMenuItem_Click;
             // 
             // closeAltToolStripMenuItem
             // 
             closeAltToolStripMenuItem.Name = "closeAltToolStripMenuItem";
-            closeAltToolStripMenuItem.Size = new Size(180, 22);
+            closeAltToolStripMenuItem.Size = new Size(177, 22);
             closeAltToolStripMenuItem.Text = "Close (Alt+F4)";
             closeAltToolStripMenuItem.Click += closeAltToolStripMenuItem_Click;
             // 
             // viewToolStripMenuItem
             // 
             viewToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { returnToStartPageToolStripMenuItem });
+            viewToolStripMenuItem.ForeColor = Color.Silver;
             viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             viewToolStripMenuItem.Size = new Size(44, 20);
             viewToolStripMenuItem.Text = "View";
@@ -99,10 +103,12 @@ namespace Webview2_Test
             // 
             // helpToolStripMenuItem
             // 
-            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { viewHelpToolStripMenuItem, reportBugToolStripMenuItem });
+            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { viewHelpToolStripMenuItem, aboutWindowsToolStripMenuItem, reportBugToolStripMenuItem });
+            helpToolStripMenuItem.ForeColor = Color.Silver;
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            helpToolStripMenuItem.Size = new Size(52, 20);
-            helpToolStripMenuItem.Text = "About";
+            helpToolStripMenuItem.Size = new Size(44, 20);
+            helpToolStripMenuItem.Text = "Help";
+            helpToolStripMenuItem.Click += helpToolStripMenuItem_Click;
             // 
             // viewHelpToolStripMenuItem
             // 
@@ -110,6 +116,13 @@ namespace Webview2_Test
             viewHelpToolStripMenuItem.Size = new Size(191, 22);
             viewHelpToolStripMenuItem.Text = "About Simple Browser";
             viewHelpToolStripMenuItem.Click += viewHelpToolStripMenuItem_Click;
+            // 
+            // aboutWindowsToolStripMenuItem
+            // 
+            aboutWindowsToolStripMenuItem.Name = "aboutWindowsToolStripMenuItem";
+            aboutWindowsToolStripMenuItem.Size = new Size(191, 22);
+            aboutWindowsToolStripMenuItem.Text = "About Windows";
+            aboutWindowsToolStripMenuItem.Click += aboutWindowsToolStripMenuItem_Click;
             // 
             // reportBugToolStripMenuItem
             // 
@@ -139,6 +152,7 @@ namespace Webview2_Test
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
+            ForeColor = SystemColors.ControlText;
             MainMenuStrip = menuStrip1;
             Name = "Browser";
             ShowIcon = false;
@@ -164,5 +178,6 @@ namespace Webview2_Test
         private ToolStripMenuItem reportBugToolStripMenuItem;
         private ToolStripMenuItem inSimpleBrowserToolStripMenuItem;
         private ToolStripMenuItem inDefaultBrowserToolStripMenuItem;
+        private ToolStripMenuItem aboutWindowsToolStripMenuItem;
     }
 }

@@ -1,5 +1,5 @@
 // Copyright (C) Daniel McGuire Corporation
-// Simple Browser (v2.0.0.257)
+// Simple Browser (v2.2.0.5)
 // THANKS FOR CONTRIBUTING (or Building from Source)
 // This file is part of Simple Browser. (Obviously)
 //
@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 using System.Resources;
+using System.Security.Policy;
 
 namespace Webview2_Test
 {
@@ -28,7 +29,7 @@ namespace Webview2_Test
             {
                 Dock = DockStyle.Top,
                 Height = 30,
-                BackColor = ColorTranslator.FromHtml("#121212"),
+                BackColor = ColorTranslator.FromHtml("#202020"),
             };
             this.Controls.Add(toolbar);
 
@@ -36,6 +37,8 @@ namespace Webview2_Test
             {
                 Dock = DockStyle.Fill,
                 Height = 20,
+                BackColor = ColorTranslator.FromHtml("#202020"),
+                ForeColor = ColorTranslator.FromHtml("#ffffff")
             };
 
             toolbar.Controls.Add(addressBar);
@@ -152,7 +155,7 @@ namespace Webview2_Test
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "HTML Files|*.html;*.htm";
+            dialog.Filter = "Web Files|*.html;*.htm";
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = dialog.FileName; // this is the file path of the selected file
@@ -188,6 +191,16 @@ namespace Webview2_Test
         private void Browser_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutWindowsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("winver"));
         }
     }
 }

@@ -35,37 +35,42 @@
             // 
             // ok
             // 
-            ok.Location = new Point(188, 71);
+            ok.BackColor = Color.Transparent;
+            ok.Location = new Point(253, 71);
             ok.Name = "ok";
             ok.Size = new Size(88, 23);
             ok.TabIndex = 0;
             ok.Text = "OK";
-            ok.UseVisualStyleBackColor = true;
+            ok.UseVisualStyleBackColor = false;
             ok.Click += ok_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(17, 16);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 12F);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(76, 10);
             label1.Name = "label1";
-            label1.Size = new Size(136, 15);
+            label1.Size = new Size(168, 21);
             label1.TabIndex = 1;
-            label1.Text = "Simple Browser 2.0.0.257";
+            label1.Text = "Simple Browser 2.2.0.5";
             // 
             // update
             // 
             update.Location = new Point(13, 71);
             update.Name = "update";
-            update.Size = new Size(169, 23);
+            update.Size = new Size(134, 23);
             update.TabIndex = 2;
-            update.Text = "Check GitHub for Updates";
+            update.Text = "Check for Updates";
             update.UseVisualStyleBackColor = true;
             update.Click += update_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(17, 40);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(99, 44);
             label2.Name = "label2";
             label2.Size = new Size(141, 15);
             label2.TabIndex = 3;
@@ -75,7 +80,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(284, 107);
+            BackColor = Color.FromArgb(64, 64, 64);
+            ClientSize = new Size(354, 107);
             Controls.Add(label2);
             Controls.Add(update);
             Controls.Add(label1);
