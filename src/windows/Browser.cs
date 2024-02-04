@@ -1,11 +1,15 @@
 // Copyright (C) Daniel McGuire Corporation
-// Simple Browser (v1.3.2.1)
+// Simple Browser (v2.0.0.257)
 // THANKS FOR CONTRIBUTING (or Building from Source)
 // This file is part of Simple Browser. (Obviously)
 //
 // Form1.cs
 using Microsoft.Web.WebView2.WinForms;
 using Microsoft.Web.WebView2.Core;
+using System.Windows.Forms;
+using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
+using System.Resources;
 
 namespace Webview2_Test
 {
@@ -13,7 +17,7 @@ namespace Webview2_Test
     {
         private WebView2 webView;
         private TextBox addressBar;
-        
+
         public Browser()
         {
             InitializeComponent();
@@ -27,7 +31,7 @@ namespace Webview2_Test
                 BackColor = ColorTranslator.FromHtml("#121212"),
             };
             this.Controls.Add(toolbar);
-            
+
             addressBar = new TextBox()
             {
                 Dock = DockStyle.Fill,
@@ -50,10 +54,13 @@ namespace Webview2_Test
                         else
                         {
                             webView.CoreWebView2.Navigate(url);
+
                         }
                     }
+
                 }
             };
+
 
             InitializeAsync();
         }
@@ -109,10 +116,78 @@ namespace Webview2_Test
             string filePath = @"C:///Program Files (x86)///SimpleBrowser///Resources///NewTab///NewTab.html";
             return filePath;
         }
-
         private void CoreWebView2_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
         {
-            // No clue what this is for.
+            // Check if the navigation was successful
+            if (e.IsSuccess)
+            {
+            }
+            else
+            {
+                // Do something if the navigation failed
+                MessageBox.Show("Navigation failed with error code: " + e.WebErrorStatus);
+            }
+        }
+
+
+        private void viewHelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Create a new instance of Form2
+            AboutBox aboutBox = new AboutBox();
+            aboutBox.ShowDialog();
+
+
+        }
+
+        private void closeAltToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void returnToStartPageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webView.CoreWebView2.Navigate("C:/Program Files (x86)/SimpleBrowser/Resources/NewTab/NewTab.html");
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "HTML Files|*.html;*.htm";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = dialog.FileName; // this is the file path of the selected file
+                webView.CoreWebView2.Navigate(filePath); // this will pass the file path to the navigate method
+            }
+
+
+        }
+
+        private void openNewWindowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("Simple-Browser.exe");
+        }
+
+        private void reportBugToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inSimpleBrowserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webView.CoreWebView2.Navigate("https://github.com/DanielLMcGuire/Simple-Browser/issues/new/choose");
+        }
+
+        private void inDefaultBrowserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            string url = "https://github.com/DanielLMcGuire/Simple-Browser/issues/new/choose";
+            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}"));
+
+        }
+
+        private void Browser_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
