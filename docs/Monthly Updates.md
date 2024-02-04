@@ -8,3 +8,10 @@
 
   - ![VirtualBoxVM_6Aj4Ex8Hap_DESC:Program Can't Find/Open NewTab Page](https://github.com/DanielLMcGuire/Simple-Browser/assets/146508360/549167ae-6cf5-4adf-bb00-0d40c649b207)
       **Program Can't Find/Open NewTab Page**
+# February 2024
+## Simple Browser UI Changes:
+
+### Simple Browser gets a MAJOR overhaul!
+  - ![DESC:Showcase of New Features](https://i.imgur.com/CJwg09S.gif)
+
+      **Showcase of New Features**
