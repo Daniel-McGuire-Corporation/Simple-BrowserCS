@@ -25,7 +25,7 @@ This method uses Visual Studio to build and run the Simple Browser application.
 Make sure you have the following installed:
 
 - **Visual Studio:** This project was developed using Visual Studio. You can download it from [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
-- **.NET:** This project requires the .NET framework. You can download it from [Microsoft .NET Downloads](https://dotnet.microsoft.com/download).
+- **.NET:** This project requires the .NET 8.0 framework. You can download it from [Microsoft .NET Downloads 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 
 ## Steps
 
