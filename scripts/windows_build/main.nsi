@@ -13,7 +13,7 @@
 ;Settings
 
   !define APPNAME "Simple Browser"
-  !define APP_NAME_IN_INSTALLED_DIR "Simple Browser"
+  !define APP_NAME_IN_INSTALLED_DIR "Simple-Browser"
   !define COMPANYNAME "Daniel McGuire Corporation"
   !define DESCRIPTION "Simple Web Browser"
   !define DEVELOPER "Daniel McGuire" #License Holder
