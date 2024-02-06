@@ -3,6 +3,7 @@
 ## Project Status
 #### 400 **OK** (just a non-html programmer making a joke)
 ## About
+
 Simple-Browser is a lightweight web browser built using C# and WebView2 (Chromium Based), aiming to offer users a simple and fast browsing experience.
 ----------------------------------------------------------------------
 ## [Monthly Newsletter](https://github.com/DanielLMcGuire/Simple-Browser/blob/main/docs/Monthly%20Updates.md)
