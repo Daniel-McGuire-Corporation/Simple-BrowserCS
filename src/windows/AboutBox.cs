@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Diagnostics;
 
 namespace Webview2_Test
 {
@@ -17,7 +10,7 @@ namespace Webview2_Test
         }
 
 
-      
+
 
         private void update_Click(object sender, EventArgs e)
         {
@@ -31,6 +24,12 @@ namespace Webview2_Test
         private void ok_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void license_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/DanielLMcGuire/Simple-Browser/blob/main/license";
+            Process.Start(new ProcessStartInfo("cmd", $"/c start msedge --app={url}") { CreateNoWindow = true });
         }
     }
 }

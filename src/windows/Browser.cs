@@ -1,16 +1,12 @@
 // Copyright (C) Daniel McGuire Corporation
-// Simple Browser (v2.2.0.5)
+// Simple Browser (v2.3.0.2)
 // THANKS FOR CONTRIBUTING (or Building from Source)
 // This file is part of Simple Browser. (Obviously)
 //
 // Form1.cs
 using Microsoft.Web.WebView2.WinForms;
 using Microsoft.Web.WebView2.Core;
-using System.Windows.Forms;
 using System.Diagnostics;
-using System.Diagnostics.Eventing.Reader;
-using System.Resources;
-using System.Security.Policy;
 
 namespace Webview2_Test
 {
@@ -28,17 +24,17 @@ namespace Webview2_Test
             Panel toolbar = new Panel()
             {
                 Dock = DockStyle.Top,
-                Height = 30,
-                BackColor = ColorTranslator.FromHtml("#202020"),
+                Height = 20,
+                BackColor = ColorTranslator.FromHtml("#202124"),
             };
             this.Controls.Add(toolbar);
 
             addressBar = new TextBox()
             {
                 Dock = DockStyle.Fill,
-                Height = 20,
-                BackColor = ColorTranslator.FromHtml("#202020"),
-                ForeColor = ColorTranslator.FromHtml("#ffffff")
+                Height = 10,
+                BackColor = ColorTranslator.FromHtml("#171717"),
+                ForeColor = ColorTranslator.FromHtml("#e8eae1")
             };
 
             toolbar.Controls.Add(addressBar);
@@ -201,6 +197,12 @@ namespace Webview2_Test
         private void aboutWindowsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start(new ProcessStartInfo("winver"));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/DanielLMcGuire/Simple-Browser/issues/new/choose";
+            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}"));
         }
     }
 }
