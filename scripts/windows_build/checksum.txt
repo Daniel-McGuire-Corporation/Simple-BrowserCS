@@ -1,6 +1,0 @@
-
-Algorithm       Hash                                                                   Path                            
----------       ----                                                                   ----                            
-SHA256          87A6CFBE03C248E8016876AC4F4ED21CBF3E6754727874FB83A69A1EE8824204       C:\Source\Simple-Browser\scri...
-
-

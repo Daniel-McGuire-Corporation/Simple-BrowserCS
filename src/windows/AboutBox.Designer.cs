@@ -1,4 +1,6 @@
-﻿namespace Webview2_Test
+﻿using System
+
+namespace Webview2_Test
 {
     partial class AboutBox
     {
