@@ -46,6 +46,6 @@ Simple-Browser is a lightweight web browser built using C# and WebView2 (Chromiu
 [Build-Source Windows](https://github.com/DanielLMcGuire/Simple-Browser/tree/main/scripts/windows_build)
 
 ## License
-Simple-Browser is licensed under the new EULA See the [EULA](https://github.com/DanielLMcGuire/Simple-Browser?tab=License-1-ov-file) for more details.
+Simple-Browser is licensed under the MIT License See the [License]([https://github.com/DanielLMcGuire/Simple-Browser?tab=License-1-ov-file](https://github.com/DanielLMcGuire/Simple-Browser?tab=MIT-1-ov-file)https://github.com/DanielLMcGuire/Simple-Browser?tab=MIT-1-ov-file) for more details.
 
 ---
