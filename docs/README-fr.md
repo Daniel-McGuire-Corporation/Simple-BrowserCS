@@ -7,7 +7,7 @@
 
 ## Comment installer :
 ### - Windows
-  - Ouvrez CMD / Powershell (Appuyez sur Win+R, puis sur Win11 tapez ```wt.exe``` (```type cmd.exe``` sur Win10) et appuyez sur Entrée)
+  - Ouvrez CMD / Powershell (Appuyez sur Win+R, puis sur Win11 tapez ```wt.exe``` (tapez ```cmd.exe``` sur Win10) et appuyez sur Entrée)
   - Exécutez la commande suivante :
     ```PowerShell
     winget install DanielMcGuireCorporation.SimpleBrowser

@@ -11,6 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="LICENSE.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="LICENSE.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2151.40" />
   </ItemGroup>
 
@@ -27,6 +35,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Updater.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

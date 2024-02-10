@@ -24,7 +24,6 @@ Prerequisites.zip
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 
 # Fortran module files
 *.mod
@@ -37,7 +36,6 @@ Prerequisites.zip
 *.lib
 
 # Executables
-*.exe
 *.out
 *.app
 

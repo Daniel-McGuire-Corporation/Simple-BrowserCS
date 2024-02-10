@@ -1,3 +1,6 @@
+# THIS IS STILL UNDER ACTIVE DEVELOPMENT, FOR NOW YOU WILL HAVE TO SUPPLY A CUSTOM NEW TAB PAGE AND UPDATER SCRIPT
+
+
 # Method 1 | .NET SDK (Recommended)
 
 This method uses the .NET SDK to build and install the Simple Browser application.

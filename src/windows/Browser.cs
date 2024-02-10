@@ -7,6 +7,7 @@
 using Microsoft.Web.WebView2.WinForms;
 using Microsoft.Web.WebView2.Core;
 using System.Diagnostics;
+using System.Security.Policy;
 
 namespace Webview2_Test
 {
@@ -202,7 +203,33 @@ namespace Webview2_Test
         private void button1_Click(object sender, EventArgs e)
         {
             string url = "https://github.com/DanielLMcGuire/Simple-Browser/issues/new/choose";
-            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}"));
+            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
+        }
+
+        private void getUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void windowsPackageManagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "conhost.exe";
+            startInfo.Arguments = "Updater.bat";
+            Process.Start(startInfo);
+            this.Close();
+        }
+
+        private void gitHubToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/DanielLMcGuire/Simple-Browser/releases/latest";
+            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
+        }
+
+        private void builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string url = "https://apps.microsoft.com/detail/9NBLGGH4NNS1";
+            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
         }
     }
 }

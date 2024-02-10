@@ -41,6 +41,11 @@ namespace Webview2_Test
             helpToolStripMenuItem = new ToolStripMenuItem();
             viewHelpToolStripMenuItem = new ToolStripMenuItem();
             aboutWindowsToolStripMenuItem = new ToolStripMenuItem();
+            getUpdatesToolStripMenuItem = new ToolStripMenuItem();
+            windowsPackageManagerToolStripMenuItem = new ToolStripMenuItem();
+            gitHubToolStripMenuItem = new ToolStripMenuItem();
+            builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem = new ToolStripMenuItem();
+            updateUtilityRequiresWindows10ToolStripMenuItem = new ToolStripMenuItem();
             reportBugToolStripMenuItem = new ToolStripMenuItem();
             inSimpleBrowserToolStripMenuItem = new ToolStripMenuItem();
             inDefaultBrowserToolStripMenuItem = new ToolStripMenuItem();
@@ -69,21 +74,21 @@ namespace Webview2_Test
             // openToolStripMenuItem
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.Size = new Size(180, 22);
+            openToolStripMenuItem.Size = new Size(177, 22);
             openToolStripMenuItem.Text = "Open";
             openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // openNewWindowToolStripMenuItem
             // 
             openNewWindowToolStripMenuItem.Name = "openNewWindowToolStripMenuItem";
-            openNewWindowToolStripMenuItem.Size = new Size(180, 22);
+            openNewWindowToolStripMenuItem.Size = new Size(177, 22);
             openNewWindowToolStripMenuItem.Text = "Open New Window";
             openNewWindowToolStripMenuItem.Click += openNewWindowToolStripMenuItem_Click;
             // 
             // closeAltToolStripMenuItem
             // 
             closeAltToolStripMenuItem.Name = "closeAltToolStripMenuItem";
-            closeAltToolStripMenuItem.Size = new Size(180, 22);
+            closeAltToolStripMenuItem.Size = new Size(177, 22);
             closeAltToolStripMenuItem.Text = "Close (Alt+F4)";
             closeAltToolStripMenuItem.Click += closeAltToolStripMenuItem_Click;
             // 
@@ -104,7 +109,7 @@ namespace Webview2_Test
             // 
             // helpToolStripMenuItem
             // 
-            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { viewHelpToolStripMenuItem, aboutWindowsToolStripMenuItem, reportBugToolStripMenuItem, simpleWebV2ToolStripMenuItem });
+            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { viewHelpToolStripMenuItem, aboutWindowsToolStripMenuItem, getUpdatesToolStripMenuItem, reportBugToolStripMenuItem, simpleWebV2ToolStripMenuItem });
             helpToolStripMenuItem.ForeColor = Color.FromArgb(232, 234, 225);
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             helpToolStripMenuItem.Size = new Size(52, 20);
@@ -125,6 +130,43 @@ namespace Webview2_Test
             aboutWindowsToolStripMenuItem.Text = "About Windows";
             aboutWindowsToolStripMenuItem.Click += aboutWindowsToolStripMenuItem_Click;
             // 
+            // getUpdatesToolStripMenuItem
+            // 
+            getUpdatesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { windowsPackageManagerToolStripMenuItem, gitHubToolStripMenuItem, builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem, updateUtilityRequiresWindows10ToolStripMenuItem });
+            getUpdatesToolStripMenuItem.Name = "getUpdatesToolStripMenuItem";
+            getUpdatesToolStripMenuItem.Size = new Size(191, 22);
+            getUpdatesToolStripMenuItem.Text = "Get Updates";
+            getUpdatesToolStripMenuItem.Click += getUpdatesToolStripMenuItem_Click;
+            // 
+            // windowsPackageManagerToolStripMenuItem
+            // 
+            windowsPackageManagerToolStripMenuItem.Name = "windowsPackageManagerToolStripMenuItem";
+            windowsPackageManagerToolStripMenuItem.Size = new Size(284, 22);
+            windowsPackageManagerToolStripMenuItem.Text = "Built-In Update Utility ";
+            windowsPackageManagerToolStripMenuItem.Click += windowsPackageManagerToolStripMenuItem_Click;
+            // 
+            // gitHubToolStripMenuItem
+            // 
+            gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
+            gitHubToolStripMenuItem.Size = new Size(284, 22);
+            gitHubToolStripMenuItem.Text = "GitHub";
+            gitHubToolStripMenuItem.Click += gitHubToolStripMenuItem_Click;
+            // 
+            // builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem
+            // 
+            builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem.Name = "builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem";
+            builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem.Size = new Size(284, 22);
+            builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem.Text = "Click Here If Update Utility Failed";
+            builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem.Click += builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem_Click;
+            // 
+            // updateUtilityRequiresWindows10ToolStripMenuItem
+            // 
+            updateUtilityRequiresWindows10ToolStripMenuItem.BackColor = SystemColors.ControlLight;
+            updateUtilityRequiresWindows10ToolStripMenuItem.ForeColor = SystemColors.GrayText;
+            updateUtilityRequiresWindows10ToolStripMenuItem.Name = "updateUtilityRequiresWindows10ToolStripMenuItem";
+            updateUtilityRequiresWindows10ToolStripMenuItem.Size = new Size(284, 22);
+            updateUtilityRequiresWindows10ToolStripMenuItem.Text = "Update Utility Requires Windows 10 / 11";
+            // 
             // reportBugToolStripMenuItem
             // 
             reportBugToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { inSimpleBrowserToolStripMenuItem, inDefaultBrowserToolStripMenuItem });
@@ -136,14 +178,14 @@ namespace Webview2_Test
             // inSimpleBrowserToolStripMenuItem
             // 
             inSimpleBrowserToolStripMenuItem.Name = "inSimpleBrowserToolStripMenuItem";
-            inSimpleBrowserToolStripMenuItem.Size = new Size(180, 22);
+            inSimpleBrowserToolStripMenuItem.Size = new Size(170, 22);
             inSimpleBrowserToolStripMenuItem.Text = "In Simple Browser";
             inSimpleBrowserToolStripMenuItem.Click += inSimpleBrowserToolStripMenuItem_Click;
             // 
             // inDefaultBrowserToolStripMenuItem
             // 
             inDefaultBrowserToolStripMenuItem.Name = "inDefaultBrowserToolStripMenuItem";
-            inDefaultBrowserToolStripMenuItem.Size = new Size(180, 22);
+            inDefaultBrowserToolStripMenuItem.Size = new Size(170, 22);
             inDefaultBrowserToolStripMenuItem.Text = "In Default Browser";
             inDefaultBrowserToolStripMenuItem.Click += inDefaultBrowserToolStripMenuItem_Click;
             // 
@@ -153,7 +195,7 @@ namespace Webview2_Test
             simpleWebV2ToolStripMenuItem.ForeColor = SystemColors.GrayText;
             simpleWebV2ToolStripMenuItem.Name = "simpleWebV2ToolStripMenuItem";
             simpleWebV2ToolStripMenuItem.Size = new Size(191, 22);
-            simpleWebV2ToolStripMenuItem.Text = "Simple Web v2";
+            simpleWebV2ToolStripMenuItem.Text = "Simple Web 2.4.0.0";
             // 
             // Browser
             // 
@@ -190,5 +232,10 @@ namespace Webview2_Test
         private ToolStripMenuItem inDefaultBrowserToolStripMenuItem;
         private ToolStripMenuItem aboutWindowsToolStripMenuItem;
         private ToolStripMenuItem simpleWebV2ToolStripMenuItem;
+        private ToolStripMenuItem getUpdatesToolStripMenuItem;
+        private ToolStripMenuItem gitHubToolStripMenuItem;
+        private ToolStripMenuItem windowsPackageManagerToolStripMenuItem;
+        private ToolStripMenuItem builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem;
+        private ToolStripMenuItem updateUtilityRequiresWindows10ToolStripMenuItem;
     }
 }
