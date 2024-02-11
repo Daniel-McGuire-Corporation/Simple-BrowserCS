@@ -174,13 +174,13 @@ namespace Webview2_Test
 
         private void inSimpleBrowserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            webView.CoreWebView2.Navigate("https://github.com/DanielLMcGuire/Simple-Browser/issues/new/choose");
+            webView.CoreWebView2.Navigate("https://github.com/Daniel-McGuire-Corporation/Simple-Browser/issues/new/choose");
         }
 
         private void inDefaultBrowserToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            string url = "https://github.com/DanielLMcGuire/Simple-Browser/issues/new/choose";
+            string url = "https://github.com/Daniel-McGuire-Corporation/Simple-Browser/issues/new/choose";
             Process.Start(new ProcessStartInfo("cmd", $"/c start {url}"));
 
         }
@@ -202,7 +202,7 @@ namespace Webview2_Test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string url = "https://github.com/DanielLMcGuire/Simple-Browser/issues/new/choose";
+            string url = "https://github.com/Daniel-McGuire-Corporation/Simple-Browser/issues/new/choose";
             Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
         }
 
@@ -222,7 +222,7 @@ namespace Webview2_Test
 
         private void gitHubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string url = "https://github.com/DanielLMcGuire/Simple-Browser/releases/latest";
+            string url = "https://github.com/Daniel-McGuire-Corporation/Simple-Browser/releases/latest";
             Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
         }
 

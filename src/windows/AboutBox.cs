@@ -58,7 +58,7 @@ namespace Webview2_Test
         private void label1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Full Version String: 24q2.4.0.0-1559_pc-mn                        (WinGet Version 2.4.0)" +
-                "                                                                      GitHub Release: https://github.com/DanielLMcGuire/Simple-Browser/releases/tag/v2.4.0.0", "Simple Browser | Advanced Version Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                "                                                                      GitHub Release: https://github.com/Daniel-McGuire-Corporation/Simple-Browser/releases/tag/v2.4.0.0", "Simple Browser | Advanced Version Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
