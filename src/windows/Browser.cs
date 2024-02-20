@@ -1,5 +1,13 @@
+//  _____ _                 _        ____                                  
+// / ____(_)               | |      |  _ \                                 
+//| (___  _ _ __ ___  _ __ | | ___  | |_) |_ __ _____      _____  ___ _ __ 
+// \___ \| | '_ ` _ \| '_ \| |/ _ \ |  _ <| '__/ _ \ \ /\ / / __|/ _ \ '__|
+// ____) | | | | | | | |_) | |  __/ | |_) | | | (_) \ V  V /\__ \  __/ |   
+//|_____/|_|_| |_| |_| .__/|_|\___| |____/|_|  \___/ \_/\_/ |___/\___|_|   
+//         Graphic by|:| Andrew M          
+//                   |_|                                                                                                                                              
 // Copyright (C) Daniel McGuire Corporation
-// Simple Browser (v2.3.0.2)
+// Simple Browser (v2.4.1.0)
 // THANKS FOR CONTRIBUTING (or Building from Source)
 // This file is part of Simple Browser. (Obviously)
 //
@@ -118,15 +126,6 @@ namespace Webview2_Test
         }
         private void CoreWebView2_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
         {
-            // Check if the navigation was successful
-            if (e.IsSuccess)
-            {
-            }
-            else
-            {
-                // Do something if the navigation failed
-                MessageBox.Show("Navigation failed with error code: " + e.WebErrorStatus);
-            }
         }
 
 
