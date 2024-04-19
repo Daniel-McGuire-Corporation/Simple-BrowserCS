@@ -1,4 +1,4 @@
-# [Jump to Latest](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/Monthly%20Updates.md#March-2024)
+# [Jump to Latest](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/Monthly%20Updates.md#April-2024)
 # January 2024
 ## Simple Browser Legacy Goes Into Planning:
 
@@ -18,6 +18,7 @@
   - ![DESC:Showcase of New Features](https://i.imgur.com/CJwg09S.gif)
 
       **Showcase of New Features**
+
 # March 2024 
 ## Simple Browser 2000 Goes Into Planning (Windows 2000 is easier than XP - 7 for now)
 
@@ -26,3 +27,11 @@
 
     **WebKit based port of Simple Web Application**
 
+# April 2024
+## New Software:
+  - ![Capture2 psd](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/assets/146508360/26ddd182-90bf-4b35-a8ad-44716b65b640)
+     
+     **DNotepad Window**
+  - ![Capture4](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/assets/146508360/d03f69a5-b900-46be-bad5-b64c63e691fb)
+
+    **Save Dialog (Other Formats availible)**
