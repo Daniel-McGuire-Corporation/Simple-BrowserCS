@@ -34,6 +34,7 @@ partial class AboutBox
         license = new Button();
         label3 = new Label();
         label4 = new Label();
+        label6 = new Label();
         SuspendLayout();
         // 
         // ok
@@ -53,11 +54,12 @@ partial class AboutBox
         label1.BackColor = Color.Transparent;
         label1.Font = new Font("Segoe UI", 12F);
         label1.ForeColor = Color.FromArgb(232, 234, 225);
-        label1.Location = new Point(88, 10);
+        label1.ImageAlign = ContentAlignment.TopCenter;
+        label1.Location = new Point(100, 12);
         label1.Name = "label1";
-        label1.Size = new Size(168, 21);
+        label1.Size = new Size(162, 21);
         label1.TabIndex = 1;
-        label1.Text = "Simple Browser 2.4.0.0";
+        label1.Text = "Simple Browser 24Q3";
         label1.Click += label1_Click;
         // 
         // update
@@ -74,7 +76,7 @@ partial class AboutBox
         // 
         label2.AutoSize = true;
         label2.ForeColor = Color.FromArgb(232, 234, 225);
-        label2.Location = new Point(100, 41);
+        label2.Location = new Point(114, 41);
         label2.Name = "label2";
         label2.Size = new Size(141, 15);
         label2.TabIndex = 3;
@@ -94,7 +96,7 @@ partial class AboutBox
         // 
         label3.AutoSize = true;
         label3.ForeColor = Color.FromArgb(232, 234, 225);
-        label3.Location = new Point(51, 56);
+        label3.Location = new Point(55, 56);
         label3.Name = "label3";
         label3.Size = new Size(255, 15);
         label3.TabIndex = 5;
@@ -104,11 +106,22 @@ partial class AboutBox
         // 
         label4.AutoSize = true;
         label4.ForeColor = SystemColors.Control;
-        label4.Location = new Point(38, 82);
+        label4.Location = new Point(67, 83);
         label4.Name = "label4";
-        label4.Size = new Size(283, 15);
+        label4.Size = new Size(234, 15);
         label4.TabIndex = 6;
-        label4.Text = "Runs on the Microsoft Edge (Webview2) Framework ";
+        label4.Text = "Runs on the Microsoft Edge (C) Framework";
+        // 
+        // label6
+        // 
+        label6.AutoSize = true;
+        label6.Font = new Font("Segoe UI", 7F);
+        label6.ForeColor = Color.FromArgb(232, 234, 225);
+        label6.Location = new Point(263, 19);
+        label6.Name = "label6";
+        label6.Size = new Size(78, 12);
+        label6.TabIndex = 8;
+        label6.Text = "Build 2.5.0.0.2785";
         // 
         // AboutBox
         // 
@@ -116,6 +129,7 @@ partial class AboutBox
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.FromArgb(32, 33, 36);
         ClientSize = new Size(354, 136);
+        Controls.Add(label6);
         Controls.Add(label4);
         Controls.Add(label3);
         Controls.Add(license);
@@ -146,4 +160,5 @@ partial class AboutBox
     private Button license;
     private Label label3;
     private Label label4;
+    private Label label6;
 }

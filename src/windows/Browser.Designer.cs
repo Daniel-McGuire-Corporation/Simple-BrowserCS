@@ -31,6 +31,7 @@ namespace Webview2_Test
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Browser));
             menuStrip1 = new MenuStrip();
             fileToolStripMenuItem = new ToolStripMenuItem();
             openToolStripMenuItem = new ToolStripMenuItem();
@@ -50,7 +51,11 @@ namespace Webview2_Test
             inSimpleBrowserToolStripMenuItem = new ToolStripMenuItem();
             inDefaultBrowserToolStripMenuItem = new ToolStripMenuItem();
             simpleWebV2ToolStripMenuItem = new ToolStripMenuItem();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -141,21 +146,21 @@ namespace Webview2_Test
             // windowsPackageManagerToolStripMenuItem
             // 
             windowsPackageManagerToolStripMenuItem.Name = "windowsPackageManagerToolStripMenuItem";
-            windowsPackageManagerToolStripMenuItem.Size = new Size(284, 22);
+            windowsPackageManagerToolStripMenuItem.Size = new Size(259, 22);
             windowsPackageManagerToolStripMenuItem.Text = "Built-In Update Utility ";
             windowsPackageManagerToolStripMenuItem.Click += windowsPackageManagerToolStripMenuItem_Click;
             // 
             // gitHubToolStripMenuItem
             // 
             gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
-            gitHubToolStripMenuItem.Size = new Size(284, 22);
+            gitHubToolStripMenuItem.Size = new Size(259, 22);
             gitHubToolStripMenuItem.Text = "GitHub";
             gitHubToolStripMenuItem.Click += gitHubToolStripMenuItem_Click;
             // 
             // builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem
             // 
             builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem.Name = "builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem";
-            builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem.Size = new Size(284, 22);
+            builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem.Size = new Size(259, 22);
             builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem.Text = "Click Here If Update Utility Failed";
             builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem.Click += builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem_Click;
             // 
@@ -164,8 +169,8 @@ namespace Webview2_Test
             updateUtilityRequiresWindows10ToolStripMenuItem.BackColor = SystemColors.ControlLight;
             updateUtilityRequiresWindows10ToolStripMenuItem.ForeColor = SystemColors.GrayText;
             updateUtilityRequiresWindows10ToolStripMenuItem.Name = "updateUtilityRequiresWindows10ToolStripMenuItem";
-            updateUtilityRequiresWindows10ToolStripMenuItem.Size = new Size(284, 22);
-            updateUtilityRequiresWindows10ToolStripMenuItem.Text = "Update Utility Requires Windows 10 / 11";
+            updateUtilityRequiresWindows10ToolStripMenuItem.Size = new Size(259, 22);
+            updateUtilityRequiresWindows10ToolStripMenuItem.Text = "Utility Requires Win11 22H2 or later";
             // 
             // reportBugToolStripMenuItem
             // 
@@ -195,23 +200,58 @@ namespace Webview2_Test
             simpleWebV2ToolStripMenuItem.ForeColor = SystemColors.GrayText;
             simpleWebV2ToolStripMenuItem.Name = "simpleWebV2ToolStripMenuItem";
             simpleWebV2ToolStripMenuItem.Size = new Size(191, 22);
-            simpleWebV2ToolStripMenuItem.Text = "Simple Web 2.4.0.0";
+            simpleWebV2ToolStripMenuItem.Text = "Simple Web 24Q3";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.Location = new Point(196, 27);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(501, 507);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20F);
+            label1.ForeColor = Color.WhiteSmoke;
+            label1.Location = new Point(0, 488);
+            label1.Name = "label1";
+            label1.Size = new Size(306, 37);
+            label1.TabIndex = 2;
+            label1.Text = "Simple Browser (C) 2024";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 50F);
+            label2.ForeColor = Color.Snow;
+            label2.Location = new Point(661, 436);
+            label2.Name = "label2";
+            label2.Size = new Size(197, 89);
+            label2.TabIndex = 3;
+            label2.Text = "24Q3";
             // 
             // Browser
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(32, 33, 36);
-            ClientSize = new Size(858, 468);
+            BackColor = Color.FromArgb(0, 30, 80);
+            ClientSize = new Size(858, 525);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(menuStrip1);
+            Controls.Add(pictureBox1);
             ForeColor = SystemColors.ControlText;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             Name = "Browser";
-            ShowIcon = false;
             Text = "Simple Web";
             Load += Browser_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -237,5 +277,8 @@ namespace Webview2_Test
         private ToolStripMenuItem windowsPackageManagerToolStripMenuItem;
         private ToolStripMenuItem builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem;
         private ToolStripMenuItem updateUtilityRequiresWindows10ToolStripMenuItem;
+        private PictureBox pictureBox1;
+        private Label label1;
+        private Label label2;
     }
 }

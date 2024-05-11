@@ -18,15 +18,15 @@
   !define DESCRIPTION "Simple Web Browser"
   !define DEVELOPER "Daniel McGuire" #License Holder
   # Files Directory
-  !define FILE_DIR "..\..\src\windows\bin\Release\net8.0-windows" #Replace with the full path of install folder
+  !define FILE_DIR "..\..\src\windows\bin\Release\net8.0-windows" #Replace with the path of install folder (Should be right unless file structure tampered.)
   !define LOGO_ICON_FILE "C:\Program Files (x86)\NSIS\Contrib\Graphics\Icons\nsis1-install.ico"
   !define LICENSE_TEXT_FILE "main.nsi-extras\LICENSE.txt"
   !define HEADER_IMG_FILE "C:\Program Files (x86)\NSIS\Contrib\Graphics\Header\win.bmp"
   # These three must be integers
   !define VERSIONMAJOR 2	#Major release Number
-  !define VERSIONMINOR 3	#Minor release Number
+  !define VERSIONMINOR 5	#Minor release Number
   !define VERSIONBUILD 0	#Maintenance release Number (bugfixes only)
-  !define BUILDNUMBER 2		#Source control revision number
+  !define BUILDNUMBER 0		#Source control revision number
   # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
   # It is possible to use "mailto:" links in here to open email client
   !define HELPURL "https://github.com/DanielLMcGuire/Simple-Browser/issues/new/choose"
