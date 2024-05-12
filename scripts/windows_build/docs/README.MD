@@ -14,14 +14,10 @@ This method uses the .NET SDK to build and install the Simple Browser applicatio
    - **.NET:** This project requires the .NET 8.0 SDK. You can download it from [microsoft.com](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
    - **Node.js:** This project requires Node.js. You can download it from [nodejs.org](https://nodejs.org/dist/v20.13.1/node-v20.13.1-x64.msi).
    - **WebView:** This project requires WebView2. You can download it from [microsoft.com](https://go.microsoft.com/fwlink/p/?LinkId=2124703).
-3. **New Tab Page**
-   - Open a PWSH window (Shift+RMB > Open in Powershell) in RepoRoot\vendor\SBmue
-      - Run ```npm install --global yarn``` to install yarn (Required)
-      - Run ```yarn``` to install all needed dependencies
-      - Run ```yarn run build``` to build yarn
-
-4. **Run BuildAll.cmd:**
-   Run the BuildAll.cmd file in the script location of the repository. This will compile the browser, bundle the newtab, and the installer.
+3. **Run BuildAll.cmd:**
+   Run the BuildAll.cmd file in the script location of the repository. This will use the ps1 to compile the browser, compile the newtab, and compile the installer.
+4. **Done**
+   The installer is in the script directory
 
 # Method 2 | Visual Studio
 
