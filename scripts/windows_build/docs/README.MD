@@ -10,12 +10,12 @@ This method uses the .NET SDK to build and install the Simple Browser applicatio
 1. **Clone the Repository:**
    Use Git to clone this repository to your local machine.
    ```bash
-   git clone https://github.com/DanielLMcGuire/Simple-Browser.git
+   git clone https://github.com/Daniel-McGuire-Corporation/Simple-Browser.git
    ```
 2. **Install the Prerequisites:**
    **.NET:** This project requires the .NET 8.0 SDK. You can download it from [Microsoft .NET Downloads 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 3. **Run BuildAll.cmd:**
-   Run the buildwindows.cmd file in this folder of the repository. This will compile the source code and create an installer.
+   Run the BuildAll.cmd file in the script location of the repository. This will compile the source code and create an installer.
 
 # Method 2 | Visual Studio
 
@@ -43,7 +43,7 @@ Make sure you have the following installed:
     
 3. **Build the Project:**
    Build the project using Visual Studio.
-    - Make sure Visual Studio is set to Release, not Debug.
+    - Make sure Visual Studio is set to Release, not Debug. (Depending on what you want)
     - Select Build from the top menu and choose Build Solution or press Ctrl + Shift + B.
 
 4. **Run the Application:**
