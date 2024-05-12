@@ -6,6 +6,7 @@ Release-SB.bat
 SimpleBrowserSetup.exe
 SimpleBrowserSetup.exe.checksum
 Prerequisites.zip
+SHA256.txt
 
 ### C++ ###
 # Prerequisites
