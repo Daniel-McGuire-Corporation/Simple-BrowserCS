@@ -96,7 +96,7 @@ namespace Webview2_Test
             webView.CoreWebView2.SourceChanged += (sender, e) =>
             {
                 string url = webView.CoreWebView2.Source.ToString();
-                if (url.Contains("SimpleBrowser/Resources/NewTab/NewTab.html"))
+                if (url.Contains("SimpleBrowser/Resources/newtab/index.html"))
                 {
                     addressBar.Text = "simple://start";
                 }
@@ -115,12 +115,12 @@ namespace Webview2_Test
         // These methods art called when the user navigates to a new page.
         private string GetDefaultHtmlFilePath()
         {
-            string filePath = @"C:\Program Files (x86)\SimpleBrowser\Resources\NewTab\NewTab.html";
+            string filePath = @"C:\Program Files (x86)\SimpleBrowser\Resources\newtab\index.html";
             return filePath;
         }
         private string GetAppDataHtmlFilePath()
         {
-            string filePath = @"C:///Program Files (x86)///SimpleBrowser///Resources///NewTab///NewTab.html";
+            string filePath = @"C:///Program Files (x86)///SimpleBrowser///Resources///newtab///index.html";
             return filePath;
         }
         private void CoreWebView2_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
@@ -144,7 +144,7 @@ namespace Webview2_Test
 
         private void returnToStartPageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            webView.CoreWebView2.Navigate("C:/Program Files (x86)/SimpleBrowser/Resources/NewTab/NewTab.html");
+            webView.CoreWebView2.Navigate("C:/Program Files (x86)/SimpleBrowser/Resources/newtab/index.html");
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
