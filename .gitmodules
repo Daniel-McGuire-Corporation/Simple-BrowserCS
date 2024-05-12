@@ -1,0 +1,3 @@
+[submodule "vendor/SBmue"]
+	path = vendor/SBmue
+	url = https://github.com/DanielLMcGuire/SBmue.git
