@@ -11,14 +11,11 @@ This method uses the .NET SDK to build and install the Simple Browser applicatio
    git clone https://github.com/Daniel-McGuire-Corporation/Simple-Browser.git --recurse-submodules
    ```
 2. **Install the Prerequisites:**
-   - **.NET:** This project requires the .NET 8.0 SDK. You can download it from [microsoft.com](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
-   - **Node.js:** This project requires Node.js. You can download it from [nodejs.org](https://nodejs.org/dist/v20.13.1/node-v20.13.1-x64.msi).
-   - **WebView:** This project requires WebView2. You can download it from [microsoft.com](https://go.microsoft.com/fwlink/p/?LinkId=2124703).
-   - **NSIS:** This project requires Nullsoft Scriptable Install System. You can download it from [nsis.sourceforge.io](https://nsis.sourceforge.io/Download).
+   - Download the [Prerequisites pack](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/releases/tag/prpack), password is DMC
 3. **Run BuildAll.cmd:**
-   Run the BuildAll.cmd file in the script location of the repository. This will use the ps1 to compile the browser, compile the newtab, and compile the installer.
+   - Run the BuildAll.cmd file in the script location of the repository. This will use the ps1 to compile the browser, compile the newtab, and compile the installer.
 4. **Done**
-   The installer is in the script directory
+   - The installer is in the script directory
 
 # Method 2 | Visual Studio
 
