@@ -20,9 +20,9 @@ Simple-Browser is a lightweight web browser built using C# and WebView2 (Chromiu
 ## Release Plans
 - ### 2024
   - 24Q1 | 2024 Update: Jan 1 - Feb 15.   
-  - 25Q2 | Earth Update Apr 22.
-  - 25Q3 | Summer Update: Jun 21.
-  - 25Q4 | Christmas Update: Dec 24.
+  - 24Q2 | Earth Update Apr 22.
+  - 24Q3 | Summer Update: Jun 21.
+  - 24Q4 | Christmas Update: Dec 24.
 - ### 2025
   - 25Q1 | 2025 Update: Jan 1 - Feb 15.
   - 25Q2 | Earth Update: Apr 22.
@@ -34,9 +34,9 @@ Simple-Browser is a lightweight web browser built using C# and WebView2 (Chromiu
 
 ## Compatibility
 - **Windows**:
-  - Windows 7 - 8.1 (Coming Soon!) (It will work by messing with the code enough.)
-  - Windows 10 22H2 or later
-  - Windows 11 (Any Version)
+  - Windows 7 - 8.1 (Coming Soon!)
+  - Windows 10 Fall Creators Edition or later
+  - Windows 11 (Any Version (Even the leaked build!)) 
 
 - More Versions Coming Soon
 
