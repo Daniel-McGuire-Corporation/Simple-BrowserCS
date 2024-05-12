@@ -10,13 +10,7 @@
 Simple-Browser is a lightweight web browser built using C# and WebView2 (Chromium Based), aiming to offer users a simple and fast browsing experience.
 ----------------------------------------------------------------------
 ## [Monthly Newsletter](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/Monthly%20Updates.md)
-## How to install:
-### - Windows
-  - Open CMD / Powershell (Press Win+R, then on Win11 type ```wt.exe``` (type ```cmd.exe``` on Win10) and press enter)
-  - Run the following command:
-    ```PowerShell
-    winget install DanielMcGuireCorporation.SimpleBrowser
-    ```
+
 ## Release Plans
 - ### 2024
   - 24Q1 | 2024 Update: Jan 1 - Feb 15.   
