@@ -8,7 +8,7 @@ This method uses the .NET SDK to build and install the Simple Browser applicatio
 1. **Clone the Repository:**
    Use Git to clone this repository to your local machine.
    ```bash
-   git clone https://github.com/Daniel-McGuire-Corporation/Simple-Browser.git
+   git clone https://github.com/Daniel-McGuire-Corporation/Simple-Browser.git --recurse-submodules
    ```
 2. **Install the Prerequisites:**
    - **.NET:** This project requires the .NET 8.0 SDK. You can download it from [microsoft.com](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
@@ -39,7 +39,7 @@ Make sure you have the following installed:
 1. **Clone the Repository:**
    Use Git to clone this repository to your local machine.
    ```bash
-   git clone https://github.com/Daniel-McGuire-Corporation/Simple-Browser.git
+   git clone https://github.com/Daniel-McGuire-Corporation/Simple-Browser.git --recurse-submodules
    ```
 
 2. **Open the Project:**
