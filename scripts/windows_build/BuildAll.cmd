@@ -25,7 +25,7 @@ echo.
 echo Compiling %App% New Tab Page
 echo.
 cd %~dp0
-cd ..\..\vendor\mue
+cd ..\..\vendor\SBmue
 mkdir ..\..\src\windows\bin\Release\net8.0-windows\Resources\newtab
 robocopy "build" ..\..\src\windows\bin\Release\net8.0-windows\Resources\newtab /E
 cd src\windows\bin\Release\net8.0-windows\

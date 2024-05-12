@@ -15,7 +15,7 @@ This method uses the .NET SDK to build and install the Simple Browser applicatio
    - **Node.js:** This project requires Node.js. You can download it from [nodejs.org](https://nodejs.org/dist/v20.13.1/node-v20.13.1-x64.msi).
    - **WebView:** This project requires WebView2. You can download it from [microsoft.com](https://go.microsoft.com/fwlink/p/?LinkId=2124703).
 3. **New Tab Page**
-   - Open a PWSH window (Shift+RMB > Open in Powershell) in RepoRoot\vendor\mue
+   - Open a PWSH window (Shift+RMB > Open in Powershell) in RepoRoot\vendor\SBmue
       - Run ```npm install --global yarn``` to install yarn (Required)
       - Run ```yarn``` to install all needed dependencies
       - Run ```yarn run build``` to build yarn
