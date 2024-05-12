@@ -28,8 +28,7 @@ Simple-Browser is a lightweight web browser built using C# and WebView2 (Chromiu
   - 25Q2 | Earth Update: Apr 22.
   - 25Q3 | Space Update: Jun 7.
   - 25Q4 | Christmas Update: Dec 24.
- *(Q for Quarter)*
-
+  - 
 **Dates might not be exact.**
 ***Does not include patches or random updates.***
 
