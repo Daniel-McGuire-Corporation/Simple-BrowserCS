@@ -1,0 +1,232 @@
+@import '../main/scss/index.scss';
+
+.welcomemodal {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 80%;
+  width: 60%;
+  padding: 0;
+
+  section {
+    width: 50%;
+    display: inline;
+    height: 80vh;
+  }
+
+  section:nth-child(1) {
+    float: left;
+    background: var(--sidebar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section:nth-child(2) {
+    float: right;
+
+    .content {
+      padding: 20px;
+    }
+
+    .buttons {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h3.quicktip {
+      text-transform: uppercase;
+      color: #5352ed;
+    }
+  }
+}
+
+.welcomeoverlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.progressbar {
+  position: fixed;
+  bottom: 50px;
+  text-align: center;
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+
+  .step {
+    display: inline-block;
+    width: 50px;
+    background: #8395a7;
+    height: 4px;
+    margin: 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .active {
+    background: #5352ed;
+  }
+}
+
+.themesToggleArea {
+  .active {
+    background: var(--tab-active) !important;
+  }
+
+  .toggle {
+    background: var(--sidebar);
+    text-align: center;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid var(--tab-active);
+
+    &:hover {
+      background: var(--tab-active);
+      cursor: pointer;
+    }
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  .auto {
+    svg {
+      font-size: 12px;
+      padding-right: 5px;
+    }
+  }
+
+  .options {
+    display: flex;
+    justify-content: space-between;
+
+    .lightTheme,
+    .darkTheme {
+      width: 40%;
+      padding: 50px;
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+.upload {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 50px;
+  background: var(--sidebar);
+  color: var(--modal-text);
+  cursor: pointer;
+  border: 3px solid var(--tab-active);
+
+  &:hover {
+    background: var(--tab-active);
+  }
+
+  svg {
+    font-size: 4em;
+  }
+
+  span {
+    font-size: 2em;
+  }
+}
+
+a.privacy {
+  text-decoration: none;
+  color: var(--modal-text);
+  font-size: 1rem;
+
+  &:hover {
+    color: #5352ed;
+  }
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 30rem !important;
+    height: auto !important;
+    display: block;
+    margin: 30px;
+    border-radius: 12px;
+  }
+}
+
+.showcaseimg {
+  width: 350px;
+  height: auto;
+}
+
+@media (max-width: 1820px) and (min-width: 1200px) {
+  .welcomemodal {
+    width: 85%;
+    height: 90%;
+  }
+
+  section {
+    height: 90vh !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .welcomemodal {
+    overflow-x: hidden !important;
+  }
+
+  .examples img {
+    width: 20rem !important;
+  }
+
+  .buttons {
+    position: relative !important;
+    bottom: 1rem !important;
+    right: -1rem !important;
+  }
+
+  section {
+    height: 100vh !important;
+  }
+}
+
+@media (max-width: 1190px) { 
+  .welcomemodal {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media (max-width: 800px) { 
+  .welcomemodal {
+    width: 100%;
+    height: 100%;
+  }
+
+  .examples img {
+    width: 15rem !important;
+  }
+
+  section {
+    height: 140vh !important;
+  }
+}

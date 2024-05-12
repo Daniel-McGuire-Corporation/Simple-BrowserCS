@@ -1,0 +1,81 @@
+@import 'modules/resetmodal';
+@import 'modules/material-ui';
+@import 'modules/reminder';
+
+@import 'modules/tabs/about';
+@import 'modules/tabs/changelog';
+@import 'modules/tabs/order';
+
+input {
+  /* colour picker */
+  &[type=color] {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    background: none;
+
+    &::-webkit-color-swatch-wrapper {
+      padding: 0;
+    }
+
+    &::-webkit-color-swatch {
+      border: none;
+      border-radius: 100%;
+    }
+  }
+
+  /* firefox fixes for colour picker (using "," didn't work) */
+  &[type=color]::-moz-color-swatch {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    -moz-appearance: none;
+    vertical-align: middle;
+    background: none;
+
+    &::-moz-color-swatch-wrapper {
+      padding: 0;
+    }
+
+    &::-moz-color-swatch {
+      border: none;
+      border-radius: 100%;
+    }
+  }
+
+  /* date picker */
+  &[type=date] {
+    width: 280px;
+    color: var(--modal-text);
+    background: var(--background);
+    border: solid var(--modal-text) 1px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    display: flex !important;
+  }
+}
+
+/* dark theme date picker fix */
+.dark {
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+}
+
+h4 {
+  cursor: pointer;
+}
+
+.keybind-table {
+  text-align: left;
+
+  th {
+    padding-right: 10px;
+  }
+}

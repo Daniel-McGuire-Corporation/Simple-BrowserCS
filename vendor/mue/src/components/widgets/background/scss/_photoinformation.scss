@@ -1,0 +1,119 @@
+.photoInformation {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: calc(10px + 0.1vmin) !important;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  user-select: none;
+  cursor: initial;
+
+  svg {
+    float: left;
+    margin-right: 1rem;
+    font-size: calc(10px + 2vmin);
+    cursor: pointer;
+  }
+
+  svg,
+  h1 {
+    display: inline;
+  }
+
+  svg:hover+.infoCard {
+    display: block;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.infoCard {
+  display: none;
+  background: var(--background);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: var(--modal-text);
+  position: fixed;
+  bottom: 2.9rem;
+  left: 0.7em;
+  padding: 1rem;
+  border-radius: 24px 24px 24px 0;
+  width: 300px !important;
+  text-align: left;
+  text-shadow: none;
+
+  svg {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    display: inline-flex;
+    padding: 2px;
+  }
+
+  .locationMap {
+    height: 100px;
+    object-fit: cover;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .mapboxLogo {
+    height: 20px;
+    width: auto;
+  }
+
+  span,
+  svg {
+    font-size: 2em;
+  }
+
+  span {
+    user-select: text;
+  }
+
+  h1,
+  .MuiSvgIcon-root {
+    user-select: none;
+    cursor: initial;
+  }
+
+  h1,
+  .infoIcon {
+    font-size: 3em;
+  }
+
+  .infoIcon {
+    padding: 4px;
+  }
+
+  hr {
+    height: 3px;
+    background: var(--photo-info);
+    outline: none;
+    border: none;
+  }
+
+  &:hover,
+  span {
+    display: block !important;
+  }
+
+  .download {
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .mapCopyright {
+    font-size: 0.9em;
+  }
+}

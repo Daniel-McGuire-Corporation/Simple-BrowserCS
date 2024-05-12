@@ -1,0 +1,54 @@
+.sortableitem {
+  background: var(--sidebar) !important;
+  padding: 10px 80px;
+  padding-left: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  font-size: 1.325rem;
+  color: var(--modal-text) !important;
+  cursor: move;
+  width: 150px;
+  z-index: 999 !important;
+
+  svg {
+    font-size: 1.3rem;
+  }
+
+  &:hover {
+    background: var(--tab-active) !important;
+  }
+}
+
+ul {
+  padding-left: 0px;
+  margin: 0;
+
+  >label {
+    vertical-align: middle;
+  }
+}
+
+.images-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+
+  div {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--sidebar);
+    border: 20px solid var(--sidebar);
+    border-radius: 20px;
+    margin: 0 20px 20px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    svg {
+      font-size: 1.9em;
+    }
+  }
+}

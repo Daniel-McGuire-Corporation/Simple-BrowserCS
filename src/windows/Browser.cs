@@ -7,7 +7,6 @@
 //         Graphic by|:| Andrew M          
 //                   |_|                                                                                                                                              
 // Copyright (C) Daniel McGuire Corporation
-// Simple Browser (v2.4.1.0)
 // THANKS FOR CONTRIBUTING (or Building from Source)
 // This file is part of Simple Browser. (Obviously)
 //

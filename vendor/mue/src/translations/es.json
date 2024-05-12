@@ -1,0 +1,556 @@
+{
+  "tabname": "Nueva pestaña",
+  "widgets": {
+    "greeting": {
+      "morning": "Buenos días",
+      "afternoon": "Buenas tardes",
+      "evening": "Buenas noches",
+      "christmas": "Feliz Navidad",
+      "newyear": "Feliz año nuevo",
+      "halloween": "Feliz Halloween",
+      "birthday": "Feliz cumpleaños"
+    },
+    "background": {
+      "credit": "Foto por",
+      "unsplash": "en Unsplash",
+      "pexels": "en Pexels",
+      "information": "Información",
+      "download": "Descargar"
+    },
+    "search": "Buscar",
+    "quicklinks": {
+      "new": "Nuevo enlace",
+      "name": "Nombre",
+      "url": "URL",
+      "icon": "Icon (optional)",
+      "add": "Añadir",
+      "name_error": "Debe indicar el nombre",
+      "url_error": "Debe indicar la URL"
+    },
+    "date": {
+      "week": "Semana"
+    },
+    "weather": {
+      "not_found": "No encontrado",
+      "meters": "{amount} metros"
+    },
+    "navbar": {
+      "tooltips": {
+        "refresh": "Recargar"
+      },
+      "notes": {
+        "title": "Notas",
+        "placeholder": "Escribe aquí"
+      }
+    }
+  },
+  "modals": {
+    "main": {
+      "title": "Opciones",
+      "loading": "Cargando...",
+      "file_upload_error": "El archivo pesa más de 2MB",
+      "navbar": {
+        "settings": "Ajustes",
+        "addons": "Mis complementos",
+        "marketplace": "Tienda"
+      },
+      "error_boundary": {
+        "title": "Error",
+        "message": "No se ha podido cargar este componente de Mue",
+        "refresh": "Recargar"
+      },
+      "settings": {
+        "enabled": "Activado",
+        "reminder": {
+          "title": "AVISO",
+          "message": "Para que se produzcan todos los cambios hay que recargar la página."
+        },
+        "sections": {
+          "time": {
+            "title": "Tiempo",
+            "format": "Formato",
+            "type": "Tipo",
+            "digital": {
+              "title": "Digital",
+              "seconds": "Segundos",
+              "twentyfourhour": "24 Horas",
+              "twelvehour": "12 Horas",
+              "zero": "Sin ceros"
+            },
+            "analogue": {
+              "title": "Analógico",
+              "second_hand": "Manecilla de los segundos",
+              "minute_hand": "Manecilla de los minutos",
+              "hour_hand": "Manecilla de las horas",
+              "hour_marks": "Marcas de las horas",
+              "minute_marks": "Marcas de los minutos"
+            },
+            "percentage_complete": "Porcentaje completado"
+          },
+          "date": {
+            "title": "Fecha",
+            "week_number": "Número de la semana",
+            "day_of_week": "Día de la semana",
+            "datenth": "Fecha nth",
+            "type": {
+              "short": "Corto",
+              "long": "Largo"
+            },
+            "short_date": "Fecha corta",
+            "short_format": "Formato corto",
+            "short_separator": {
+              "title": "Separador corto",
+              "dots": "Puntos",
+              "dash": "Guiones",
+              "gaps": "Guiones con espacios",
+              "slashes": "Barras"
+            }
+          },
+          "quote": {
+            "title": "Cita",
+            "author_link": "Enlace del autor",
+            "custom": "Cita personalizada",
+            "custom_author": "Autor personalizado",
+            "add": "Add quote",
+            "buttons": {
+              "title": "Botones",
+              "copy": "Botón de copiar",
+              "tweet": "Botón de Tweet",
+              "favourite": "Botón de favoritos"
+            }
+          },
+          "greeting": {
+            "title": "Saludo",
+            "events": "Eventos",
+            "default": "Mensaje del saludo por defecto",
+            "name": "Nombre para el saludo",
+            "birthday": "Cumpleaños",
+            "birthday_age": "Edad de cumpleaños",
+            "birthday_date": "Fecha de cumpleaños"
+          },
+          "background": {
+            "title": "Fondo",
+            "ddg_image_proxy": "Utilizar el proxy de imágenes de DuckDuckGo",
+            "transition": "Transición fade-in",
+            "photo_information": "Ver información de la foto",
+            "show_map": "Show location map on photo information if available",
+            "category": "Categoría",
+            "buttons": {
+              "title": "Botones",
+              "view": "Ver",
+              "favourite": "Favorito",
+              "download": "Descargar"
+            },
+            "effects": {
+              "title": "Efectos",
+              "blur": "Ajustar difuminado",
+              "brightness": "Ajustar brillo",
+              "filters": {
+                "title": "Filtros del fondo",
+                "amount": "Cantidad del filtro",
+                "grayscale": "Escala de grises",
+                "sepia": "Sepia",
+                "invert": "Invertir",
+                "saturate": "Saturar",
+                "contrast": "Contraste"
+              }
+            },
+            "type": {
+              "title": "Tipo",
+              "api": "API",
+              "custom_image": "Imagen personalizada",
+              "custom_colour": "Color/degradado personalizado",
+              "random_colour": "Random colour",
+              "random_gradient": "Random gradient"
+            },
+            "source": {
+              "title": "Fuente",
+              "api": "API de fondos",
+              "custom_background": "Fondo personalizado",
+              "custom_colour": "Color del fondo personalizado",
+              "upload": "Subir",
+              "add_colour": "Añadir color",
+              "add_background": "Add background",
+              "add_url": "Add URL",
+              "disabled": "Desactivado",
+              "loop_video": "Vídeo en bucle",
+              "mute_video": "Silenciar video",
+              "quality": {
+                "title": "Calidad",
+                "original": "Original",
+                "high": "Calidad alta",
+                "normal": "Calidad normal",
+                "datasaver": "Ahorro de datos"
+              }
+            },
+            "interval": {
+              "title": "Cambiar cada",
+              "minute": "Minuto",
+              "half_hour": "Media hora",
+              "hour": "Hora",
+              "day": "Día",
+              "month": "Mes"
+            }
+          },
+          "search": {
+            "title": "Búsqueda",
+            "search_engine": "Motor de búsqueda",
+            "custom": "URL de búsqueda personalizada",
+            "autocomplete": "Autocompletado",
+            "autocomplete_provider": "Proveedor del autocompletado",
+            "voice_search": "Búsqueda por voz",
+            "dropdown": "Search dropdown"
+          },
+          "weather": {
+            "title": "Clima",
+            "location": "Ubicación",
+            "auto": "Auto",
+            "temp_format": {
+              "title": "Formato de la temperatura",
+              "celsius": "Celsius",
+              "fahrenheit": "Fahrenheit",
+              "kelvin": "Kelvin"
+            },
+            "extra_info": {
+              "title": "Información extra",
+              "show_location": "Mostrar ubicación",
+              "show_description": "Mostrar descripción",
+              "cloudiness": "Nubosidad",
+              "humidity": "Humedad",
+              "visibility": "Visibilidad",
+              "wind_speed": "Velocidad del viento",
+              "wind_direction": "Dirección del viento",
+              "min_temp": "Temperatura mínima",
+              "max_temp": "Temperatura máxima",
+              "atmospheric_pressure": "Presión atmosférica"
+            }
+          },
+          "quicklinks": {
+            "title": "Enlaces rápidos",
+            "open_new": "Abrir en una nueva pestaña",
+            "tooltip": "Descripción emergente",
+            "text_only": "Show text only"
+          },
+          "message": {
+            "title": "Message",
+            "add": "Add message",
+            "text": "Text"
+          },
+          "appearance": {
+            "title": "Apariencia",
+            "theme": {
+              "title": "Tema",
+              "auto": "Auto",
+              "light": "Claro",
+              "dark": "Oscuro"
+            },
+            "navbar": {
+              "title": "Barra de búsqueda",
+              "notes": "Notas",
+              "refresh": "Botón de recargar",
+              "hover": "Only display on hover",
+              "refresh_options": {
+                "none": "None",
+                "page": "Página"
+              }
+            },
+            "font": {
+              "title": "Fuente",
+              "custom": "Fuente personalizada",
+              "google": "Importar desde Google Fonts",
+              "weight": {
+                "title": "Tipo de la fuente",
+                "thin": "Delgado",
+                "extra_light": "Extra fino",
+                "light": "Fino",
+                "normal": "Normal",
+                "medium": "Mediano",
+                "semi_bold": "Semi negrita",
+                "bold": "Negrita",
+                "extra_bold": "Extra negrita"
+              },
+              "style": {
+                "title": "Estilo de la fuente",
+                "normal": "Normal",
+                "italic": "Cursiva",
+                "oblique": "Oblicua"
+              }
+            },
+            "accessibility": {
+              "title": "Accesibilidad",
+              "animations": "Animaciones",
+              "text_shadow": "Widget text shadow",
+              "widget_zoom": "Zoom del widget",
+              "toast_duration": "Duración de la notificación",
+              "milliseconds": "milisegundos"
+            }
+          },
+          "order": {
+            "title": "Orden de widgets"
+          },
+          "advanced": {
+            "title": "Avanzado",
+            "offline_mode": "Modo sin conexión",
+            "data": "Datos",
+            "reset_modal": {
+              "title": "ADVERTENCIA",
+              "question": "¿Quieres reiniciar Mue?",
+              "information": "Esto borrará todos los datos. Si desea mantener sus datos y preferencias, por favor, expórtelos primero.",
+              "cancel": "Cancelar"
+            },
+            "customisation": "Personalización",
+            "custom_css": "CSS personalizado",
+            "custom_js": "JS personalizado",
+            "tab_name": "Nombre de la pestaña",
+            "timezone": {
+              "title": "Zona horaria",
+              "automatic": "Automático"
+            },
+            "experimental_warning": "Por favor, ten en cuenta que el equipo de Mue no puede dar soporte si tienes el modo experimental activado. Por favor, desactívalo primero y comprueba si el problema sigue ocurriendo antes de contactar con el equipo de soporte."
+          },
+          "stats": {
+            "title": "Estadísticas",
+            "warning": "Tienes que activar las estadísticas de uso para poder utilizar esta función. This data is only stored locally.",
+            "sections": {
+              "tabs_opened": "Pestañas abiertas",
+              "backgrounds_favourited": "Fondos favoritos",
+              "backgrounds_downloaded": "Fondos descargados",
+              "quotes_favourited": "Citas favoritas",
+              "quicklinks_added": "Enlaces rápidos añadidos",
+              "settings_changed": "Ajustes cambiados",
+              "addons_installed": "Complementos instalados"
+            },
+            "usage": "Estadísticas de uso"
+          },
+          "keybinds": {
+            "title": "Keybinds",
+            "recording": "Recording...",
+            "click_to_record": "Click to record",
+            "background": {
+              "favourite": "Favourite background",
+              "maximise": "Maximise background",
+              "download": "Download background",
+              "show_info": "Show background information"
+            },
+            "quote": {
+              "favourite": "Favourite quote",
+              "copy": "Copy quote",
+              "tweet": "Tweet quote"
+            },
+            "notes": {
+              "pin": "Pin notes",
+              "copy": "Copy notes"
+            },
+            "search": "Focus search",
+            "quicklinks": "Toggle add quick link",
+            "modal": "Toggle modal"
+          },
+          "experimental": {
+            "title": "Experimental",
+            "warning": "Estos ajustes no han sido totalmente probados/implementados y pueden no funcionar correctamente.",
+            "developer": "Desarrollador"
+          },
+          "language": {
+            "title": "Idioma",
+            "quote": "Idioma de las citas"
+          },
+          "changelog": {
+            "title": "Registro de cambios",
+            "by": "By {author}"
+          },
+          "about": {
+            "title": "Acerca de",
+            "copyright": "Copyright",
+            "version": {
+              "title": "Versión",
+              "checking_update": "Comprobando actualizaciones",
+              "update_available": "Actualización disponible",
+              "no_update": "Actualizaciones no disponibles",
+              "offline_mode": "No se puede comprobar la actualización en modo sin conexión",
+              "error": {
+                "title": "Fallo al obtener la información de la actualización",
+                "description": "Ha ocurrido un error"
+              }
+            },
+            "contact_us": "Contacto",
+            "support_mue": "Apoya Mue",
+            "resources_used": {
+              "title": "Recursos usados",
+              "bg_images": "Imágenes de fondo sin conexión",
+              "welcome_img": "Imagen de bienvenida",
+              "pin_icon": "Icono de chincheta"
+            },
+            "contributors": "Contribuyentes",
+            "supporters": "Partidarios",
+            "no_supporters": "There are currently no Mue supporters",
+            "photographers": "Fotógrafos"
+          }
+        },
+        "buttons": {
+          "reset": "Reiniciar",
+          "import": "Importar",
+          "export": "Exportar"
+        }
+      },
+      "marketplace": {
+        "photo_packs": "Paquetes de fotos",
+        "quote_packs": "Paquetes de citas",
+        "preset_settings": "Ajustes preestablecidos",
+        "no_items": "No hay artículos en esta categoría",
+        "product": {
+          "overview": "Vista general",
+          "information": "Información",
+          "last_updated": "Última actualización",
+          "version": "Versión",
+          "author": "Autor",
+          "buttons": {
+            "addtomue": "Añadir a Mue",
+            "remove": "Desinstalar",
+            "update_addon": "Update Add-on"
+          },
+          "quote_warning": {
+            "title": "Advertencia",
+            "description": "¡Este paquete de citas solicita a servidores externos que pueden rastrearte!"
+          }
+        },
+        "offline": {
+          "title": "Parece que estás desconectado",
+          "description": "Por favor conéctate a Internet"
+        }
+      },
+      "addons": {
+        "added": "Añadidos",
+        "check_updates": "Check for updates",
+        "no_updates": "No updates available",
+        "updates_available": "Updates avaialble {amount}",
+        "empty": {
+          "title": "Vacío",
+          "description": "Dirígete a la tienda para agregar algunos."
+        },
+        "sideload": {
+          "title": "Cargar localmente",
+          "failed": "Failed to sideload addon",
+          "errors": {
+            "no_name": "No name provided",
+            "no_author": "No author provided",
+            "no_type": "No type provided",
+            "invalid_photos": "Invalid photos object",
+            "invalid_quotes": "Invalid quotes object"
+          }
+        },
+        "sort": {
+          "title": "Ordenar",
+          "newest": "Instalado (Nuevos)",
+          "oldest": "Instalado (Antiguos)",
+          "a_z": "Alfabético (A-Z)",
+          "z_a": "Alfabético (Z-A)"
+        },
+        "create": {
+          "title": "Crear",
+          "other_title": "Crear complemento",
+          "metadata": {
+            "name": "Nombre",
+            "icon_url": "URL del icono",
+            "screenshot_url": "URL de la captura de pantalla",
+            "description": "Descripción"
+          },
+          "finish": {
+            "title": "Acabar",
+            "download": "Descargar complemento"
+          },
+          "settings": {
+            "current": "Importar la configuración actual",
+            "json": "Subir JSON"
+          },
+          "photos": {
+            "title": "Añadir fotos"
+          },
+          "quotes": {
+            "title": "Añadir citas",
+            "api": {
+              "title": "API",
+              "url": "Quote URL",
+              "name": "JSON quote name",
+              "author": "JSON quote author (or override)"
+            },
+            "local": {
+              "title": "Local"
+            }
+          }
+        }
+      }
+    },
+    "update": {
+      "title": "Actualizar",
+      "offline": {
+        "title": "Sin conexión",
+        "description": "No se pueden obtener actualizaciones en modo sin conexión"
+      },
+      "error": {
+        "title": "Error",
+        "description": "No se pudo conectar con el servidor"
+      }
+    },
+    "welcome": {
+      "tip": "Truco",
+      "sections": {
+        "intro": {
+          "title": "Bienvenido a Mue Tab",
+          "description": "Gracias por instalar Mue, esperamos que disfrute de su tiempo con nuestra extensión."
+        },
+        "language": {
+          "title": "Elige el idioma",
+          "description": "Mue puede mostrarse en los idiomas que se indican debajo. ¡También puedes contribuir con traducciones en nuestro"
+        },
+        "theme": {
+          "title": "Selecciona un tema",
+          "description": "Mue está disponible tanto en el tema claro como en el oscuro, también se puede configurar automáticamente en función del tema de su sistema.",
+          "tip": "Si utiliza la configuración automática, utilizará el tema de su ordenador. Esta configuración afectará a los modales y a algunos de los widgets que aparecen en la pantalla, como el tiempo y las notas."
+        },
+        "settings": {
+          "title": "Importa los ajustes",
+          "description": "¿Instalando Mue en un nuevo dispositivo? No dudes en importar tu antigua configuración.",
+          "tip": "Puedes exportar tu antigua configuración navegando a la pestaña Avanzado en tu antigua configuración de Mue. Luego debes hacer clic en el botón de exportación que descargará el archivo JSON. Puedes subir este archivo aquí para mantener tus ajustes y preferencias de tu anterior instalación de Mue."
+        },
+        "privacy": {
+          "title": "Opciones de privacidad",
+          "description": "Activa estos ajustes para proteger aún más tu privacidad con Mue.",
+          "offline_mode_description": "Al activar el modo offline se deshabilitarán todas las peticiones a cualquier servicio. Esto hará que se desactiven los fondos en línea, las citas en línea, la tienda, el tiempo, los enlaces rápidos, el registro de cambios y alguna información de la pestaña Acerca de.",
+          "ddg_proxy_description": "Puedes hacer que las solicitudes de imágenes pasen por DuckDuckGo si lo deseas. Por defecto, las solicitudes a la API van a tráves de nuestros servidores de código abierto y las solicitudes de imágenes van a través del servidor original. Si desactivas esta opción para los enlaces rápidos y los iconos de obtendrán de Google en lugar de DuckDuckGo. El proxy de DuckDuckGo está siempre activado para la tienda.",
+          "links": {
+            "title": "Enlaces",
+            "privacy_policy": "Política de privacidad",
+            "source_code": "Código fuente"
+          }
+        },
+        "final": {
+          "title": "Último paso",
+          "description": "Tu experiencia con Mue Tab está a punto de comenzar",
+          "changes": "Cambios",
+          "changes_description": "Para cambiar la configuración más tarde, haga clic en el icono de configuración en la esquina superior derecha de su pestaña.",
+          "imported": "Importados {amount} ajustes"
+        }
+      },
+      "buttons": {
+        "next": "Siguiente",
+        "preview": "Preview",
+        "previous": "Anterior",
+        "close": "Cerrar"
+      },
+      "preview": {
+        "description": "You are currently in preview mode. Settings will be reset on closing this tab.",
+        "continue": "Continue setup"
+      }
+    }
+  },
+  "toasts": {
+    "quote": "Cita copiada",
+    "notes": "Notas copiadas",
+    "reset": "Restablecido correctamente",
+    "installed": "Instalado correctamente",
+    "uninstalled": "Desinstalado correctamente",
+    "updated": "Successfully updated",
+    "error": "Algo salió mal",
+    "imported": "Importado correctamente"
+  }
+}

@@ -1,6 +1,0 @@
-[submodule "vendor/mue/mue"]
-	path = vendor/mue/mue
-	url = https://github.com/mue/mue.git
-[submodule "vendor/WebUI"]
-	path = vendors/WebUI
-	url = https://github.com/webui-dev/webui.git

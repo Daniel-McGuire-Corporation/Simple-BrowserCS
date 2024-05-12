@@ -1,0 +1,103 @@
+/* these are overrides for the material ui default styles */
+.MuiCheckbox-colorPrimary.Mui-checked,
+.MuiSwitch-colorPrimary.Mui-checked,
+.MuIconButton-colorPrimary.Mui-checked,
+.MuiSwitch-thumb,
+.MuiRadio-colorSecondary.Mui-checked,
+.PrivateSwitchBase-input-4,
+.MuiRadio-root,
+.aboutLink,
+.MuiSlider-colorPrimary,
+legend {
+  color: var(--modal-text) !important;
+}
+
+.MuiFormControlLabel-labelPlacementStart {
+  margin-left: 0px !important;
+}
+
+.MuiSwitch-colorPrimary.Mui-checked+.MuiSwitch-track {
+  background: darkgray !important;
+}
+
+.MuiIconButton-label>svg.MuiSvgIcon-root {
+  color: var(--modal-text) !important;
+}
+
+.MuiTouchRipple-root {
+  background: transparent;
+}
+
+.MuiFormControl-root {
+  margin-top: 10px !important;
+}
+
+.checkbox svg {
+  fill: var(--modal-text) !important;
+}
+
+.radio-title {
+  font-weight: bold;
+  font-size: 1.17rem;
+}
+
+.radio-title-small {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.MuiSlider-root {
+  margin-bottom: 30px !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: var(--modal-text) !important;
+}
+
+.MuiFormLabel-root-MuiInputLabel-root {
+  color: var(--modal-text) !important;
+}
+
+.MuiInputLabel-root,
+.MuiSlider-markLabel,
+.MuiInputLabel-root,
+.MuiSelect-icon,
+.MuiSelect-select,
+.Mui-focused,
+legend,
+.MuiOutlinedInput-input {
+  color: var(--modal-text) !important;
+}
+
+.MuiMenu-list {
+  background-color: var(--background) !important;
+  color: var(--modal-text) !important;
+}
+
+.Mui-selected {
+  background-color: var(--tab-active) !important;
+}
+
+.MuiTextField-root,
+.MuiFormControl-root,
+.MuiSlider-root {
+  width: 300px !important;
+  display: flex !important;
+}
+
+.Mui-disabled {
+  color: #818181 !important;
+  cursor: not-allowed;
+
+  .checkbox svg {
+    fill: #818181 !important;
+  }
+}
+
+.MuiPaper-root {
+  background-color: var(--background) !important;
+}
+
+.MuiSlider-valueLabel {
+  background-color: var(--tab-active) !important;
+}

@@ -1,6 +1,4 @@
-# THIS IS STILL UNDER ACTIVE DEVELOPMENT, FOR NOW YOU WILL HAVE TO SUPPLY A CUSTOM NEW TAB PAGE AND UPDATER SCRIPT
-
-
+## *Requires Windows 10 to run and compile!*
 # Method 1 | Build Script
 
 This method uses the .NET SDK to build and install the Simple Browser application.
@@ -13,20 +11,28 @@ This method uses the .NET SDK to build and install the Simple Browser applicatio
    git clone https://github.com/Daniel-McGuire-Corporation/Simple-Browser.git
    ```
 2. **Install the Prerequisites:**
-   **.NET:** This project requires the .NET 8.0 SDK. You can download it from [Microsoft .NET Downloads 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
-3. **Run BuildAll.cmd:**
-   Run the BuildAll.cmd file in the script location of the repository. This will compile the source code and create an installer.
+   - **.NET:** This project requires the .NET 8.0 SDK. You can download it from [microsoft.com](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
+   - **Node.js:** This project requires Node.js. You can download it from [nodejs.org](https://nodejs.org/dist/v20.13.1/node-v20.13.1-x64.msi).
+   - **WebView:** This project requires WebView2. You can download it from [microsoft.com](https://go.microsoft.com/fwlink/p/?LinkId=2124703).
+3. **New Tab Page**
+   - Open a PWSH window (Shift+RMB > Open in Powershell) in RepoRoot\vendor\mue
+      - Run ```npm install --global yarn``` to install yarn (Required)
+      - Run ```yarn``` to install all needed dependencies
+      - Run ```yarn run build``` to build yarn
+
+4. **Run BuildAll.cmd:**
+   Run the BuildAll.cmd file in the script location of the repository. This will compile the browser, bundle the newtab, and the installer.
 
 # Method 2 | Visual Studio
 
-This method uses Visual Studio to build and run the Simple Browser application.
+This method uses Visual Studio to build and run the Simple Browser application **(The new tab and installer will not be built.)**
 
 ## Prerequisites
 
 Make sure you have the following installed:
 
-- **Visual Studio:** This project was developed using Visual Studio. You can download it from [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
-- **.NET:** This project requires the .NET 8.0 SDK. You can download it from [Microsoft .NET Downloads 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
+- **Visual Studio:** This project was developed using Visual Studio 2022. You can download it from [microsoft.com](https://visualstudio.microsoft.com/downloads/).
+- **.NET:** This project requires the .NET 8.0 SDK. You can download it from [microsoft.com](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 
 ## Steps
 
