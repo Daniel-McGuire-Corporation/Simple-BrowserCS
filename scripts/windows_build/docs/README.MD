@@ -13,7 +13,7 @@ This method uses the .NET SDK to build and install the Simple Browser applicatio
 2. **Install the Prerequisites:**
    - Download the [Prerequisites pack](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/releases/tag/prpack), password is DMC
 3. **Run BuildAll.cmd:**
-   - Run the BuildAll.cmd file in the script location of the repository. This will use the ps1 to compile the browser, compile the newtab, and compile the installer.
+   - Run the BuildAll.cmd (no NOT the ps1) file in the script location of the repository. This will use the ps1 to compile the browser, compile the newtab, and compile the installer.
 4. **Done**
    - The installer is in the script directory
 
