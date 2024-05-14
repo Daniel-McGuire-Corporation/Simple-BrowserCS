@@ -2,10 +2,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,linux,macos,xcode,csharp,gradle,kotlin,windows,intellij,visualstudio,androidstudio,visualstudiocode,yarn,node
 
 # Release Cycle Components
-Release-SB.bat
-SimpleBrowserSetup.exe
-Prerequisites.zip
-SHA256.txt
+*SHA256.txt
+*Setup.exe
+
 
 ### C++ ###
 # Prerequisites
