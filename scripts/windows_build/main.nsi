@@ -52,6 +52,9 @@
   ;Request application privileges for Windows Vista
   RequestExecutionLevel admin ;Require admin rights on NT6+ (When UAC is turned on)
   
+  ;Set the text in the bottom left
+  BrandingText "${COMPANYNAME}" ; Set the branding text to your custom text
+  
 ;--------------------------------
 ;Variables
 
