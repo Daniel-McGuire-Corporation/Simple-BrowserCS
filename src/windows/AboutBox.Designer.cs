@@ -98,9 +98,10 @@ partial class AboutBox
         label3.ForeColor = Color.FromArgb(232, 234, 225);
         label3.Location = new Point(55, 56);
         label3.Name = "label3";
-        label3.Size = new Size(255, 15);
+        label3.Size = new Size(254, 15);
         label3.TabIndex = 5;
-        label3.Text = "Daniel McGuire Corporation (and Contributers)";
+        label3.Text = "Daniel McGuire Corporation (and contributors)";
+        label3.Click += label3_Click;
         // 
         // label4
         // 
@@ -121,7 +122,8 @@ partial class AboutBox
         label6.Name = "label6";
         label6.Size = new Size(78, 12);
         label6.TabIndex = 8;
-        label6.Text = "Build 2.5.0.0.2785";
+        label6.Text = "Build 2.5.1.2.2420";
+        label6.Click += label6_Click;
         // 
         // AboutBox
         // 

@@ -200,7 +200,7 @@ namespace Webview2_Test
             simpleWebV2ToolStripMenuItem.ForeColor = SystemColors.GrayText;
             simpleWebV2ToolStripMenuItem.Name = "simpleWebV2ToolStripMenuItem";
             simpleWebV2ToolStripMenuItem.Size = new Size(191, 22);
-            simpleWebV2ToolStripMenuItem.Text = "Simple Web 24Q3";
+            simpleWebV2ToolStripMenuItem.Text = "Simple Web 24Q3 ";
             // 
             // pictureBox1
             // 

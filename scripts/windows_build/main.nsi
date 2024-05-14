@@ -25,8 +25,8 @@
   # These three must be integers
   !define VERSIONMAJOR 2	#Major release Number
   !define VERSIONMINOR 5	#Minor release Number
-  !define VERSIONBUILD 0	#Maintenance release Number (bugfixes only)
-  !define BUILDNUMBER 0		#Source control revision number
+  !define VERSIONBUILD 1	#Maintenance release Number (bugfixes only)
+  !define BUILDNUMBER 2		#Source control revision number
   # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
   # It is possible to use "mailto:" links in here to open email client
   !define HELPURL "https://github.com/DanielLMcGuire/Simple-Browser/issues/new/choose"
