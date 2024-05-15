@@ -80,18 +80,6 @@ Write-Output ""
 # Compiles the installer
 makensis.exe /V4 $PSScriptRoot\main.nsi
 write-host "Installer Compiled!" -ForegroundColor Green
-$continue = Read-Host -Prompt "Is this a release build [y/n] (Type n if unsure)"
-if ($continue -eq 'n') {
-	$continue = Read-Host -Prompt "Do you want to install Simple Browser? [y/n]"
-	if ($continue -eq 'n') {
-		Exit
-	}
-    
-}
-clear
-# Generates the file hash 
-write-host Computing Checksum to SHA256.txt
-Get-FileHash $PSScriptRoot\SimpleBrowserSetup.exe -Algorithm SHA256 | Out-File -FilePath $PSScriptRoot\SHA256.txt
 $continue = Read-Host -Prompt "Do you want to install Simple Browser? [y/n]"
 if ($continue -eq 'n') {
     Exit

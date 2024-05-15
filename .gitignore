@@ -4,7 +4,9 @@
 # Release Cycle Components
 *SHA256.txt
 *Setup.exe
-
+*Internal.ps1
+*Internal.cmd
+signer64.exe
 
 ### C++ ###
 # Prerequisites
