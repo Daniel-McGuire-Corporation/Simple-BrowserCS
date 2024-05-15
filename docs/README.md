@@ -13,16 +13,17 @@ Simple-Browser is a lightweight web browser built using C# and WebView2 (Chromiu
 
 ## Release Plans
 - ### 2024
-  - 24Q1 | 2024 Update: Jan 1 - Feb 15.   
-  - 24Q2 | Earth Update Apr 22. 
-  - 24Q3 | Summer Update: Jun 21. (Was early)
-  - 24Q4 | Christmas Update: Dec 24.
+  - 24Q1 | 2024 Update: January 1st - March 30th.   
+  - 24Q2 | Earth Update April 22nd. 
+  - 24Q3 | Summer Update: July 21st. (Was too early)
+  - 24Q4 | Christmas Update: Dec 24th.
 - ### 2025
-  - 25Q1 | 2025 Update: Jan 1 - Feb 15.
-  - 25Q2 | Earth Update: Apr 22.
-  - 25Q3 | Space Update: Jun 7.
-  - 25Q4 | Christmas Update: Dec 24.
-  - 
+  - 24Q1 | 2025 Update: January 1st - March 30th.   
+  - 24Q2 | Earth Update April 22nd. 
+  - 24Q3 | Summer Update: July 21st. 
+  - 24Q4 | Christmas Update: Dec 24th.
+ 
+    
 **Dates might not be exact.**
 ***Does not include patches or random updates.***
 
