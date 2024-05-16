@@ -2,7 +2,7 @@
 #### [en français](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/README-fr.md)
 [FAQ](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/FAQ.md)
 
-[![License: GPL v3](https://img.shields.io/github/license/Daniel-McGuire-Corporation/Simple-Browser?style=flat-square)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600?style=flat-square) ![GitHub repo size](https://img.shields.io/github/repo-size/DanielLMcGuire/Simple-Browser?style=flat-square) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser?style=flat-square)
+[![License: GPL v3](https://img.shields.io/github/license/Daniel-McGuire-Corporation/Simple-Browser?style=flat-square)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600?style=flat-square) ![GitHub repo size](https://img.shields.io/github/repo-size/Daniel-McGuire-Corporation/Simple-Browser?style=flat-square) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser?style=flat-square)
 ## Project Status
 #### 400 **OK** (just a non-html programmer making a joke)
 ## About
@@ -36,13 +36,13 @@ Simple-Browser is a lightweight web browser built using C# and WebView2 (Chromiu
 - More Versions Coming Soon
 
 ## Download
-- [(Recommended) Download Simple-Browser (GitHub)](https://github.com/DanielLMcGuire/Simple-Browser/releases/latest)
+- [(Recommended) Download Simple-Browser (GitHub)](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/releases/latest)
 - [Download Simple-Browser (SourceForge)](https://sourceforge.net/projects/simple-browser/files/latest/download)
 
 ## Build From Source:
 [Build-Source Windows](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/wiki/Build-Source-Instructions)
 
 ## License
-Simple-Browser is licensed under the MIT License See the [License](https://github.com/DanielLMcGuire/Simple-Browser?tab=MIT-1-ov-file) for more details.
+Simple-Browser is licensed under the MIT License See the [License](https://github.com/Daniel-McGuire-Corporation/Simple-Browser?tab=MIT-1-ov-file) for more details.
 
 ---
