@@ -86,4 +86,3 @@ if ($continue -eq 'n') {
 }
 cd $PSScriptRoot
 ./SimpleBrowserSetup.exe
-Exit
