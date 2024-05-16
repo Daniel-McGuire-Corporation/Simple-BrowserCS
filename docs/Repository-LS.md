@@ -3,14 +3,13 @@
 
  Directory of E:\Simple-Browser
 
-05/16/2024  04:10 AM    <DIR>          .
-05/16/2024  04:10 AM    <DIR>          ..
+05/16/2024  04:11 AM    <DIR>          .
+05/16/2024  04:11 AM    <DIR>          ..
 05/15/2024  05:27 AM    <DIR>          .github
 05/15/2024  03:46 AM            22,058 .gitignore
 05/12/2024  08:56 AM                99 .gitmodules
-05/16/2024  04:08 AM    <DIR>          docs
+05/16/2024  04:13 AM    <DIR>          docs
 02/12/2024  09:58 AM             1,092 LICENSE
-05/16/2024  04:10 AM                 0 repo-ls.md
 05/11/2024  10:01 AM    <DIR>          resources
 05/15/2024  05:27 AM    <DIR>          scripts
 05/15/2024  08:53 PM               184 setenv.bat
@@ -18,17 +17,17 @@
 05/15/2024  05:27 AM    <DIR>          src
 05/15/2024  05:27 AM    <DIR>          vendor
 05/15/2024  05:30 AM    <DIR>          WIP
-               6 File(s)         24,920 bytes
+               5 File(s)         24,920 bytes
 
  Directory of E:\Simple-Browser\.git
 
-05/16/2024  04:07 AM                13 COMMIT_EDITMSG
+05/16/2024  04:15 AM                 8 COMMIT_EDITMSG
 05/12/2024  08:56 AM               527 config
 02/12/2024  09:58 AM                73 description
-05/16/2024  04:07 AM               256 FETCH_HEAD
+05/16/2024  04:15 AM               256 FETCH_HEAD
 02/12/2024  09:58 AM                21 HEAD
 05/06/2024  01:23 AM    <DIR>          hooks
-05/16/2024  04:07 AM             8,243 index
+05/16/2024  04:15 AM             8,243 index
 05/06/2024  01:23 AM    <DIR>          info
 05/15/2024  05:27 AM    <DIR>          logs
 05/15/2024  05:27 AM    <DIR>          modules
@@ -36,7 +35,7 @@
 05/15/2024  08:57 PM                41 ORIG_HEAD
 05/15/2024  03:07 AM               709 packed-refs
 05/15/2024  05:27 AM    <DIR>          refs
-               8 File(s)          9,883 bytes
+               8 File(s)          9,878 bytes
 
  Directory of E:\Simple-Browser\.git\hooks
 
@@ -68,9 +67,9 @@
 
 05/15/2024  05:27 AM    <DIR>          .
 05/15/2024  05:27 AM    <DIR>          ..
-05/16/2024  04:07 AM            10,091 HEAD
+05/16/2024  04:15 AM            10,273 HEAD
 05/15/2024  05:27 AM    <DIR>          refs
-               1 File(s)         10,091 bytes
+               1 File(s)         10,273 bytes
 
  Directory of E:\Simple-Browser\.git\logs\refs
 
@@ -84,8 +83,8 @@
 
 05/06/2024  01:23 AM    <DIR>          .
 05/06/2024  01:23 AM    <DIR>          ..
-05/16/2024  04:07 AM             9,715 main
-               1 File(s)          9,715 bytes
+05/16/2024  04:15 AM             9,897 main
+               1 File(s)          9,897 bytes
 
  Directory of E:\Simple-Browser\.git\logs\refs\remotes
 
@@ -98,10 +97,10 @@
 
 05/06/2024  01:23 AM    <DIR>          .
 05/06/2024  01:23 AM    <DIR>          ..
-05/16/2024  04:07 AM             8,465 HEAD
+05/16/2024  04:15 AM             8,620 HEAD
 05/15/2024  03:07 AM               243 issue-6
-05/16/2024  04:07 AM             7,131 main
-               3 File(s)         15,839 bytes
+05/16/2024  04:15 AM             7,312 main
+               3 File(s)         16,175 bytes
 
  Directory of E:\Simple-Browser\.git\modules
 
@@ -1847,8 +1846,8 @@
 
  Directory of E:\Simple-Browser\.git\objects
 
-05/16/2024  04:07 AM    <DIR>          .
-05/16/2024  04:07 AM    <DIR>          ..
+05/16/2024  04:15 AM    <DIR>          .
+05/16/2024  04:15 AM    <DIR>          ..
 05/12/2024  08:32 AM    <DIR>          00
 05/15/2024  08:40 PM    <DIR>          01
 05/15/2024  03:13 AM    <DIR>          02
@@ -1870,7 +1869,7 @@
 05/15/2024  04:39 AM    <DIR>          13
 05/12/2024  10:38 PM    <DIR>          14
 05/12/2024  08:32 AM    <DIR>          15
-05/12/2024  10:38 PM    <DIR>          16
+05/16/2024  04:15 AM    <DIR>          16
 05/12/2024  08:32 AM    <DIR>          17
 05/16/2024  04:05 AM    <DIR>          18
 05/15/2024  08:40 PM    <DIR>          1a
@@ -1880,7 +1879,7 @@
 05/14/2024  09:35 AM    <DIR>          20
 05/15/2024  08:40 PM    <DIR>          22
 05/12/2024  12:05 PM    <DIR>          23
-05/11/2024  12:08 PM    <DIR>          24
+05/16/2024  04:15 AM    <DIR>          24
 05/15/2024  08:40 PM    <DIR>          26
 05/12/2024  08:32 AM    <DIR>          27
 05/14/2024  09:52 AM    <DIR>          28
@@ -1974,7 +1973,7 @@
 05/15/2024  08:57 PM    <DIR>          90
 05/12/2024  08:35 AM    <DIR>          91
 05/12/2024  08:32 AM    <DIR>          92
-05/16/2024  04:05 AM    <DIR>          93
+05/16/2024  04:15 AM    <DIR>          93
 05/12/2024  08:32 AM    <DIR>          94
 05/15/2024  08:40 PM    <DIR>          95
 05/15/2024  08:40 PM    <DIR>          96
@@ -2032,7 +2031,7 @@
 05/16/2024  04:05 AM    <DIR>          d2
 05/15/2024  08:40 PM    <DIR>          d3
 05/15/2024  04:01 AM    <DIR>          d4
-05/16/2024  04:05 AM    <DIR>          d5
+05/16/2024  04:15 AM    <DIR>          d5
 05/12/2024  08:32 AM    <DIR>          d6
 05/12/2024  08:32 AM    <DIR>          d7
 05/15/2024  08:40 PM    <DIR>          d8
@@ -2046,7 +2045,7 @@
 05/12/2024  08:35 AM    <DIR>          e1
 05/15/2024  08:40 PM    <DIR>          e2
 05/15/2024  04:08 AM    <DIR>          e3
-05/15/2024  08:40 PM    <DIR>          e4
+05/16/2024  04:15 AM    <DIR>          e4
 05/12/2024  08:32 AM    <DIR>          e5
 05/12/2024  08:32 AM    <DIR>          e6
 05/12/2024  08:32 AM    <DIR>          e7
@@ -2247,11 +2246,12 @@
 
  Directory of E:\Simple-Browser\.git\objects\16
 
-05/12/2024  10:38 PM    <DIR>          .
-05/12/2024  10:38 PM    <DIR>          ..
+05/16/2024  04:15 AM    <DIR>          .
+05/16/2024  04:15 AM    <DIR>          ..
 05/12/2024  08:37 AM               155 15cb9d5a57d0571a261b446a9273f49bee5cc4
+05/16/2024  04:15 AM               406 9b0d41b72930f227baadfd34f6e410347cd715
 05/12/2024  10:38 PM               835 f41c0c9f911d1559cad7b1516c811d29b56bac
-               2 File(s)            990 bytes
+               3 File(s)          1,396 bytes
 
  Directory of E:\Simple-Browser\.git\objects\17
 
@@ -2332,10 +2332,11 @@
 
  Directory of E:\Simple-Browser\.git\objects\24
 
-05/11/2024  12:08 PM    <DIR>          .
-05/11/2024  12:08 PM    <DIR>          ..
+05/16/2024  04:15 AM    <DIR>          .
+05/16/2024  04:15 AM    <DIR>          ..
 05/11/2024  12:08 PM               638 19f0bd186b2c882df5745d432676d6feb5273d
-               1 File(s)            638 bytes
+05/16/2024  04:15 AM               186 f1a299fa8ca7b814c479ce0e25cdffc4ebc793
+               2 File(s)            824 bytes
 
  Directory of E:\Simple-Browser\.git\objects\26
 
@@ -3139,11 +3140,12 @@
 
  Directory of E:\Simple-Browser\.git\objects\93
 
-05/16/2024  04:05 AM    <DIR>          .
-05/16/2024  04:05 AM    <DIR>          ..
+05/16/2024  04:15 AM    <DIR>          .
+05/16/2024  04:15 AM    <DIR>          ..
+05/16/2024  04:15 AM               823 8ebdedaf49b92ad72ac3baec42e7498ce44d46
 05/15/2024  04:01 AM               181 a37b589a027a83d4ebbbe58c3e75a9e9bd3441
 05/16/2024  04:05 AM                53 f25ad2a8ac657c1242e94486d7a076f38f31bd
-               2 File(s)            234 bytes
+               3 File(s)          1,057 bytes
 
  Directory of E:\Simple-Browser\.git\objects\94
 
@@ -3630,15 +3632,16 @@
 
  Directory of E:\Simple-Browser\.git\objects\d5
 
-05/16/2024  04:05 AM    <DIR>          .
-05/16/2024  04:05 AM    <DIR>          ..
+05/16/2024  04:15 AM    <DIR>          .
+05/16/2024  04:15 AM    <DIR>          ..
 05/14/2024  09:35 AM             2,737 4ac19106069d8deccd097a89909d935e892fb6
+05/16/2024  04:15 AM               673 6791f4cb95de4ea45f5a66594fae61d7cff78f
 05/16/2024  04:05 AM             1,020 86423cd1d1fc50f346f11e7b1e17bc301c1e66
 05/12/2024  08:37 AM               829 9b84fde0067d0f4b9c993c75a57f3cf0e7b143
 05/15/2024  03:07 AM               371 a7e2a7f93b0c3b8f6dcee149bcc0fb146ea4bf
 05/15/2024  08:40 PM               181 a97bd4da6053bf7012cf54e8dc2a3b5d3f405f
 05/12/2024  08:37 AM             6,117 b3328b00e4fb3298e41826478b5bd9ecc9ed3f
-               6 File(s)         11,255 bytes
+               7 File(s)         11,928 bytes
 
  Directory of E:\Simple-Browser\.git\objects\d6
 
@@ -3744,11 +3747,12 @@
 
  Directory of E:\Simple-Browser\.git\objects\e4
 
-05/15/2024  08:40 PM    <DIR>          .
-05/15/2024  08:40 PM    <DIR>          ..
+05/16/2024  04:15 AM    <DIR>          .
+05/16/2024  04:15 AM    <DIR>          ..
 05/12/2024  08:35 AM               492 1d72327dfeb4226abf5218f9e3b01c4918c622
 05/15/2024  08:40 PM           178,445 d85c08bbb6e7458be264e8e177e3ff95608604
-               2 File(s)        178,937 bytes
+05/16/2024  04:15 AM           474,165 f9f7b3bb6bd0b4b586ce698b7e004d597044a0
+               3 File(s)        653,102 bytes
 
  Directory of E:\Simple-Browser\.git\objects\e5
 
@@ -3937,32 +3941,32 @@
 
 05/15/2024  05:27 AM    <DIR>          .
 05/15/2024  05:27 AM    <DIR>          ..
-05/16/2024  04:07 AM    <DIR>          heads
+05/16/2024  04:15 AM    <DIR>          heads
 05/15/2024  05:27 AM    <DIR>          remotes
 05/14/2024  09:35 AM    <DIR>          tags
                0 File(s)              0 bytes
 
  Directory of E:\Simple-Browser\.git\refs\heads
 
-05/16/2024  04:07 AM    <DIR>          .
-05/16/2024  04:07 AM    <DIR>          ..
-05/16/2024  04:07 AM                41 main
+05/16/2024  04:15 AM    <DIR>          .
+05/16/2024  04:15 AM    <DIR>          ..
+05/16/2024  04:15 AM                41 main
                1 File(s)             41 bytes
 
  Directory of E:\Simple-Browser\.git\refs\remotes
 
 05/15/2024  05:27 AM    <DIR>          .
 05/15/2024  05:27 AM    <DIR>          ..
-05/16/2024  04:07 AM    <DIR>          origin
+05/16/2024  04:15 AM    <DIR>          origin
                0 File(s)              0 bytes
 
  Directory of E:\Simple-Browser\.git\refs\remotes\origin
 
-05/16/2024  04:07 AM    <DIR>          .
-05/16/2024  04:07 AM    <DIR>          ..
-05/16/2024  04:07 AM                30 HEAD
+05/16/2024  04:15 AM    <DIR>          .
+05/16/2024  04:15 AM    <DIR>          ..
+05/16/2024  04:15 AM                30 HEAD
 05/15/2024  03:07 AM                41 issue-6
-05/16/2024  04:07 AM                41 main
+05/16/2024  04:15 AM                41 main
                3 File(s)            112 bytes
 
  Directory of E:\Simple-Browser\.git\refs\tags
@@ -4029,8 +4033,8 @@
 
  Directory of E:\Simple-Browser\docs
 
-05/16/2024  04:08 AM    <DIR>          .
-05/16/2024  04:08 AM    <DIR>          ..
+05/16/2024  04:13 AM    <DIR>          .
+05/16/2024  04:13 AM    <DIR>          ..
 05/06/2024  01:23 AM    <DIR>          blog
 02/12/2024  09:58 AM             2,658 Blog-Template.css
 05/11/2024  12:08 PM               767 FAQ.md
@@ -4039,18 +4043,19 @@
 05/06/2024  01:23 AM    <DIR>          intlTelInput
 02/12/2024  09:58 AM            89,478 jquery.js
 02/12/2024  09:58 AM            39,182 License.html
-05/11/2024  12:08 PM             1,644 Monthly Updates.md
+05/16/2024  04:12 AM             1,679 Monthly Updates.md
 02/12/2024  09:58 AM         1,490,663 nicepage.css
 02/12/2024  09:58 AM           347,293 nicepage.js
 02/12/2024  09:58 AM             1,416 Post-Template.css
 02/12/2024  09:58 AM             2,512 README-fr.md
 02/12/2024  09:58 AM             4,392 Readme.html
 05/16/2024  04:06 AM             2,421 README.md
+05/16/2024  05:03 AM                 0 Repository-LS.md
 02/12/2024  09:58 AM               166 Simple-Browser.css
 02/12/2024  09:58 AM             5,984 Simple-Browser.html
 05/15/2024  04:07 AM               442 SimpleBrowserLegacy.md
 02/12/2024  09:58 AM               709 sitemap.xml
-              16 File(s)      1,995,786 bytes
+              17 File(s)      1,995,821 bytes
 
  Directory of E:\Simple-Browser\docs\blog
 
@@ -73477,5 +73482,5 @@
                1 File(s)          6,144 bytes
 
      Total Files Listed:
-           46674 File(s)    329,486,524 bytes
-           11477 Dir(s)  115,892,121,600 bytes free
+           46679 File(s)    329,963,507 bytes
+           11477 Dir(s)  115,887,538,176 bytes free
