@@ -21,21 +21,21 @@
 
  Directory of E:\Simple-Browser\.git
 
-05/16/2024  04:15 AM                 8 COMMIT_EDITMSG
+05/16/2024  05:04 AM                24 COMMIT_EDITMSG
 05/12/2024  08:56 AM               527 config
 02/12/2024  09:58 AM                73 description
-05/16/2024  04:15 AM               256 FETCH_HEAD
+05/16/2024  05:04 AM               256 FETCH_HEAD
 02/12/2024  09:58 AM                21 HEAD
 05/06/2024  01:23 AM    <DIR>          hooks
-05/16/2024  04:15 AM             8,243 index
+05/16/2024  05:04 AM             8,243 index
 05/06/2024  01:23 AM    <DIR>          info
 05/15/2024  05:27 AM    <DIR>          logs
 05/15/2024  05:27 AM    <DIR>          modules
-05/16/2024  04:07 AM    <DIR>          objects
+05/16/2024  04:15 AM    <DIR>          objects
 05/15/2024  08:57 PM                41 ORIG_HEAD
 05/15/2024  03:07 AM               709 packed-refs
 05/15/2024  05:27 AM    <DIR>          refs
-               8 File(s)          9,878 bytes
+               8 File(s)          9,894 bytes
 
  Directory of E:\Simple-Browser\.git\hooks
 
@@ -67,9 +67,9 @@
 
 05/15/2024  05:27 AM    <DIR>          .
 05/15/2024  05:27 AM    <DIR>          ..
-05/16/2024  04:15 AM            10,273 HEAD
+05/16/2024  05:04 AM            10,471 HEAD
 05/15/2024  05:27 AM    <DIR>          refs
-               1 File(s)         10,273 bytes
+               1 File(s)         10,471 bytes
 
  Directory of E:\Simple-Browser\.git\logs\refs
 
@@ -83,8 +83,8 @@
 
 05/06/2024  01:23 AM    <DIR>          .
 05/06/2024  01:23 AM    <DIR>          ..
-05/16/2024  04:15 AM             9,897 main
-               1 File(s)          9,897 bytes
+05/16/2024  05:04 AM            10,095 main
+               1 File(s)         10,095 bytes
 
  Directory of E:\Simple-Browser\.git\logs\refs\remotes
 
@@ -97,10 +97,10 @@
 
 05/06/2024  01:23 AM    <DIR>          .
 05/06/2024  01:23 AM    <DIR>          ..
-05/16/2024  04:15 AM             8,620 HEAD
+05/16/2024  05:04 AM             8,930 HEAD
 05/15/2024  03:07 AM               243 issue-6
-05/16/2024  04:15 AM             7,312 main
-               3 File(s)         16,175 bytes
+05/16/2024  05:04 AM             7,493 main
+               3 File(s)         16,666 bytes
 
  Directory of E:\Simple-Browser\.git\modules
 
@@ -1846,8 +1846,8 @@
 
  Directory of E:\Simple-Browser\.git\objects
 
-05/16/2024  04:15 AM    <DIR>          .
-05/16/2024  04:15 AM    <DIR>          ..
+05/16/2024  05:04 AM    <DIR>          .
+05/16/2024  05:04 AM    <DIR>          ..
 05/12/2024  08:32 AM    <DIR>          00
 05/15/2024  08:40 PM    <DIR>          01
 05/15/2024  03:13 AM    <DIR>          02
@@ -1856,7 +1856,7 @@
 05/14/2024  02:40 AM    <DIR>          05
 05/12/2024  08:58 AM    <DIR>          07
 05/14/2024  09:52 AM    <DIR>          08
-05/14/2024  02:40 AM    <DIR>          09
+05/16/2024  05:04 AM    <DIR>          09
 05/12/2024  10:38 PM    <DIR>          0a
 05/12/2024  08:32 AM    <DIR>          0b
 05/12/2024  08:32 AM    <DIR>          0c
@@ -1958,7 +1958,7 @@
 05/15/2024  03:46 AM    <DIR>          7d
 05/15/2024  08:40 PM    <DIR>          7e
 05/16/2024  04:05 AM    <DIR>          80
-05/12/2024  08:56 AM    <DIR>          82
+05/16/2024  05:04 AM    <DIR>          82
 05/15/2024  03:46 AM    <DIR>          83
 05/15/2024  08:40 PM    <DIR>          85
 05/12/2024  10:25 AM    <DIR>          87
@@ -2027,7 +2027,7 @@
 05/15/2024  03:11 AM    <DIR>          cd
 05/15/2024  03:11 AM    <DIR>          ce
 05/15/2024  08:40 PM    <DIR>          d0
-05/15/2024  04:08 AM    <DIR>          d1
+05/16/2024  05:04 AM    <DIR>          d1
 05/16/2024  04:05 AM    <DIR>          d2
 05/15/2024  08:40 PM    <DIR>          d3
 05/15/2024  04:01 AM    <DIR>          d4
@@ -2145,11 +2145,12 @@
 
  Directory of E:\Simple-Browser\.git\objects\09
 
-05/14/2024  02:40 AM    <DIR>          .
-05/14/2024  02:40 AM    <DIR>          ..
+05/16/2024  05:04 AM    <DIR>          .
+05/16/2024  05:04 AM    <DIR>          ..
 05/14/2024  02:40 AM             2,554 2dbabeb52e646eda69c5eaae1c971164454b09
+05/16/2024  05:04 AM               674 654fdd52a26bebb2d863c2489b20cd81ef2efe
 05/14/2024  02:40 AM               149 6ae9f693f71ce8228fdaa997bb047a29106c4e
-               2 File(s)          2,703 bytes
+               3 File(s)          3,377 bytes
 
  Directory of E:\Simple-Browser\.git\objects\0a
 
@@ -3018,11 +3019,12 @@
 
  Directory of E:\Simple-Browser\.git\objects\82
 
-05/12/2024  08:56 AM    <DIR>          .
-05/12/2024  08:56 AM    <DIR>          ..
+05/16/2024  05:04 AM    <DIR>          .
+05/16/2024  05:04 AM    <DIR>          ..
+05/16/2024  05:04 AM               197 39436f4f2c0077a575ae828486a4a83df1d594
 05/12/2024  08:56 AM               190 591365838420ee79fe1e768d8accdbf5e8fb6d
 05/12/2024  08:54 AM               294 86aaf5f98e5f4263ad9362d803a1959794e8e8
-               2 File(s)            484 bytes
+               3 File(s)            681 bytes
 
  Directory of E:\Simple-Browser\.git\objects\83
 
@@ -3595,11 +3597,13 @@
 
  Directory of E:\Simple-Browser\.git\objects\d1
 
-05/15/2024  04:08 AM    <DIR>          .
-05/15/2024  04:08 AM    <DIR>          ..
+05/16/2024  05:04 AM    <DIR>          .
+05/16/2024  05:04 AM    <DIR>          ..
+05/16/2024  05:04 AM           474,474 31dcd6e4ba9cde8297b1b43e4847a6040bb440
 05/12/2024  12:06 PM               231 43ac77b4697e080064f4b6c0973d4778dc40fc
 05/15/2024  04:08 AM               372 914aca1036c56418e0bab3d80a445c891481fa
-               2 File(s)            603 bytes
+05/16/2024  05:04 AM               406 db204af659d51e5c4521004e9e345eb339e1c5
+               4 File(s)        475,483 bytes
 
  Directory of E:\Simple-Browser\.git\objects\d2
 
@@ -3941,32 +3945,32 @@
 
 05/15/2024  05:27 AM    <DIR>          .
 05/15/2024  05:27 AM    <DIR>          ..
-05/16/2024  04:15 AM    <DIR>          heads
+05/16/2024  05:04 AM    <DIR>          heads
 05/15/2024  05:27 AM    <DIR>          remotes
 05/14/2024  09:35 AM    <DIR>          tags
                0 File(s)              0 bytes
 
  Directory of E:\Simple-Browser\.git\refs\heads
 
-05/16/2024  04:15 AM    <DIR>          .
-05/16/2024  04:15 AM    <DIR>          ..
-05/16/2024  04:15 AM                41 main
+05/16/2024  05:04 AM    <DIR>          .
+05/16/2024  05:04 AM    <DIR>          ..
+05/16/2024  05:04 AM                41 main
                1 File(s)             41 bytes
 
  Directory of E:\Simple-Browser\.git\refs\remotes
 
 05/15/2024  05:27 AM    <DIR>          .
 05/15/2024  05:27 AM    <DIR>          ..
-05/16/2024  04:15 AM    <DIR>          origin
+05/16/2024  05:04 AM    <DIR>          origin
                0 File(s)              0 bytes
 
  Directory of E:\Simple-Browser\.git\refs\remotes\origin
 
-05/16/2024  04:15 AM    <DIR>          .
-05/16/2024  04:15 AM    <DIR>          ..
-05/16/2024  04:15 AM                30 HEAD
+05/16/2024  05:04 AM    <DIR>          .
+05/16/2024  05:04 AM    <DIR>          ..
+05/16/2024  05:04 AM                30 HEAD
 05/15/2024  03:07 AM                41 issue-6
-05/16/2024  04:15 AM                41 main
+05/16/2024  05:04 AM                41 main
                3 File(s)            112 bytes
 
  Directory of E:\Simple-Browser\.git\refs\tags
@@ -4050,7 +4054,7 @@
 02/12/2024  09:58 AM             2,512 README-fr.md
 02/12/2024  09:58 AM             4,392 Readme.html
 05/16/2024  04:06 AM             2,421 README.md
-05/16/2024  05:03 AM                 0 Repository-LS.md
+05/16/2024  05:06 AM                 0 Repository-LS.md
 02/12/2024  09:58 AM               166 Simple-Browser.css
 02/12/2024  09:58 AM             5,984 Simple-Browser.html
 05/15/2024  04:07 AM               442 SimpleBrowserLegacy.md
@@ -4110,16 +4114,16 @@
 05/15/2024  08:46 PM               667 BuildAll.cmd
 05/15/2024  08:20 AM             2,870 BuildAll.ps1
 05/15/2024  03:28 AM               756 BuildInternal.cmd
-05/15/2024  08:38 AM             3,605 BuildInternal.ps1
+05/16/2024  05:05 AM             3,614 BuildInternal.ps1
 05/15/2024  08:42 PM               175 computechecksum.cmd
 05/16/2024  04:02 AM    <DIR>          docs
 05/15/2024  08:42 PM             8,688 main.nsi
 05/06/2024  01:23 AM    <DIR>          main.nsi-extras
 05/15/2024  08:42 PM             2,870 script.ps1
 05/15/2024  08:43 AM               369 SHA256.txt
-05/15/2024  08:39 AM         9,624,136 SimpleBrowserSetup.exe
+05/16/2024  05:06 AM         9,624,144 SimpleBrowserSetup.exe
 05/15/2024  08:55 PM                81 VS22.bat
-              10 File(s)      9,644,217 bytes
+              10 File(s)      9,644,234 bytes
 
  Directory of E:\Simple-Browser\scripts\windows_build\bin
 
@@ -4469,13 +4473,13 @@
 
 05/15/2024  05:27 AM    <DIR>          .
 05/15/2024  05:27 AM    <DIR>          ..
-05/15/2024  08:39 AM    <DIR>          net8.0-windows
+05/16/2024  05:05 AM    <DIR>          net8.0-windows
                0 File(s)              0 bytes
 
  Directory of E:\Simple-Browser\src\windows\bin\Release\net8.0-windows
 
-05/15/2024  08:39 AM    <DIR>          .
-05/15/2024  08:39 AM    <DIR>          ..
+05/16/2024  05:05 AM    <DIR>          .
+05/16/2024  05:05 AM    <DIR>          ..
 04/10/2024  04:41 AM           567,896 Microsoft.Web.WebView2.Core.dll
 04/10/2024  04:41 AM            38,360 Microsoft.Web.WebView2.WinForms.dll
 04/10/2024  04:41 AM            51,160 Microsoft.Web.WebView2.Wpf.dll
@@ -4484,9 +4488,9 @@
 05/15/2024  05:27 AM    <DIR>          runtimes
 05/12/2024  10:18 AM                 0 SHA256.txt
 05/12/2024  08:27 AM             2,680 Simple-Browser.deps.json
-05/15/2024  08:16 AM           603,136 Simple-Browser.dll
-05/15/2024  08:39 AM           270,848 Simple-Browser.exe
-05/15/2024  08:16 AM            17,848 Simple-Browser.pdb
+05/16/2024  05:05 AM           603,136 Simple-Browser.dll
+05/16/2024  05:06 AM           270,848 Simple-Browser.exe
+05/16/2024  05:05 AM            17,848 Simple-Browser.pdb
 05/12/2024  08:27 AM               458 Simple-Browser.runtimeconfig.json
 02/12/2024  09:58 AM             1,174 Updater.bat
 10/16/2023  02:32 PM           399,280 WinRT.Runtime.dll
@@ -4872,23 +4876,23 @@
 05/15/2024  05:27 AM    <DIR>          .
 05/15/2024  05:27 AM    <DIR>          ..
 05/11/2024  10:45 AM               198 .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
-05/15/2024  08:16 AM           269,312 apphost.exe
+05/16/2024  05:05 AM           269,312 apphost.exe
 05/11/2024  10:46 AM    <DIR>          ref
 05/11/2024  10:46 AM    <DIR>          refint
 05/12/2024  08:27 AM                 0 Simple-B.4F14E2B0.Up2Date
-05/15/2024  08:16 AM             1,195 Simple-Browser.AssemblyInfo.cs
-05/15/2024  08:16 AM                66 Simple-Browser.AssemblyInfoInputs.cache
+05/16/2024  05:05 AM             1,195 Simple-Browser.AssemblyInfo.cs
+05/16/2024  05:05 AM                66 Simple-Browser.AssemblyInfoInputs.cache
 05/11/2024  10:45 AM             3,146 Simple-Browser.assets.cache
 05/11/2024  10:45 AM             1,506 Simple-Browser.csproj.AssemblyReference.cache
 05/11/2024  10:45 AM                66 Simple-Browser.csproj.CoreCompileInputs.cache
 05/11/2024  10:46 AM             2,895 Simple-Browser.csproj.FileListAbsolute.txt
 05/14/2024  02:40 AM               178 Simple-Browser.csproj.GenerateResource.cache
-05/15/2024  08:16 AM           603,136 Simple-Browser.dll
+05/16/2024  05:05 AM           603,136 Simple-Browser.dll
 05/11/2024  10:45 AM               869 Simple-Browser.GeneratedMSBuildEditorConfig.editorconfig
 05/11/2024  10:46 AM                66 Simple-Browser.genruntimeconfig.cache
 05/11/2024  10:45 AM               377 Simple-Browser.GlobalUsings.g.cs
-05/15/2024  08:16 AM            17,848 Simple-Browser.pdb
-05/15/2024  08:16 AM               299 Simple-Browser.sourcelink.json
+05/16/2024  05:05 AM            17,848 Simple-Browser.pdb
+05/16/2024  05:05 AM               299 Simple-Browser.sourcelink.json
 05/14/2024  02:40 AM               180 Webview2_Test.AboutBox.resources
 05/14/2024  02:40 AM           451,619 Webview2_Test.Browser.resources
 05/11/2024  10:45 AM               180 Webview2_Test.Properties.Resources.resources
@@ -4898,14 +4902,14 @@
 
 05/11/2024  10:46 AM    <DIR>          .
 05/11/2024  10:46 AM    <DIR>          ..
-05/15/2024  08:16 AM           133,120 Simple-Browser.dll
+05/16/2024  05:05 AM           133,120 Simple-Browser.dll
                1 File(s)        133,120 bytes
 
  Directory of E:\Simple-Browser\src\windows\obj\Release\net8.0-windows10.0.22000.0\refint
 
 05/11/2024  10:46 AM    <DIR>          .
 05/11/2024  10:46 AM    <DIR>          ..
-05/15/2024  08:16 AM           133,120 Simple-Browser.dll
+05/16/2024  05:05 AM           133,120 Simple-Browser.dll
                1 File(s)        133,120 bytes
 
  Directory of E:\Simple-Browser\src\windows\obj\x64
@@ -73482,5 +73486,5 @@
                1 File(s)          6,144 bytes
 
      Total Files Listed:
-           46679 File(s)    329,963,507 bytes
-           11477 Dir(s)  115,887,538,176 bytes free
+           46683 File(s)    330,440,178 bytes
+           11477 Dir(s)  115,877,277,696 bytes free
