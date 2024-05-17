@@ -1,50 +1,72 @@
 # Simple Browser
-#### [en français](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/README-fr.md)
-[FAQ](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/FAQ.md)
 
-[#11](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/discussions/11)
+[![License: GPL v3](https://img.shields.io/github/license/Daniel-McGuire-Corporation/Simple-Browser?style=flat-square)](https://www.gnu.org/licenses/old-licenses/gpl-3.0)
+![Language: C#](https://img.shields.io/badge/language-C%23-178600?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/Daniel-McGuire-Corporation/Simple-Browser?style=flat-square)
+![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser?style=flat-square)
 
-[![License: GPL v3](https://img.shields.io/github/license/Daniel-McGuire-Corporation/Simple-Browser?style=flat-square)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-178600?style=flat-square) ![GitHub repo size](https://img.shields.io/github/repo-size/Daniel-McGuire-Corporation/Simple-Browser?style=flat-square) ![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser?style=flat-square)
-## Project Status
-#### 400 **OK** (just a non-html programmer making a joke)
+#### [en français](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/README-fr.md) | [FAQ](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/FAQ.md) | [#11 Discussion](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/discussions/11)
+
+---
+
 ## About
 
 Simple-Browser is a lightweight web browser built using C# and WebView2 (Chromium Based), aiming to offer users a simple and fast browsing experience.
-----------------------------------------------------------------------
-## [Monthly Newsletter](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/Monthly%20Updates.md)
+
+---
+
+## Table of Contents
+- [Monthly Newsletter](#monthly-newsletter)
+- [Release Plans](#release-plans)
+- [Compatibility](#compatibility)
+- [Download](#download)
+- [Build From Source](#build-from-source)
+- [License](#license)
+
+---
+
+## Monthly Newsletter
+Stay updated with our [Monthly Updates](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/Monthly%20Updates.md).
+
+---
 
 ## Release Plans
-- ### 2024
-  - 24Q1 | 2024 Update: January 1st - March 30th.   
-  - 24Q2 | Earth Update April 22nd. 
-  - 24Q3 | Summer Update: July 21st. (Was too early)
-  - 24Q4 | Christmas Update: Dec 24th.
-- ### 2025
-  - 24Q1 | 2025 Update: January 1st - March 30th.   
-  - 24Q2 | Earth Update April 22nd. 
-  - 24Q3 | Summer Update: July 21st. 
-  - 24Q4 | Christmas Update: Dec 24th.
- 
-    
-**Dates might not be exact.**
-***Does not include patches or random updates.***
+### 2024
+- **24Q1:** January 1st - March 30th
+- **24Q2:** Earth Update April 22nd
+- **24Q3:** Summer Update July 21st (Was too early)
+- **24Q4:** Christmas Update December 24th
+
+### 2025
+- **24Q1:** January 1st - March 30th
+- **24Q2:** Earth Update April 22nd
+- **24Q3:** Summer Update July 21st
+- **24Q4:** Christmas Update December 24th
+
+> **Note:** Dates might not be exact. Does not include patches or random updates.
+
+---
 
 ## Compatibility
-- **Windows**:
+- **Windows:**
   - Windows 7 - 8.1 (Coming Soon!)
   - Windows 10 Fall Creators Edition or later
-  - Windows 11 (Any Version (Even the leaked build!)) 
+  - Windows 11 (Any Version, even the leaked build!)
 
 - More Versions Coming Soon
 
+---
+
 ## Download
-- [(Recommended) Download Simple-Browser (GitHub)](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/releases/latest)
-- [Download Simple-Browser (SourceForge)](https://sourceforge.net/projects/simple-browser/files/latest/download)
-
-## Build From Source:
-[Build-Source Windows](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/wiki/Build-Source-Instructions)
-
-## License
-Simple-Browser is licensed under the MIT License See the [License](https://github.com/Daniel-McGuire-Corporation/Simple-Browser?tab=MIT-1-ov-file) for more details.
+- [(Recommended) Download Simple-Browser from GitHub](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/releases/latest)
+- [Download Simple-Browser from SourceForge](https://sourceforge.net/projects/simple-browser/files/latest/download)
 
 ---
+
+## Build From Source
+Follow the [Build-Source Instructions for Windows](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/wiki/Build-Source-Instructions).
+
+---
+
+## License
+Simple-Browser is licensed under the MIT License. See the [License](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/LICENSE) for more details.
