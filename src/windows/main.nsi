@@ -18,7 +18,7 @@
   !define DESCRIPTION "Simple Web Browser"
   !define DEVELOPER "Daniel McGuire" #License Holder
   # Files Directory
-  !define FILE_DIR "bin\Release\net8.0-windows" #Replace with the path of install folder (Should be right unless file structure tampered.)
+  !define FILE_DIR "bin\Release\net8.0-windows10.0.22000.0" #Replace with the path of install folder (Should be right unless file structure tampered.)
   !define LOGO_ICON_FILE "C:\Program Files (x86)\NSIS\Contrib\Graphics\Icons\nsis1-install.ico"
   !define LICENSE_TEXT_FILE "LICENSE.txt"
   !define HEADER_IMG_FILE "C:\Program Files (x86)\NSIS\Contrib\Graphics\Header\win.bmp"
@@ -116,7 +116,7 @@ Section "install"
   SetOutPath $INSTDIR
 
   # Files add here should be removed by the uninstaller (see section "uninstall")
-  File /r "bin\Release\net8.0-windows\*.*"
+  File /r "bin\Release\net8.0-windows10.0.22000.0\*.*"
   
   ################################################################################################################
 
@@ -188,9 +188,11 @@ Section "uninstall"
 
   ; Remove installed files
   Delete /REBOOTOK $INSTDIR\*
+  Delete $LOCALAPPDATA\SimpleBrowser\*
 
   ; Remove installed directories
   RMDir /r $INSTDIR
+  RMDir /r $LOCALAPPDATA\SimpleBrowser
   
   #Delete installation folder from registry if available - this will only happen if it is empty
   DeleteRegKey HKCU "Software\${APPNAME}"

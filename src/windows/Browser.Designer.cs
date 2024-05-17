@@ -54,6 +54,7 @@ namespace Webview2_Test
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
+            resetBrowserToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -70,7 +71,7 @@ namespace Webview2_Test
             // 
             // fileToolStripMenuItem
             // 
-            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openToolStripMenuItem, openNewWindowToolStripMenuItem, closeAltToolStripMenuItem });
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openToolStripMenuItem, openNewWindowToolStripMenuItem, closeAltToolStripMenuItem, resetBrowserToolStripMenuItem });
             fileToolStripMenuItem.ForeColor = Color.FromArgb(232, 234, 225);
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             fileToolStripMenuItem.Size = new Size(37, 20);
@@ -79,21 +80,21 @@ namespace Webview2_Test
             // openToolStripMenuItem
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.Size = new Size(177, 22);
+            openToolStripMenuItem.Size = new Size(180, 22);
             openToolStripMenuItem.Text = "Open";
             openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // openNewWindowToolStripMenuItem
             // 
             openNewWindowToolStripMenuItem.Name = "openNewWindowToolStripMenuItem";
-            openNewWindowToolStripMenuItem.Size = new Size(177, 22);
+            openNewWindowToolStripMenuItem.Size = new Size(180, 22);
             openNewWindowToolStripMenuItem.Text = "Open New Window";
             openNewWindowToolStripMenuItem.Click += openNewWindowToolStripMenuItem_Click;
             // 
             // closeAltToolStripMenuItem
             // 
             closeAltToolStripMenuItem.Name = "closeAltToolStripMenuItem";
-            closeAltToolStripMenuItem.Size = new Size(177, 22);
+            closeAltToolStripMenuItem.Size = new Size(180, 22);
             closeAltToolStripMenuItem.Text = "Close (Alt+F4)";
             closeAltToolStripMenuItem.Click += closeAltToolStripMenuItem_Click;
             // 
@@ -227,11 +228,18 @@ namespace Webview2_Test
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 50F);
             label2.ForeColor = Color.Snow;
-            label2.Location = new Point(661, 436);
+            label2.Location = new Point(0, 72);
             label2.Name = "label2";
             label2.Size = new Size(197, 89);
             label2.TabIndex = 3;
             label2.Text = "24Q3";
+            // 
+            // resetBrowserToolStripMenuItem
+            // 
+            resetBrowserToolStripMenuItem.Name = "resetBrowserToolStripMenuItem";
+            resetBrowserToolStripMenuItem.Size = new Size(180, 22);
+            resetBrowserToolStripMenuItem.Text = "Reset Browser";
+            resetBrowserToolStripMenuItem.Click += resetBrowserToolStripMenuItem_Click;
             // 
             // Browser
             // 
@@ -280,5 +288,6 @@ namespace Webview2_Test
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
+        private ToolStripMenuItem resetBrowserToolStripMenuItem;
     }
 }

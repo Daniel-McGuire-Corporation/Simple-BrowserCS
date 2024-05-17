@@ -80,13 +80,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Reset.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Updater.bat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="PostBuild.bat" />
+    <Exec Command="PostBuild.bat $(ConfigurationName)&#xD;&#xA;" />
   </Target>
 
 </Project>

@@ -7,6 +7,7 @@
 *Internal.ps1
 *Internal.cmd
 signer64.exe
+computechecksum.exe
 
 ### C++ ###
 # Prerequisites

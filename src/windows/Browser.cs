@@ -229,5 +229,13 @@ namespace Webview2_Test
             string url = "https://apps.microsoft.com/detail/9NBLGGH4NNS1";
             Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
         }
+
+        private void resetBrowserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "conhost.exe";
+            startInfo.Arguments = "Reset.bat";
+            Process.Start(startInfo);
+        }
     }
 }

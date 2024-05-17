@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Simple-Browser": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    }
+  }
+}
