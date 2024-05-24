@@ -70,6 +70,7 @@ Stay updated with our [Monthly Updates](https://github.com/Daniel-McGuire-Corpor
 
 ## Build From Source
 Follow the [Build-Source Instructions for Windows](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/wiki/Windows-Build-Source-Instructions).
+Follow the [Build-Source Instructions for Legacy Edition](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/wiki/Win%E2%80%90Legacy-Build-Source-Instructions)
 
 ---
 
