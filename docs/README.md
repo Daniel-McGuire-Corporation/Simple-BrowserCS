@@ -40,14 +40,15 @@ Stay updated with our [Monthly Updates](https://github.com/Daniel-McGuire-Corpor
 - **24Q2:** Spring | Apr 1st - Jun 30th
 - **24Q3:** Summer Update | Jul 01st - Sep 30th
 - **24Q4:** Christmas Update | Dec 1st - 14th
+> **Note:** Dates might not be exact. Does not include patches or random updates.
+
 
 ### 2026
-- **Release Schedule Planning:** Dec 29st - 31st
+- **Release Schedule Planning:** Dec 29th - 31st
 -  **Feature Planning**
-  - Every other month (Jan 1st to 5th, Mar 1st to 5th, May 1st to 5th, Jul 1st to 5th, Sep 1st to 5th, Nov 1st to 5th)
-> Suggestions are recommended during these times.
+    - Every other month (Jan 1st to 5th, Mar 1st to 5th, May 1st to 5th, Jul 1st to 5th, Sep 1st to 5th, Nov 1st to 5th)
 
-> **Note:** Dates might not be exact. Does not include patches or random updates.
+***Suggestions are welcomed during these times.***
 
 ---
 
