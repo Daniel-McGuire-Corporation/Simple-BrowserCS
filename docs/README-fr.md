@@ -64,7 +64,7 @@ Restez à jour avec nos [Mises à jour mensuelles](https://github.com/Daniel-McG
 ---
 
 ## Construire à partir du Code Source
-Suivez les [Instructions de construction pour Windows](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/wiki/Build-Source-Instructions).
+Suivez les [Instructions de construction pour Windows](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/wiki/Windows-Build-Source-Instructions).
 
 ---
 
