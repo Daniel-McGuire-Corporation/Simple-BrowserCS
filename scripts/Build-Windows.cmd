@@ -14,8 +14,8 @@ echo C# Non-Universal Compiling Script for Simple Browser
 :: Argument Handler
 if "%~1"=="" (
     :: If no arguments are provided, just execute the PowerShell script as Release
-    powershell.exe -ExecutionPolicy Bypass -File script.ps1 release
+    powershell.exe -ExecutionPolicy Bypass -File windows.ps1 release
 ) else (
     :: If arguments are provided, pass them to the PowerShell script
-    powershell.exe -ExecutionPolicy Bypass -File script.ps1 %*
+    powershell.exe -ExecutionPolicy Bypass -File windows.ps1 %*
 )

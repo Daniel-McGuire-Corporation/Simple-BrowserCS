@@ -8,7 +8,7 @@ if ($args -contains "-h" -or $args -contains "--help") {
     # Define the help message using a here-string
     $helpMessage = @"
 Usage:
-  .\BuildAll.cmd [-Type <Type>] [-Verbose]
+  .\BuildAll-Windows.cmd [-Type <Type>] [-Verbose]
 
 Options:
   -Type, -t <Type>      Specifies the build configuration. Accepted values are 'Release' or 'Debug'. 
@@ -44,7 +44,7 @@ $dotnetBuildCommand = "dotnet build Simple-Browser.csproj --nologo $buildConfig 
 Write-Output ""
 Write-Host "Compiling Simple Browser" -ForegroundColor Yellow
 Write-Output ""
-cd ..\..\src\windows\
+cd ..\src\windows\
 Invoke-Expression $dotnetBuildCommand
 Write-Output ""
 write-host "Installer Compiled!" -ForegroundColor Green
@@ -53,5 +53,5 @@ if ($continue -eq 'n') {
     Exit
 }
 cd $PSScriptRoot
-cd ..\..\
+cd ..\
 ./SimpleBrowserSetup.exe
