@@ -37,6 +37,7 @@ namespace Webview2_Test
             openToolStripMenuItem = new ToolStripMenuItem();
             openNewWindowToolStripMenuItem = new ToolStripMenuItem();
             closeAltToolStripMenuItem = new ToolStripMenuItem();
+            resetBrowserToolStripMenuItem = new ToolStripMenuItem();
             viewToolStripMenuItem = new ToolStripMenuItem();
             returnToStartPageToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
@@ -54,7 +55,7 @@ namespace Webview2_Test
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
-            resetBrowserToolStripMenuItem = new ToolStripMenuItem();
+            aboutToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -98,6 +99,13 @@ namespace Webview2_Test
             closeAltToolStripMenuItem.Text = "Close (Alt+F4)";
             closeAltToolStripMenuItem.Click += closeAltToolStripMenuItem_Click;
             // 
+            // resetBrowserToolStripMenuItem
+            // 
+            resetBrowserToolStripMenuItem.Name = "resetBrowserToolStripMenuItem";
+            resetBrowserToolStripMenuItem.Size = new Size(180, 22);
+            resetBrowserToolStripMenuItem.Text = "Reset Browser";
+            resetBrowserToolStripMenuItem.Click += resetBrowserToolStripMenuItem_Click;
+            // 
             // viewToolStripMenuItem
             // 
             viewToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { returnToStartPageToolStripMenuItem });
@@ -109,13 +117,13 @@ namespace Webview2_Test
             // returnToStartPageToolStripMenuItem
             // 
             returnToStartPageToolStripMenuItem.Name = "returnToStartPageToolStripMenuItem";
-            returnToStartPageToolStripMenuItem.Size = new Size(179, 22);
+            returnToStartPageToolStripMenuItem.Size = new Size(180, 22);
             returnToStartPageToolStripMenuItem.Text = "Return to Start Page";
             returnToStartPageToolStripMenuItem.Click += returnToStartPageToolStripMenuItem_Click;
             // 
             // helpToolStripMenuItem
             // 
-            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { viewHelpToolStripMenuItem, aboutWindowsToolStripMenuItem, getUpdatesToolStripMenuItem, reportBugToolStripMenuItem, simpleWebV2ToolStripMenuItem });
+            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { viewHelpToolStripMenuItem, aboutWindowsToolStripMenuItem, getUpdatesToolStripMenuItem, reportBugToolStripMenuItem, simpleWebV2ToolStripMenuItem, aboutToolStripMenuItem });
             helpToolStripMenuItem.ForeColor = Color.FromArgb(232, 234, 225);
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             helpToolStripMenuItem.Size = new Size(52, 20);
@@ -184,14 +192,14 @@ namespace Webview2_Test
             // inSimpleBrowserToolStripMenuItem
             // 
             inSimpleBrowserToolStripMenuItem.Name = "inSimpleBrowserToolStripMenuItem";
-            inSimpleBrowserToolStripMenuItem.Size = new Size(170, 22);
+            inSimpleBrowserToolStripMenuItem.Size = new Size(180, 22);
             inSimpleBrowserToolStripMenuItem.Text = "In Simple Browser";
             inSimpleBrowserToolStripMenuItem.Click += inSimpleBrowserToolStripMenuItem_Click;
             // 
             // inDefaultBrowserToolStripMenuItem
             // 
             inDefaultBrowserToolStripMenuItem.Name = "inDefaultBrowserToolStripMenuItem";
-            inDefaultBrowserToolStripMenuItem.Size = new Size(170, 22);
+            inDefaultBrowserToolStripMenuItem.Size = new Size(180, 22);
             inDefaultBrowserToolStripMenuItem.Text = "In Default Browser";
             inDefaultBrowserToolStripMenuItem.Click += inDefaultBrowserToolStripMenuItem_Click;
             // 
@@ -234,12 +242,11 @@ namespace Webview2_Test
             label2.TabIndex = 3;
             label2.Text = "24Q3";
             // 
-            // resetBrowserToolStripMenuItem
+            // aboutToolStripMenuItem
             // 
-            resetBrowserToolStripMenuItem.Name = "resetBrowserToolStripMenuItem";
-            resetBrowserToolStripMenuItem.Size = new Size(180, 22);
-            resetBrowserToolStripMenuItem.Text = "Reset Browser";
-            resetBrowserToolStripMenuItem.Click += resetBrowserToolStripMenuItem_Click;
+            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            aboutToolStripMenuItem.Size = new Size(191, 22);
+            aboutToolStripMenuItem.Text = "About";
             // 
             // Browser
             // 
@@ -289,5 +296,6 @@ namespace Webview2_Test
         private Label label1;
         private Label label2;
         private ToolStripMenuItem resetBrowserToolStripMenuItem;
+        private ToolStripMenuItem aboutToolStripMenuItem;
     }
 }

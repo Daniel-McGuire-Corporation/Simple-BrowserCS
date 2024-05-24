@@ -14,7 +14,6 @@
 using Microsoft.Web.WebView2.WinForms;
 using Microsoft.Web.WebView2.Core;
 using System.Diagnostics;
-using System.Security.Policy;
 
 namespace Webview2_Test
 {
@@ -69,33 +68,37 @@ namespace Webview2_Test
             };
 
 
-            InitializeAsync();
+            InitializeAsync(GetWebView());
+        }
+
+        private WebView2 GetWebView()
+        {
+            return webView;
         }
 
         // This method is called when the form is loaded.
-        private async void InitializeAsync()
+        private async void InitializeAsync(WebView2 SimpleWeb)
         {
-            webView = new WebView2
+            SimpleWeb = new WebView2
             {
                 Dock = DockStyle.Fill,
             };
 
-            webView.CreationProperties = new CoreWebView2CreationProperties()
+            SimpleWeb.CreationProperties = new CoreWebView2CreationProperties()
             {
                 UserDataFolder = $"C:\\Users\\{Environment.UserName}\\AppData\\Local\\SimpleBrowser"
             };
 
-            await webView.EnsureCoreWebView2Async(null);
+            await SimpleWeb.EnsureCoreWebView2Async(null);
 
-            this.Controls.Add(webView);
-            this.Controls.SetChildIndex(webView, 0);
-
-            webView.CoreWebView2.NavigationCompleted += CoreWebView2_NavigationCompleted;
+            Controls.Add(SimpleWeb);
+            this.Controls.SetChildIndex(SimpleWeb, 0);
+            SimpleWeb.CoreWebView2.NavigationCompleted += CoreWebView2_NavigationCompleted;
 
             // This event is fired when the user presses the Back button.
-            webView.CoreWebView2.SourceChanged += (sender, e) =>
+            SimpleWeb.CoreWebView2.SourceChanged += (sender, e) =>
             {
-                string url = webView.CoreWebView2.Source.ToString();
+                string url = SimpleWeb.CoreWebView2.Source.ToString();
                 if (url.Contains("SimpleBrowser/Resources/newtab/index.html"))
                 {
                     addressBar.Text = "simple://start";
@@ -108,7 +111,7 @@ namespace Webview2_Test
 
             // This event is fired when the user presses the Back button.
             string defaultHtmlFilePath = GetDefaultHtmlFilePath();
-            webView.CoreWebView2.Navigate(defaultHtmlFilePath);
+            SimpleWeb.CoreWebView2.Navigate(defaultHtmlFilePath);
         }
 
 
