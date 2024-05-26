@@ -1,6 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/c++,linux,macos,xcode,csharp,gradle,kotlin,windows,intellij,visualstudio,androidstudio,visualstudiocode,yarn,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=c++,linux,macos,xcode,csharp,gradle,kotlin,windows,intellij,visualstudio,androidstudio,visualstudiocode,yarn,node
-
 # Release Cycle Components
 *debug*.log
 *SHA256.txt
@@ -9,6 +6,9 @@
 *Internal*.cmd
 signer*.exe
 computechecksum.*
+
+# Created by https://www.toptal.com/developers/gitignore/api/c++,linux,macos,xcode,csharp,gradle,kotlin,windows,intellij,visualstudio,androidstudio,visualstudiocode,yarn,node,dotnetcore,intellij
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,linux,macos,xcode,csharp,gradle,kotlin,windows,intellij,visualstudio,androidstudio,visualstudiocode,yarn,node,dotnetcore,intellij
 
 ### C++ ###
 # Prerequisites
@@ -439,6 +439,15 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+### DotnetCore ###
+# .NET Core build folders
+bin/
+obj/
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
 
 ### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -872,7 +881,6 @@ gradle-app.setting
 # Java class files
 
 # Generated files
-bin/
 gen/
 
 # Gradle files
@@ -915,7 +923,6 @@ gen-external-apklibs
 .externalNativeBuild
 
 # NDK
-obj/
 
 # IntelliJ IDEA
 *.iml
@@ -1153,4 +1160,4 @@ obj/
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/c++,linux,macos,xcode,csharp,gradle,kotlin,windows,intellij,visualstudio,androidstudio,visualstudiocode,yarn,node
+# End of https://www.toptal.com/developers/gitignore/api/c++,linux,macos,xcode,csharp,gradle,kotlin,windows,intellij,visualstudio,androidstudio,visualstudiocode,yarn,node,dotnetcore,intellij
