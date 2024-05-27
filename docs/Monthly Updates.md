@@ -5,7 +5,7 @@
 ### We are planning development paths for Windows 7, XP, and Vista! (Maybe 98-SE in the near future?)
   - ![404](https://github.com/DanielLMcGuire/Simple-Browser/assets/146508360/7cb6a6a5-9f10-4870-b83e-2b69db6511f7)
 
-      **Installer Working**
+>     **Installer Working**
 
   - ![404](https://github.com/DanielLMcGuire/Simple-Browser/assets/146508360/549167ae-6cf5-4adf-bb00-0d40c649b207)
 
