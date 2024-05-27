@@ -1,4 +1,4 @@
-# Release Cycle Components
+# Internal Development and Release Components
 *debug*.log
 *SHA256.txt
 *Setup.exe
@@ -6,9 +6,11 @@
 *Internal*.cmd
 signer*.exe
 computechecksum.*
+ErrorSearcher/
 
-# Created by https://www.toptal.com/developers/gitignore/api/c++,linux,macos,xcode,csharp,gradle,kotlin,windows,intellij,visualstudio,androidstudio,visualstudiocode,yarn,node,dotnetcore,intellij
-# Edit at https://www.toptal.com/developers/gitignore?templates=c++,linux,macos,xcode,csharp,gradle,kotlin,windows,intellij,visualstudio,androidstudio,visualstudiocode,yarn,node,dotnetcore,intellij
+
+# Below is Created by https://www.toptal.com/developers/gitignore/api/c++,linux,macos,xcode,csharp,gradle,kotlin,windows,intellij,visualstudio,androidstudio,visualstudiocode,yarn,node,dotnetcore,intellij
+# Edit the below at https://www.toptal.com/developers/gitignore?templates=c++,linux,macos,xcode,csharp,gradle,kotlin,windows,intellij,visualstudio,androidstudio,visualstudiocode,yarn,node,dotnetcore,intellij
 
 ### C++ ###
 # Prerequisites
