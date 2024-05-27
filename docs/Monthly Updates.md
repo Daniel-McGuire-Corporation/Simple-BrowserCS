@@ -41,4 +41,4 @@
 ## Simple Browser Internal Dev tools becoming open source:
   - ![SBINT.psd](https://raw.githubusercontent.com/Daniel-McGuire-Corporation/Simple-Browser/main/resources/Screenshot%20(18).png)
      
->More info soon!
+>Screenshot of FULL source code (including dev tools code)
