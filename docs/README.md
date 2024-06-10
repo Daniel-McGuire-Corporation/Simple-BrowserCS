@@ -1,9 +1,9 @@
 # Simple Browser
 
-[![License: GPL v3](https://img.shields.io/github/license/Daniel-McGuire-Corporation/Simple-Browser?style=flat-square)](https://www.gnu.org/licenses/old-licenses/gpl-3.0)
-![Language: C#](https://img.shields.io/badge/language-C%23-178600?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/Daniel-McGuire-Corporation/Simple-Browser?style=flat-square)
-![SourceForge Downloads](https://img.shields.io/sourceforge/dm/simple-browser?style=flat-square)
+[![License: GPL v3](https://img.shields.io/github/license/Daniel-McGuire-Corporation/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0)
+![Language: C#](https://img.shields.io/badge/language-C%23-178600)
+![Lines of code](https://img.shields.io/tokei/lines/github/Daniel-McGuire-Corporation/Simple-Browser)
+![GitHub Release](https://img.shields.io/github/v/release/Daniel-McGuire-Corporation/Simple-Browser?include_prereleases&sort=semver)
 
 #### [en français](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/README-fr.md) | [FAQ](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/FAQ.md) | [#11 Discussion](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/discussions/11)
 
