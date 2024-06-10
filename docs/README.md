@@ -37,7 +37,7 @@ Stay updated with our [Monthly Updates](https://github.com/Daniel-McGuire-Corpor
 
 ### 2025
 - **24Q1:** Jan 1st - Mar 30th
-- **24Q2:** Spring | Apr 1st - Jun 30th
+- **24Q2:** Spring Update | Apr 1st - Jun 30th
 - **24Q3:** Summer Update | Jul 01st - Sep 30th
 - **24Q4:** Christmas Update | Dec 1st - 14th
 -  **Feature Planning**
