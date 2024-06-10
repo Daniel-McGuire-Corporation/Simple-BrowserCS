@@ -1,4 +1,5 @@
-### 6/10/24UPDATE: Linux Version has officially started major development (based on firefox) :)
+### 6/10/24UPDATE: Linux Version has officially started major development (based on firefox) :) (also gonna watch WWDC just incase something might help out with apple development)
+
 # Simple Browser
 
 [![License: GPL v3](https://img.shields.io/github/license/Daniel-McGuire-Corporation/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0)
