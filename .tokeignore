@@ -1,0 +1,66 @@
+# Compiled source files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Compressed files
+*.7z
+*.gz
+*.zip
+*.tar
+*.rar
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Static files
+*.jpg
+*.png
+*.gif
+*.svg
+*.ico
+*.webp
+
+# Documents
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# Database files
+*.sql
+*.sqlite
+*.db
+
+# Generated files
+*.pyc
+*.pyo
+*.pyd
+*.class
+
+# Configuration files
+*.ini
+*.cfg
+*.json
+*.yml
+*.yaml
+
+# Miscellaneous
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules/
