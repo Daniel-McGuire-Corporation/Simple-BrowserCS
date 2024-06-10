@@ -11,11 +11,28 @@ cd %~dp0
 echo Launching
 cls
 echo C# Non-Universal Compiling Script for Simple Browser
+
+:: Check if Python or Python3 is available
+where python > nul 2>&1
+if %errorlevel% equ 0 (
+    set PYTHON_EXECUTABLE=python
+) else (
+    where python3 > nul 2>&1
+    if %errorlevel% equ 0 (
+        set PYTHON_EXECUTABLE=python3
+    ) else (
+        echo Python is not found in your PATH.
+        echo Please install Python and make sure it's added to the PATH.
+        pause
+        exit /b
+    )
+)
+
 :: Argument Handler
 if "%~1"=="" (
-    :: If no arguments are provided, just execute the PowerShell script as Release
-    powershell.exe -ExecutionPolicy Bypass -File windows.ps1 release
+    :: If no arguments are provided, execute the PowerShell script as Release
+    %PYTHON_EXECUTABLE% windows.py release
 ) else (
     :: If arguments are provided, pass them to the PowerShell script
-    powershell.exe -ExecutionPolicy Bypass -File windows.ps1 %*
+    %PYTHON_EXECUTABLE% windows.py %*
 )
