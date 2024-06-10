@@ -1,4 +1,4 @@
-### 6/10/24UPDATE: Linux Version has officially started major development (based on firefox) :) (also gonna watch WWDC just incase something might help out with apple development)
+### 6/10/24UPDATE: Linux Version has officially started major development (based on firefox) :) (gonna be difficult as i barely remember c / c++ syntax)
 
 # Simple Browser
 
