@@ -1,4 +1,7 @@
-### 6/10/24UPDATE: [Linux Version has officially started major development](https://github.com/Daniel-McGuire-Corporation/SimpleBrowser-Linux) (based on firefox) :) (gonna be difficult as i barely remember c / c++ syntax)
+### Update: 
+Simple Browser is getting redesigned at [../SimpleBrowser-Fire](https://github.com/Daniel-McGuire-Corporation/SimpleBrowser-Fire)
+This Version (SBCS) is not planned to stop development, and will still be updated and supported.
+The new version Simple Browser (Firefox) is based on firefox.
 
 # Simple Browser
 
