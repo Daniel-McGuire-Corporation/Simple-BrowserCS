@@ -5,7 +5,7 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/Daniel-McGuire-Corporation/Simple-Browser)
 ![GitHub Release](https://img.shields.io/github/v/release/Daniel-McGuire-Corporation/Simple-Browser?include_prereleases&sort=semver)
 
-#### [en français](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/README-fr.md) | [FAQ](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/FAQ.md) | [#11 Discussion](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/discussions/11) | [Linux Repo](https://github.com/Daniel-McGuire-Corporation/SimpleBrowser-Linux)
+#### [en français](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/README-fr.md) | [FAQ](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/FAQ.md) | [#11 Discussion](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/discussions/11) | [Fire Codebase](https://github.com/Daniel-McGuire-Corporation/SimpleBrowser-Linux)
 
 ____
 
