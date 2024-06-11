@@ -1,8 +1,3 @@
-### Update: 
-Simple Browser is getting redesigned at [../SimpleBrowser-Fire](https://github.com/Daniel-McGuire-Corporation/SimpleBrowser-Fire)
-This Version (SBCS) is not planned to stop development, and will still be updated and supported.
-The new version Simple Browser (Firefox) is based on firefox.
-
 # Simple Browser
 
 [![License: GPL v3](https://img.shields.io/github/license/Daniel-McGuire-Corporation/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0)
@@ -12,7 +7,15 @@ The new version Simple Browser (Firefox) is based on firefox.
 
 #### [en français](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/README-fr.md) | [FAQ](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/FAQ.md) | [#11 Discussion](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/discussions/11) | [Linux Repo](https://github.com/Daniel-McGuire-Corporation/SimpleBrowser-Linux)
 
----
+____
+
+### Update: 
+
+Simple Browser is getting redesigned at [../SimpleBrowser-Fire](https://github.com/Daniel-McGuire-Corporation/SimpleBrowser-Fire)
+
+This Version (SBCS) is not planned to stop development, and will still be updated and supported.
+The new version Simple Browser (Firefox) is based on firefox.
+
 
 ## About
 
