@@ -1,4 +1,4 @@
-# Simple Browser
+# Simple Browser C#
 
 [![License: GPL v3](https://img.shields.io/github/license/Daniel-McGuire-Corporation/Simple-Browser)](https://www.gnu.org/licenses/old-licenses/gpl-3.0)
 ![Language: C#](https://img.shields.io/badge/language-C%23-178600)
