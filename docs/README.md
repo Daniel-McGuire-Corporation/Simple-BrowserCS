@@ -11,7 +11,7 @@ ____
 
 ### Update: 
 
-See the progress of SimpleBrowserFire at [../SimpleBrowser-Fire](https://github.com/Daniel-McGuire-Corporation/SimpleBrowser-Fire)
+See the progress of SimpleBrowserFire at [../Simple-BrowserFire](https://github.com/Daniel-McGuire-Corporation/SimpleBrowser-Fire)
 
 This Version (SBCS) is not planned to stop development, and will still be updated and supported.
 The new version Simple Browser (Firefox) is based on firefox.
