@@ -9,6 +9,10 @@ obj/
 *.sln.docstates
 .vscode/
 
+# DMC INT DEVELOPMENT
+releases/
+releases/*
+
 # Windows
 # Windows image file caches
 Thumbs.db
