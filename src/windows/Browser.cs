@@ -2,7 +2,7 @@
 // / ____(_)               | |      |  _ \                                 
 //| (___  _ _ __ ___  _ __ | | ___  | |_) |_ __ _____      _____  ___ _ __ 
 // \___ \| | '_ ` _ \| '_ \| |/ _ \ |  _ <| '__/ _ \ \ /\ / / __|/ _ \ '__|
-// ____) | | | | | | | |_) | |  __/ | |_) | | | (_) \ V  V /\__ \  __/ |   
+// ____) | | | | | | | | |_) | |  __/ | |_) | | | (_) \ V  V /\__ \  __/ |   
 //|_____/|_|_| |_| |_| .__/|_|\___| |____/|_|  \___/ \_/\_/ |___/\___|_|   
 //         Graphic by|:| Andrew M          
 //                   |_|                                                                                                                                              
@@ -19,15 +19,26 @@ namespace Webview2_Test
 {
     public partial class Browser : Form
     {
+        // Constants for file paths
+        private const string DefaultHtmlFilePath = @"C:\Program Files (x86)\SimpleBrowser\Resources\newtab\index.html";
+        private const string AppDataHtmlFilePath = @"C:\Program Files (x86)\SimpleBrowser\Resources\newtab\index.html";
+        private const string UserDataFolderPath = $"C:\\Users\\{Environment.UserName}\\AppData\\Local\\SimpleBrowser";
+
         private WebView2 webView;
         private TextBox addressBar;
 
         public Browser()
         {
             InitializeComponent();
-            // Line Below sets the title bar text to whatever you want it to be (Simple Web) in this case.
+            InitializeUI(); // Initialize the user interface
+            InitializeAsync(GetWebView()); // Initialize the WebView2 component asynchronously
+        }
+
+        private void InitializeUI()
+        {
             this.Text = "Simple Web";
 
+            // Create and configure the toolbar panel
             Panel toolbar = new Panel()
             {
                 Dock = DockStyle.Top,
@@ -36,6 +47,7 @@ namespace Webview2_Test
             };
             this.Controls.Add(toolbar);
 
+            // Create and configure the address bar
             addressBar = new TextBox()
             {
                 Dock = DockStyle.Fill,
@@ -45,99 +57,112 @@ namespace Webview2_Test
             };
 
             toolbar.Controls.Add(addressBar);
-            // This event is fired when the user presses Enter in the address bar.
-            addressBar.KeyPress += (sender, e) =>
+            addressBar.KeyPress += AddressBar_KeyPress; // Add event handler for address bar key press
+        }
+
+        private void AddressBar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13) // Check if Enter key is pressed
             {
-                if (e.KeyChar == (char)13)
+                if (webView != null && webView.CoreWebView2 != null)
                 {
-                    if (webView != null && webView.CoreWebView2 != null)
+                    string url = addressBar.Text;
+                    if (url.Contains(AppDataHtmlFilePath))
                     {
-                        string url = addressBar.Text;
-                        if (url.Contains(GetAppDataHtmlFilePath()))
-                        {
-                            addressBar.Text = "simple://start";
-                        }
-                        else
-                        {
-                            webView.CoreWebView2.Navigate(url);
-
-                        }
+                        addressBar.Text = "simple://start"; // Replace specific URL with custom scheme
                     }
-
+                    else
+                    {
+                        webView.CoreWebView2.Navigate(url); // Navigate to the entered URL
+                    }
                 }
-            };
-
-
-            InitializeAsync(GetWebView());
+            }
         }
 
         private WebView2 GetWebView()
         {
-            return webView;
+            return webView; // Return the WebView2 instance
         }
 
-        // This method is called when the form is loaded.
         private async void InitializeAsync(WebView2 SimpleWeb)
         {
+            // Create and configure the WebView2 instance
             SimpleWeb = new WebView2
             {
                 Dock = DockStyle.Fill,
+                CreationProperties = new CoreWebView2CreationProperties()
+                {
+                    UserDataFolder = UserDataFolderPath
+                }
             };
 
-            SimpleWeb.CreationProperties = new CoreWebView2CreationProperties()
-            {
-                UserDataFolder = $"C:\\Users\\{Environment.UserName}\\AppData\\Local\\SimpleBrowser"
-            };
-
-            await SimpleWeb.EnsureCoreWebView2Async(null);
+            await SimpleWeb.EnsureCoreWebView2Async(null); // Initialize the WebView2 control
 
             Controls.Add(SimpleWeb);
-            this.Controls.SetChildIndex(SimpleWeb, 0);
-            SimpleWeb.CoreWebView2.NavigationCompleted += CoreWebView2_NavigationCompleted;
+            this.Controls.SetChildIndex(SimpleWeb, 0); // Set the WebView2 control as the first child
+            SimpleWeb.CoreWebView2.NavigationCompleted += CoreWebView2_NavigationCompleted; // Add event handler for navigation completed
+            SimpleWeb.CoreWebView2.SourceChanged += CoreWebView2_SourceChanged; // Add event handler for source changed
 
-            // This event is fired when the user presses the Back button.
-            SimpleWeb.CoreWebView2.SourceChanged += (sender, e) =>
-            {
-                string url = SimpleWeb.CoreWebView2.Source.ToString();
-                if (url.Contains("SimpleBrowser/Resources/newtab/index.html"))
-                {
-                    addressBar.Text = "simple://start";
-                }
-                else
-                {
-                    addressBar.Text = url;
-                }
-            };
-
-            // This event is fired when the user presses the Back button.
-            string defaultHtmlFilePath = GetDefaultHtmlFilePath();
-            SimpleWeb.CoreWebView2.Navigate(defaultHtmlFilePath);
+            SimpleWeb.CoreWebView2.Navigate(DefaultHtmlFilePath); // Navigate to the default HTML file
         }
 
-
-        // These methods art called when the user navigates to a new page.
-        private string GetDefaultHtmlFilePath()
+        private void CoreWebView2_SourceChanged(object sender, CoreWebView2SourceChangedEventArgs e)
         {
-            string filePath = @"C:\Program Files (x86)\SimpleBrowser\Resources\newtab\index.html";
-            return filePath;
+            string url = ((CoreWebView2)sender).Source.ToString();
+            // Update the address bar text based on the URL
+            addressBar.Text = url.Contains("SimpleBrowser/Resources/newtab/index.html") ? "simple://start" : url;
         }
-        private string GetAppDataHtmlFilePath()
-        {
-            string filePath = @"C:///Program Files (x86)///SimpleBrowser///Resources///newtab///index.html";
-            return filePath;
-        }
+
         private void CoreWebView2_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
         {
+            // Handle navigation completed event
         }
 
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open a file dialog to select an HTML file
+            using (OpenFileDialog dialog = new OpenFileDialog { Filter = "Web Files|*.html;*.htm" })
+            {
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = dialog.FileName;
+                    webView.CoreWebView2.Navigate(filePath); // Navigate to the selected file
+                }
+            }
+        }
+
+        private void openNewWindowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("Simple-Browser.exe"); // Open a new instance of the browser
+        }
+
+        private void inDefaultBrowserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/Daniel-McGuire-Corporation/Simple-Browser/issues/new/choose";
+            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true }); // Open URL in default browser
+        }
+
+        private void aboutWindowsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("winver")); // Open Windows version dialog
+        }
+
+        private void resetBrowserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Run a batch file to reset the browser
+            ProcessStartInfo startInfo = new ProcessStartInfo
+            {
+                FileName = "conhost.exe",
+                Arguments = "Reset.bat"
+            };
+            Process.Start(startInfo);
+        }
 
         private void viewHelpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Create a new instance of Form2
             AboutBox aboutBox = new AboutBox();
             aboutBox.ShowDialog();
-
-
         }
 
         private void closeAltToolStripMenuItem_Click(object sender, EventArgs e)
@@ -150,24 +175,6 @@ namespace Webview2_Test
             webView.CoreWebView2.Navigate("C:/Program Files (x86)/SimpleBrowser/Resources/newtab/index.html");
         }
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "Web Files|*.html;*.htm";
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                string filePath = dialog.FileName; // this is the file path of the selected file
-                webView.CoreWebView2.Navigate(filePath); // this will pass the file path to the navigate method
-            }
-
-
-        }
-
-        private void openNewWindowToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Process.Start("Simple-Browser.exe");
-        }
-
         private void reportBugToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -178,14 +185,6 @@ namespace Webview2_Test
             webView.CoreWebView2.Navigate("https://github.com/Daniel-McGuire-Corporation/Simple-Browser/issues/new/choose");
         }
 
-        private void inDefaultBrowserToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            string url = "https://github.com/Daniel-McGuire-Corporation/Simple-Browser/issues/new/choose";
-            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}"));
-
-        }
-
         private void Browser_Load(object sender, EventArgs e)
         {
 
@@ -194,11 +193,6 @@ namespace Webview2_Test
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void aboutWindowsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Process.Start(new ProcessStartInfo("winver"));
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -231,14 +225,6 @@ namespace Webview2_Test
         {
             string url = "https://apps.microsoft.com/detail/9NBLGGH4NNS1";
             Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
-        }
-
-        private void resetBrowserToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "conhost.exe";
-            startInfo.Arguments = "Reset.bat";
-            Process.Start(startInfo);
         }
     }
 }
