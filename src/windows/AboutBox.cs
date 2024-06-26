@@ -11,10 +11,7 @@ namespace Webview2_Test
         {
             InitializeComponent();
         }
-
-
-
-
+        
         private void update_Click(object sender, EventArgs e)
         {
             try

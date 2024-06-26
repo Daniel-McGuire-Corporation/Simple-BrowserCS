@@ -2,7 +2,7 @@
 //  / ____(_)               | |      | |  | |         | |     | |           
 // | (___  _ _ __ ___  _ __ | | ___  | |  | |_ __   __| | __ _| |_ ___ _ __ 
 //  \___ \| | '_ ` _ \| '_ \| |/ _ \ | |  | | '_ \ / _` |/ _` | __/ _ \ '__|
-//  ____) | | | | | | | |_) | |  __/ | |__| | |_) | (_| | (_| | ||  __/ |   
+//  ____) | | | | | | | | | |_) | |  __/ | |__| | |_) | (_| | (_| | ||  __/ |   
 // |_____/|_|_| |_| |_| .__/|_|\___|  \____/| .__/ \__, _|\__, _|\__\___|_|   
 //                    | |         Graphic by|:| Andrew M                             
 //                    |_|                   |_|
@@ -18,6 +18,7 @@ using System.Net;
 using Newtonsoft.Json;
 using System.Diagnostics;
 using System.IO;
+using Microsoft.WindowsAPICodePack.Taskbar;
 
 namespace Updater
 {
@@ -84,6 +85,8 @@ namespace Updater
                 {
                     // Add personal access token to the request headers
                     wc.Headers.Add("Authorization", "token " + PersonalAccessToken);
+                    // Set User-Agent to mimic Microsoft Edge
+                    wc.Headers.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.64");
 
                     // Fetch release information from GitHub
                     string json = wc.DownloadString(GitHubRepoUrl.Replace("{owner}", Owner).Replace("{repo}", Repo));
@@ -110,6 +113,9 @@ namespace Updater
                             progressBar2.Value = args.ProgressPercentage;
                             // Show file info
                             label1.Text = $"{(args.BytesReceived / 1024.0 / 1024.0).ToString("0.00")}MB of {(args.TotalBytesToReceive / 1024.0 / 1024.0).ToString("0.00")}MB";
+
+                            // Update taskbar progress
+                            TaskbarManager.Instance.SetProgressValue(args.ProgressPercentage, 100);
                         };
 
                         // After download completion, install the update and exit
@@ -132,7 +138,7 @@ namespace Updater
 
                         // Open main program
                         // Replace "YourMainProgram.exe" with your main program's executable file name
-                        Process.Start("YourMainProgram.exe");
+                        Process.Start("SimpleBrowser.exe");
 
                         // Close the updater immediately
                         Application.Exit();
