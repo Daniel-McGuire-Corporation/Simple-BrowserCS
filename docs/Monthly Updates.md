@@ -1,4 +1,4 @@
-# [Jump to Latest](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/Monthly%20Updates.md#April-2024)
+# [Jump to Latest](https://github.com/Daniel-McGuire-Corporation/Simple-Browser/blob/main/docs/Monthly%20Updates.md#June-2024)
 # January 2024
 ## Simple Browser Legacy Goes Into Planning:
 
@@ -39,7 +39,7 @@
 
 # May 2024
 ## Simple Browser Internal Dev tools becoming open source:
-  - ![SBINT.psd](https://raw.githubusercontent.com/Daniel-McGuire-Corporation/Simple-Browser/main/resources/Screenshot%20(18).png)
+  - ![404](https://raw.githubusercontent.com/Daniel-McGuire-Corporation/Simple-Browser/main/resources/Screenshot%20(18).png)
      
 >Screenshot of FULL source code (including dev tools code)
 
@@ -49,4 +49,5 @@ More Soon!
 
 June's monthly update has been skipped,
 but i recommend you try cursor
+![404](https://github.com/Daniel-McGuire-Corporation/Simple-BrowserCS/blob/main/resources/SS.png?raw=true)
 
