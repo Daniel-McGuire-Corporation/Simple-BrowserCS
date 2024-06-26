@@ -13,7 +13,7 @@ Simple Browser is a lightweight, user-friendly web browser designed for simplici
 - **Customizable**: Options to customize the appearance and behavior.
 - **Secure**: Built with security in mind to protect user data.
 
-### Updater *WIP!!* (Requires Config!)
+### Updater *WIP!!* (Requires Config and must be built from source!)
 - **GitHub Integration**: Checks for the latest release from a specified GitHub repository.
 - **Version Comparison**: Compares the current version with the latest version available on GitHub.
 - **Download and Install**: Downloads the latest version and installs it automatically.
@@ -23,8 +23,8 @@ Simple Browser is a lightweight, user-friendly web browser designed for simplici
 ## Requirements
 - .NET Framework 8.0.0 (and 4.7.0 for updater) or later
 ## Updater-Only Requirements *WIP!!* 
-- GitHub Personal Access Token with repository access
-- `Microsoft.WindowsAPICodePack-Shell` NuGet package
+- GitHub Personal Access Token
+- `Microsoft.WindowsAPICodePack-Shell` NuGet package (Build-Source Requirement)
 
 
 ## Usage
