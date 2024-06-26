@@ -46,3 +46,7 @@
 # June 2024
 ### Way To Much!
 More Soon!
+
+June's monthly update has been skipped,
+but i recommend you try cursor
+
