@@ -27,13 +27,6 @@ Simple Browser is a lightweight, user-friendly web browser designed for simplici
 1. Run the `SimpleBrowser` application.
 2. Use the browser to navigate the web with a simple and efficient interface.
 
-### Updater *WIP!!*
-
-1. Run the `UpdaterForm` application.
-2. The application will automatically check for updates when it loads.
-3. If an update is available, it will download and install the latest version. The progress will be displayed on the taskbar icon and in the application window.
-4. If no update is available, the main program will be launched.
-
 ## Contributing
 
 1. Fork the repository.
