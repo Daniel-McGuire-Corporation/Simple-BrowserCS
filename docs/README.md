@@ -11,11 +11,6 @@ Simple Browser is a lightweight, user-friendly web browser designed for simplici
 - **Lightweight**: Minimalistic design for fast performance.
 - **User-Friendly Interface**: Easy to navigate and use.
 
-### Updater *WIP!!* (Requires Config and must be built from [source](https://github.com/Daniel-McGuire-Corporation/Simple-BrowserCS/tree/main/WIP/src/windows/Updater)!)
-- **GitHub Integration**: Checks for the latest release from a specified GitHub repository.
-- **Version Comparison**: Compares the current version with the latest version available on GitHub.
-- **Download and Install**: Downloads the latest version and installs it automatically..
-
 ## Requirements
 - [.NET Framework 8.0.0 or later](https://download.visualstudio.microsoft.com/download/pr/76e5dbb2-6ae3-4629-9a84-527f8feb709c/09002599b32d5d01dc3aa5dcdffcc984/windowsdesktop-runtime-8.0.6-win-x64.exe)
 - [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)
@@ -25,7 +20,8 @@ Simple Browser is a lightweight, user-friendly web browser designed for simplici
 ### Simple Browser
 
 1. Run the `SimpleBrowser` application.
-2. Use the browser to navigate the web with a simple and efficient interface.
+2. Wait for the updater to check for updates (Coming in July update)
+3. Use the browser to navigate the web with a simple and efficient interface.
 
 ## Contributing
 
