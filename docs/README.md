@@ -11,7 +11,7 @@ Simple Browser is a lightweight, user-friendly web browser designed for simplici
 - **Lightweight**: Minimalistic design for fast performance.
 - **User-Friendly Interface**: Easy to navigate and use.
 
-### Updater *WIP!!* (Requires Config and must be built from source!)
+### Updater *WIP!!* (Requires Config and must be built from [source](https://github.com/Daniel-McGuire-Corporation/Simple-BrowserCS/tree/main/WIP/src/windows/Updater)!)
 - **GitHub Integration**: Checks for the latest release from a specified GitHub repository.
 - **Version Comparison**: Compares the current version with the latest version available on GitHub.
 - **Download and Install**: Downloads the latest version and installs it automatically..
