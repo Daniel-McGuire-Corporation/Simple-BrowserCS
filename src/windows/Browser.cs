@@ -1,11 +1,3 @@
-//  _____ _                 _        ____                                  
-// / ____(_)               | |      |  _ \                                 
-//| (___  _ _ __ ___  _ __ | | ___  | |_) |_ __ _____      _____  ___ _ __ 
-// \___ \| | '_ ` _ \| '_ \| |/ _ \ |  _ <| '__/ _ \ \ /\ / / __|/ _ \ '__|
-// ____) | | | | | | | | |_) | |  __/ | |_) | | | (_) \ V  V /\__ \  __/ |   
-//|_____/|_|_| |_| |_| .__/|_|\___| |____/|_|  \___/ \_/\_/ |___/\___|_|   
-//         Graphic by|:| Andrew M          
-//                   |_|                                                                                                                                              
 // Copyright (C) Daniel McGuire Corporation
 // THANKS FOR CONTRIBUTING (or Building from Source)
 // This file is part of Simple Browser. (Obviously)
@@ -22,7 +14,7 @@ namespace Webview2_Test
         // Constants for file paths
         private const string DefaultHtmlFilePath = @"C:\Program Files (x86)\SimpleBrowser\Resources\newtab\index.html";
         private const string AppDataHtmlFilePath = @"C:\Program Files (x86)\SimpleBrowser\Resources\newtab\index.html";
-        private const string UserDataFolderPath = $"C:\\Users\\{Environment.UserName}\\AppData\\Local\\SimpleBrowser";
+        private readonly string UserDataFolderPath = $"C:\\Users\\{Environment.UserName}\\AppData\\Local\\SimpleBrowser";
 
         private WebView2 webView;
         private TextBox addressBar;
@@ -208,10 +200,10 @@ namespace Webview2_Test
 
         private void windowsPackageManagerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "conhost.exe";
-            startInfo.Arguments = "Updater.bat";
-            Process.Start(startInfo);
+            ProcessStartInfo startInfo = new ProcessStartInfo // Open the updater app
+            {
+                FileName = "Updater.exe"
+            };
             this.Close();
         }
 
@@ -223,8 +215,6 @@ namespace Webview2_Test
 
         private void builtInUpdateUtilityMayNotWorkOnWindows10AndEarlierToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string url = "https://apps.microsoft.com/detail/9NBLGGH4NNS1";
-            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
         }
     }
 }

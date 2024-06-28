@@ -29,7 +29,7 @@ int ProgressCallback(void* ptr, curl_off_t totalToDownload, curl_off_t nowDownlo
     double fractionDownloaded = (double)nowDownloaded / totalToDownload;
     int barWidth = 50;
     std::cout << "\r" << "Downloading: " << nowDownloaded / (1024 * 1024) << "MB of " << totalToDownload / (1024 * 1024) << "MB [";
-    int pos = barWidth * fractionDownloaded;
+    int pos = static_cast<int>(barWidth * fractionDownloaded);  // Explicit cast to int
     for (int i = 0; i < barWidth; ++i) {
         if (i < pos) std::cout << "=";
         else if (i == pos) std::cout << ">";
@@ -54,7 +54,12 @@ bool DownloadFile(const std::string& url, const std::string& output_path) {
     CURLcode res;
     curl = curl_easy_init();
     if (curl) {
-        fp = fopen(output_path.c_str(), "wb");
+        // Use fopen_s instead of fopen
+        if (fopen_s(&fp, output_path.c_str(), "wb") != 0) {
+            std::cerr << "Failed to open file for writing: " << output_path << std::endl;
+            curl_easy_cleanup(curl);
+            return false;
+        }
         curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
@@ -78,6 +83,13 @@ bool IsNewerVersion(const std::string& current, const std::string& latest) {
     char dot;
 
     currentStream >> currentMajor >> dot >> currentMinor >> dot >> currentPatch;
+
+    // Strip leading 'v' from latest version if present
+    if (latest[0] == 'v') {
+        latestStream.str(latest.substr(1));
+    } else {
+        latestStream.str(latest);
+    }
     latestStream >> latestMajor >> dot >> latestMinor >> dot >> latestPatch;
 
     if (latestMajor > currentMajor) return true;
@@ -140,10 +152,29 @@ int main() {
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
         curl_easy_setopt(curl, CURLOPT_USERAGENT, "libcurl-agent/1.0");
+
+        // Disable SSL certificate verification (not recommended for production)
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
+
+        // Set headers
+        struct curl_slist *headers = NULL;
+        headers = curl_slist_append(headers, "Accept: application/vnd.github.v3+json");
+        curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+
         // Perform the request
         res = curl_easy_perform(curl);
+
+        // Check for errors
+        if (res != CURLE_OK) {
+            std::cerr << "CURL request failed: " << curl_easy_strerror(res) << std::endl;
+        }
+
         // Clean up CURL
         curl_easy_cleanup(curl);
+        curl_slist_free_all(headers);
+    } else {
+        std::cerr << "Failed to initialize CURL." << std::endl;
     }
 
     // Parse the JSON response
@@ -159,6 +190,7 @@ int main() {
         // Extract the tag name
         tag_name = jsonData["tag_name"].asString();
         const Json::Value assets = jsonData["assets"];
+
         // Find the updater.exe in the assets
         for (const auto& asset : assets) {
             if (asset["name"].asString() == "updater.exe") {
@@ -166,6 +198,8 @@ int main() {
                 break;
             }
         }
+    } else {
+        std::cerr << "Failed to parse JSON: " << errs << std::endl;
     }
 
     // If updater.exe URL is not found, exit with an error
