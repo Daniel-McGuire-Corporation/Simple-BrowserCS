@@ -1,4 +1,4 @@
 @echo off
-echo Use command 'BuildAll' at anytime to build immediately
-echo Use command 'VS22' to open the solution in VS IDE 17 (VS22)
-set path=%~dp0\scripts\;%path%
+echo Use command 'Build-Windows' at anytime to build immediately
+echo Use command 'VS22' to open the solution in Visual Studio (VS22)
+set path=.\scripts\;%path%

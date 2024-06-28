@@ -3,6 +3,6 @@
 
 ## License
 
-**Simple-Browser is licensed under the DMC SB License** See the [LICENSE](https://DanielLMcGuire.github.io/Simple-Browser/License) for more details.
+**Simple-Browser is licensed under the MIT License** See the [LICENSE](https://DanielLMcGuire.github.io/Simple-Browser/License) for more details.
 
 

@@ -11,8 +11,7 @@ obj/
 
 # DMC INT DEVELOPMENT
 releases/
-releases/*
-.old/*
+.old/
 
 # Windows
 # Windows image file caches

@@ -30,9 +30,9 @@ if %errorlevel% equ 0 (
 
 :: Argument Handler
 if "%~1"=="" (
-    :: If no arguments are provided, execute the PowerShell script as Release
+    :: If no arguments are provided, execute the python script as Release
     %PYTHON_EXECUTABLE% windows.py release
 ) else (
-    :: If arguments are provided, pass them to the PowerShell script
+    :: If arguments are provided, pass them to the python script
     %PYTHON_EXECUTABLE% windows.py %*
 )
