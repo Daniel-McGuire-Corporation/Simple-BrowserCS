@@ -122,7 +122,7 @@ partial class AboutBox
         label6.Name = "label6";
         label6.Size = new Size(78, 12);
         label6.TabIndex = 8;
-        label6.Text = "Build 2.5.1.2.2420";
+        label6.Text = "Build 2.6.0.5.2426";
         label6.Click += label6_Click;
         // 
         // AboutBox

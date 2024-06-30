@@ -6,6 +6,7 @@
 using Microsoft.Web.WebView2.WinForms;
 using Microsoft.Web.WebView2.Core;
 using System.Diagnostics;
+using System.Security.Policy;
 
 namespace Webview2_Test
 {
@@ -113,7 +114,7 @@ namespace Webview2_Test
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Open a file dialog to select an HTML file
-            using (OpenFileDialog dialog = new OpenFileDialog { Filter = "Web Files|*.html;*.htm" })
+            using (OpenFileDialog dialog = new OpenFileDialog { Filter = "HTML Documents|*.html;*.htm" })
             {
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
@@ -200,11 +201,8 @@ namespace Webview2_Test
 
         private void windowsPackageManagerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo startInfo = new ProcessStartInfo // Open the updater app
-            {
-                FileName = "Updater.exe"
-            };
-            this.Close();
+            string updatepath = "C:\\Program Files (x86)\\SimpleBrowser\\Updater.exe";
+            Process.Start(new ProcessStartInfo(updatepath) { CreateNoWindow = false });
         }
 
         private void gitHubToolStripMenuItem_Click(object sender, EventArgs e)

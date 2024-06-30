@@ -119,6 +119,8 @@ int main(int argc, char* argv[]) {
     }
 
     // Standard output for checking updates
+    std::cout << "Simple Browser 2.6.0.5 (Updater 1.0.0 Beta)" << std::endl;
+    std::cout << "" << std::endl;
     std::cout << "Checking for updates..." << std::endl;
 
     // Initialize COM library
@@ -225,9 +227,16 @@ int main(int argc, char* argv[]) {
         std::cerr << "Failed to parse JSON: " << errs << std::endl;
     }
 
-    // If updater.exe URL is not found, exit with an error
+    // If updater.exe URL is not found, start SB and exit with an error
     if (updater_url.empty()) {
         std::cerr << "Updater not found in the latest release." << std::endl;
+        std::wstring main_app_path = L"Simple-Browser.exe";
+        STARTUPINFO si = { sizeof(si) };
+        PROCESS_INFORMATION pi;
+        if (!CreateProcess(main_app_path.c_str(), NULL, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi)) {
+            std::cerr << "Failed to start Simple-Browser.exe." << std::endl;
+            return 1;
+        }
         return 1;
     }
 
@@ -240,7 +249,7 @@ int main(int argc, char* argv[]) {
 
         // Step 2: Quit the main app
         if (verbose) std::cout << "Closing the main application..." << std::endl;
-        system("taskkill /f /im SimpleBrowser.exe");
+        system("taskkill /f /im Simple-Browser.exe");
 
         // Step 3: Download the updater.exe
         std::string updater_path = "updater.exe";
@@ -273,11 +282,11 @@ int main(int argc, char* argv[]) {
         std::cout << "No update needed." << std::endl;
 
         // Run the main app if no update is needed
-        std::wstring main_app_path = L"SimpleBrowser.exe";
+        std::wstring main_app_path = L"Simple-Browser.exe";
         STARTUPINFO si = { sizeof(si) };
         PROCESS_INFORMATION pi;
         if (!CreateProcess(main_app_path.c_str(), NULL, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi)) {
-            std::cerr << "Failed to start SimpleBrowser.exe." << std::endl;
+            std::cerr << "Failed to start Simple-Browser.exe." << std::endl;
             return 1;
         }
 

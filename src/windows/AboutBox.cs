@@ -18,8 +18,7 @@ namespace Webview2_Test
             {
                 ProcessStartInfo startInfo = new ProcessStartInfo
                 {
-                    FileName = "conhost.exe",
-                    Arguments = "Updater.bat"
+                    FileName = "Updater.exe",
                 };
                 Process.Start(startInfo);
             }
@@ -76,7 +75,7 @@ namespace Webview2_Test
 
         private void label1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Full Version String: 24Q3-2.5.1.2-2420_bg-fx (WinGet Version 2.5.1)\nGitHub Release: https://github.com/Daniel-McGuire-Corporation/Simple-Browser/releases/tag/v2.5.1.2", 
+            MessageBox.Show("Full Version String: 24Q3-2.6.0.5-2426_up-dr (WinGet Version 2.6.0)\nGitHub Release: https://github.com/Daniel-McGuire-Corporation/Simple-Browser/releases/tag/v2.5.1.2", 
                 "Simple Browser | Advanced Version Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
