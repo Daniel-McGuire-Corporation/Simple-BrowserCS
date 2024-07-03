@@ -27,15 +27,8 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
- - OS: [e.g. Windows, Debian]
- - Browser [e.g. Chrome, Safari]
- - Version [e.g. 122]
-
-**Smartphone (if applicable):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. Safari, ChromeMobile]
- - Version [e.g. 122]
+ - OS: [e.g. Windows XX XXHX]
+ - OS Version [e.g. XXXXX.XXXX]
 
 **Additional context**
 Add any other context about the problem here.
