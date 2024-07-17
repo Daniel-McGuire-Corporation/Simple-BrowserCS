@@ -106,9 +106,14 @@ namespace Webview2_Test
             addressBar.Text = url.Contains("SimpleBrowser/Resources/newtab/index.html") ? "simple://start" : url;
         }
 
-        private void CoreWebView2_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
+        private async void CoreWebView2_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
         {
-            // Handle navigation completed event
+            if (webView != null && webView.CoreWebView2 != null)
+            {
+                string title = await webView.CoreWebView2.ExecuteScriptAsync("document.title");
+                title = title.Trim('"'); // Remove the surrounding quotes from the title
+                this.Text = $"Simple Web - {title}";
+            }
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
