@@ -1,7 +1,7 @@
 DEVELOPMENT PAUSED, i have way too many projects that need more attention! (still might look at issues tho)
 
 # Simple Browser C# 
-<sub>(Updater Coming Next Month!)</sub>
+<sub>(~Updater Coming Next Month~! EDIT: Development Paused)</sub>
 
 ## Overview
 
@@ -22,7 +22,7 @@ Simple Browser is a lightweight, user-friendly web browser designed for simplici
 ### Simple Browser
 
 1. Run the `SimpleBrowser` application.
-2. Wait for the updater to check for updates (Coming in July update)
+2. Wait for the updater to check for updates (~Coming in July update~ EDIT: Development Paused)
 3. Use the browser to navigate the web with a simple and efficient interface.
 
 ## Contributing
