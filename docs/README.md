@@ -1,3 +1,5 @@
+DEVELOPMENT PAUSED, i have way too many projects that need more attention! (still might look at issues tho)
+
 # Simple Browser C# 
 <sub>(Updater Coming Next Month!)</sub>
 
