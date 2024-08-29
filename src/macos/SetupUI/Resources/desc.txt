@@ -1,0 +1,8 @@
+Simple Browser is a cross-platform browser.
+
+
+Press ^⌘I to start the installation.
+
+
+
+More Coming Soon!

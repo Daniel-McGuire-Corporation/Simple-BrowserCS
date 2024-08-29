@@ -1,0 +1,1 @@
+Simple Browser Installer for macOS 
